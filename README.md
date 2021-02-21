@@ -170,17 +170,17 @@ This project is licensed under the MIT license. See the [LICENSE](LICENSE) file 
 
 [mit-url]: https://github.com/reloadly/reloadly-sdk-java/raw/master/LICENSE
 
-[maven-badge]: https://img.shields.io/maven-central/v/software.reloadly/reloadly-java/reloadly.svg 
+[maven-badge]: https://img.shields.io/maven-central/v/software.reloadly/reloadly-java/reloadly.svg
 
 [maven-url]: http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.reloadly%22%20AND%20a%3A%22reloadly%22
 
-[circle-ci-badge]: https://img.shields.io/circleci/project/github/reloadly/reloadly-java.svg?style=flat
+[circle-ci-badge] https://circleci.com/gh/Reloadly/reloadly-sdk-java.svg?style=svg&circle-token=654d949431c1d699084ebfe053f0372e163ba400
 
-[circle-ci-url]: https://circleci.com/gh/reloadly/reloadly-java/tree/master
+[circle-ci-url]: https://app.circleci.com/pipelines/github/Reloadly/reloadly-sdk-java?branch=main
 
-[codecov-badge]: https://codecov.io/gh/reloadly/reloadly-java/branch/master/graph/badge.svg
+[codecov-badge]: https://codecov.io/gh/reloadly/reloadly-sdk-java/branch/main/graph/badge.svg?token=8U89VKQ2BF
 
-[codecov-url]: https://codecov.io/gh/reloadly/reloadly-java
+[codecov-url]: https://app.codecov.io/gh/reloadly/reloadly-sdk-java
 
 [youtube-series]: https://www.youtube.com/watch?v=TbXC4Ic8x30&t=141s&ab_channel=Reloadly
 
