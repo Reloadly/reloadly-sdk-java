@@ -1,0 +1,35 @@
+{
+  "transactionId": 10671,
+  "operatorTransactionId": null,
+  "customIdentifier": "ede8ffda-25d7-4039-841c-5f62393dec2b",
+  "recipientPhone": "306907039456",
+  "recipientEmail": null,
+  "senderPhone": null,
+  "countryCode": "GR",
+  "operatorId": 672,
+  "operatorName": "Wind PIN Greece",
+  "discount": 0.5,
+  "discountCurrencyCode": "USD",
+  "requestedAmount": 18.24,
+  "requestedAmountCurrencyCode": "USD",
+  "deliveredAmount": 15.04,
+  "deliveredAmountCurrencyCode": "EUR",
+  "transactionDate": "2021-01-16 03:44:13",
+  "pinDetail": {
+    "serial": "810268",
+    "info1": "DIAL *611",
+    "info2": "DIAL *611",
+    "info3": "Dial *233* and PIN #",
+    "value": null,
+    "code": "773709732524155",
+    "ivr": "1-888-888-8888",
+    "validity": "90 days"
+  },
+  "balanceInfo": {
+    "oldBalance": 1635.36,
+    "newBalance": 1617.12,
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "updatedAt": "2021-01-16 08:44:13"
+  }
+}

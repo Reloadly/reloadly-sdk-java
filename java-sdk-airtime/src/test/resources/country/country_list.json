@@ -1,0 +1,1586 @@
+[
+  {
+    "isoName": "AF",
+    "name": "Afghanistan",
+    "currencyCode": "AFN",
+    "currencyName": "Afghan Afghani",
+    "currencySymbol": "؋",
+    "flag": "https://s3.amazonaws.com/rld-flags/af.svg",
+    "callingCodes": [
+      "+93"
+    ]
+  },
+  {
+    "isoName": "AL",
+    "name": "Albania",
+    "currencyCode": "ALL",
+    "currencyName": "Albanian Lek",
+    "currencySymbol": "Lek",
+    "flag": "https://s3.amazonaws.com/rld-flags/al.svg",
+    "callingCodes": [
+      "+355"
+    ]
+  },
+  {
+    "isoName": "DZ",
+    "name": "Algeria",
+    "currencyCode": "DZD",
+    "currencyName": "Algerian Dinar",
+    "currencySymbol": "د.ج.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/dz.svg",
+    "callingCodes": [
+      "+213"
+    ]
+  },
+  {
+    "isoName": "AS",
+    "name": "American Samoa",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/as.svg",
+    "callingCodes": [
+      "+1684"
+    ]
+  },
+  {
+    "isoName": "AO",
+    "name": "Angola",
+    "currencyCode": "AOA",
+    "currencyName": "Angolan Kwanza",
+    "currencySymbol": "AOA",
+    "flag": "https://s3.amazonaws.com/rld-flags/ao.svg",
+    "callingCodes": [
+      "+244"
+    ]
+  },
+  {
+    "isoName": "AI",
+    "name": "Anguilla",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "currencySymbol": "XCD",
+    "flag": "https://s3.amazonaws.com/rld-flags/ai.svg",
+    "callingCodes": [
+      "+1264"
+    ]
+  },
+  {
+    "isoName": "AG",
+    "name": "Antigua and Barbuda",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "currencySymbol": "XCD",
+    "flag": "https://s3.amazonaws.com/rld-flags/ag.svg",
+    "callingCodes": [
+      "+1268"
+    ]
+  },
+  {
+    "isoName": "AR",
+    "name": "Argentina",
+    "currencyCode": "ARS",
+    "currencyName": "Argentine Peso",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/ar.svg",
+    "callingCodes": [
+      "+54"
+    ]
+  },
+  {
+    "isoName": "AM",
+    "name": "Armenia",
+    "currencyCode": "AMD",
+    "currencyName": "Armenian Dram",
+    "currencySymbol": "դր.",
+    "flag": "https://s3.amazonaws.com/rld-flags/am.svg",
+    "callingCodes": [
+      "+374"
+    ]
+  },
+  {
+    "isoName": "AW",
+    "name": "Aruba",
+    "currencyCode": "AWG",
+    "currencyName": "Aruban Florin",
+    "currencySymbol": "AWG",
+    "flag": "https://s3.amazonaws.com/rld-flags/aw.svg",
+    "callingCodes": [
+      "+297"
+    ]
+  },
+  {
+    "isoName": "BS",
+    "name": "Bahamas",
+    "currencyCode": "BSD",
+    "currencyName": "Bahamian Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/bs.svg",
+    "callingCodes": [
+      "+1242"
+    ]
+  },
+  {
+    "isoName": "BH",
+    "name": "Bahrain",
+    "currencyCode": "BHD",
+    "currencyName": "Bahraini Dinar",
+    "currencySymbol": "د.ب.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/bh.svg",
+    "callingCodes": [
+      "+973"
+    ]
+  },
+  {
+    "isoName": "BD",
+    "name": "Bangladesh",
+    "currencyCode": "BDT",
+    "currencyName": "Bangladeshi Taka",
+    "currencySymbol": "৳",
+    "flag": "https://s3.amazonaws.com/rld-flags/bd.svg",
+    "callingCodes": [
+      "+880"
+    ]
+  },
+  {
+    "isoName": "BB",
+    "name": "Barbados",
+    "currencyCode": "BBD",
+    "currencyName": "Barbadian Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/bb.svg",
+    "callingCodes": [
+      "+1246"
+    ]
+  },
+  {
+    "isoName": "BZ",
+    "name": "Belize",
+    "currencyCode": "BZD",
+    "currencyName": "Belize Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/bz.svg",
+    "callingCodes": [
+      "+501"
+    ]
+  },
+  {
+    "isoName": "BJ",
+    "name": "Benin",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/bj.svg",
+    "callingCodes": [
+      "+229"
+    ]
+  },
+  {
+    "isoName": "BM",
+    "name": "Bermuda",
+    "currencyCode": "BMD",
+    "currencyName": "Bermudan Dollar",
+    "currencySymbol": "BMD",
+    "flag": "https://s3.amazonaws.com/rld-flags/bm.svg",
+    "callingCodes": [
+      "+1441"
+    ]
+  },
+  {
+    "isoName": "BO",
+    "name": "Bolivia",
+    "currencyCode": "BOB",
+    "currencyName": "Bolivian Boliviano",
+    "currencySymbol": "Bs",
+    "flag": "https://s3.amazonaws.com/rld-flags/bo.svg",
+    "callingCodes": [
+      "+591"
+    ]
+  },
+  {
+    "isoName": "BW",
+    "name": "Botswana",
+    "currencyCode": "BWP",
+    "currencyName": "Botswanan Pula",
+    "currencySymbol": "P",
+    "flag": "https://s3.amazonaws.com/rld-flags/bw.svg",
+    "callingCodes": [
+      "+267"
+    ]
+  },
+  {
+    "isoName": "BR",
+    "name": "Brazil",
+    "currencyCode": "BRL",
+    "currencyName": "Brazilian Real",
+    "currencySymbol": "R$",
+    "flag": "https://s3.amazonaws.com/rld-flags/br.svg",
+    "callingCodes": [
+      "+55"
+    ]
+  },
+  {
+    "isoName": "VG",
+    "name": "British Virgin Islands",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/vg.svg",
+    "callingCodes": [
+      "+1284"
+    ]
+  },
+  {
+    "isoName": "BF",
+    "name": "Burkina Faso",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/bf.svg",
+    "callingCodes": [
+      "+226"
+    ]
+  },
+  {
+    "isoName": "BI",
+    "name": "Burundi",
+    "currencyCode": "BIF",
+    "currencyName": "Burundian Franc",
+    "currencySymbol": "FBu",
+    "flag": "https://s3.amazonaws.com/rld-flags/bi.svg",
+    "callingCodes": [
+      "+257"
+    ]
+  },
+  {
+    "isoName": "KH",
+    "name": "Cambodia",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/kh.svg",
+    "callingCodes": [
+      "+855"
+    ]
+  },
+  {
+    "isoName": "CM",
+    "name": "Cameroon",
+    "currencyCode": "XAF",
+    "currencyName": "CFA Franc BEAC",
+    "currencySymbol": "FCFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/cm.svg",
+    "callingCodes": [
+      "+237"
+    ]
+  },
+  {
+    "isoName": "CA",
+    "name": "Canada",
+    "currencyCode": "CAD",
+    "currencyName": "Canadian Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/ca.svg",
+    "callingCodes": [
+      "+1"
+    ]
+  },
+  {
+    "isoName": "CV",
+    "name": "Cape Verde",
+    "currencyCode": "CVE",
+    "currencyName": "Cape Verdean Escudo",
+    "currencySymbol": "CV$",
+    "flag": "https://s3.amazonaws.com/rld-flags/cv.svg",
+    "callingCodes": [
+      "+238"
+    ]
+  },
+  {
+    "isoName": "KY",
+    "name": "Cayman Islands",
+    "currencyCode": "KYD",
+    "currencyName": "Cayman Islands Dollar",
+    "currencySymbol": "KYD",
+    "flag": "https://s3.amazonaws.com/rld-flags/ky.svg",
+    "callingCodes": [
+      "+1345"
+    ]
+  },
+  {
+    "isoName": "CF",
+    "name": "Central African Republic",
+    "currencyCode": "XAF",
+    "currencyName": "CFA Franc BEAC",
+    "currencySymbol": "FCFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/cf.svg",
+    "callingCodes": [
+      "+236"
+    ]
+  },
+  {
+    "isoName": "CL",
+    "name": "Chile",
+    "currencyCode": "CLP",
+    "currencyName": "Chilean Peso",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/cl.svg",
+    "callingCodes": [
+      "+56"
+    ]
+  },
+  {
+    "isoName": "CN",
+    "name": "China",
+    "currencyCode": "CNY",
+    "currencyName": "Chinese Yuan",
+    "currencySymbol": "CN¥",
+    "flag": "https://s3.amazonaws.com/rld-flags/cn.svg",
+    "callingCodes": [
+      "+86"
+    ]
+  },
+  {
+    "isoName": "CO",
+    "name": "Colombia",
+    "currencyCode": "COP",
+    "currencyName": "Colombian Peso",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/co.svg",
+    "callingCodes": [
+      "+57"
+    ]
+  },
+  {
+    "isoName": "CG",
+    "name": "Congo",
+    "currencyCode": "XAF",
+    "currencyName": "CFA Franc BEAC",
+    "currencySymbol": "FCFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/cg.svg",
+    "callingCodes": [
+      "+242"
+    ]
+  },
+  {
+    "isoName": "CR",
+    "name": "Costa Rica",
+    "currencyCode": "CRC",
+    "currencyName": "Costa Rican Colón",
+    "currencySymbol": "₡",
+    "flag": "https://s3.amazonaws.com/rld-flags/cr.svg",
+    "callingCodes": [
+      "+506"
+    ]
+  },
+  {
+    "isoName": "CI",
+    "name": "Côte d'Ivoire",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/ci.svg",
+    "callingCodes": [
+      "+225"
+    ]
+  },
+  {
+    "isoName": "CU",
+    "name": "Cuba",
+    "currencyCode": "CUC",
+    "currencyName": "Cuban Peso",
+    "currencySymbol": "₱",
+    "flag": "https://s3.amazonaws.com/rld-flags/cu.svg",
+    "callingCodes": [
+      "+53"
+    ]
+  },
+  {
+    "isoName": "CY",
+    "name": "Cyprus",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/cy.svg",
+    "callingCodes": [
+      "+357"
+    ]
+  },
+  {
+    "isoName": "DM",
+    "name": "Dominica",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "currencySymbol": "XCD",
+    "flag": "https://s3.amazonaws.com/rld-flags/dm.svg",
+    "callingCodes": [
+      "+1767"
+    ]
+  },
+  {
+    "isoName": "DO",
+    "name": "Dominican Republic",
+    "currencyCode": "DOP",
+    "currencyName": "Dominican Peso",
+    "currencySymbol": "RD$",
+    "flag": "https://s3.amazonaws.com/rld-flags/do.svg",
+    "callingCodes": [
+      "+1849",
+      "+1829",
+      "+1809"
+    ]
+  },
+  {
+    "isoName": "EC",
+    "name": "Ecuador",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/ec.svg",
+    "callingCodes": [
+      "+593"
+    ]
+  },
+  {
+    "isoName": "EG",
+    "name": "Egypt",
+    "currencyCode": "EGP",
+    "currencyName": "Egyptian Pound",
+    "currencySymbol": "ج.م.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/eg.svg",
+    "callingCodes": [
+      "+20"
+    ]
+  },
+  {
+    "isoName": "SV",
+    "name": "El Salvador",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/sv.svg",
+    "callingCodes": [
+      "+503"
+    ]
+  },
+  {
+    "isoName": "ET",
+    "name": "Ethiopia",
+    "currencyCode": "ETB",
+    "currencyName": "Ethiopian Birr",
+    "currencySymbol": "Br",
+    "flag": "https://s3.amazonaws.com/rld-flags/et.svg",
+    "callingCodes": [
+      "+251"
+    ]
+  },
+  {
+    "isoName": "FJ",
+    "name": "Fiji",
+    "currencyCode": "FJD",
+    "currencyName": "Fijian Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/fj.svg",
+    "callingCodes": [
+      "+679"
+    ]
+  },
+  {
+    "isoName": "FR",
+    "name": "France",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/fr.svg",
+    "callingCodes": [
+      "+33"
+    ]
+  },
+  {
+    "isoName": "GM",
+    "name": "Gambia",
+    "currencyCode": "GMD",
+    "currencyName": "Gambian Dalasi",
+    "currencySymbol": "GMD",
+    "flag": "https://s3.amazonaws.com/rld-flags/gm.svg",
+    "callingCodes": [
+      "+220"
+    ]
+  },
+  {
+    "isoName": "GE",
+    "name": "Georgia",
+    "currencyCode": "GEL",
+    "currencyName": "Georgian Lari",
+    "currencySymbol": "ლ",
+    "flag": "https://s3.amazonaws.com/rld-flags/ge.svg",
+    "callingCodes": [
+      "+995"
+    ]
+  },
+  {
+    "isoName": "DE",
+    "name": "Germany",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/de.svg",
+    "callingCodes": [
+      "+49"
+    ]
+  },
+  {
+    "isoName": "GH",
+    "name": "Ghana",
+    "currencyCode": "GHS",
+    "currencyName": "Ghanaian Cedi",
+    "currencySymbol": "GH₵",
+    "flag": "https://s3.amazonaws.com/rld-flags/gh.svg",
+    "callingCodes": [
+      "+233"
+    ]
+  },
+  {
+    "isoName": "GD",
+    "name": "Grenada",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "currencySymbol": "XCD",
+    "flag": "https://s3.amazonaws.com/rld-flags/gd.svg",
+    "callingCodes": [
+      "+1473"
+    ]
+  },
+  {
+    "isoName": "GT",
+    "name": "Guatemala",
+    "currencyCode": "GTQ",
+    "currencyName": "Guatemalan Quetzal",
+    "currencySymbol": "Q",
+    "flag": "https://s3.amazonaws.com/rld-flags/gt.svg",
+    "callingCodes": [
+      "+502"
+    ]
+  },
+  {
+    "isoName": "GN",
+    "name": "Guinea Conakry",
+    "currencyCode": "GNF",
+    "currencyName": "Guinean Franc",
+    "currencySymbol": "FG",
+    "flag": "https://s3.amazonaws.com/rld-flags/gn.svg",
+    "callingCodes": [
+      "+224"
+    ]
+  },
+  {
+    "isoName": "GW",
+    "name": "Guinea-Bissau",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/gw.svg",
+    "callingCodes": [
+      "+245"
+    ]
+  },
+  {
+    "isoName": "GY",
+    "name": "Guyana",
+    "currencyCode": "GYD",
+    "currencyName": "Guyanaese Dollar",
+    "currencySymbol": "GYD",
+    "flag": "https://s3.amazonaws.com/rld-flags/gy.svg",
+    "callingCodes": [
+      "+592"
+    ]
+  },
+  {
+    "isoName": "HT",
+    "name": "Haiti",
+    "currencyCode": "HTG",
+    "currencyName": "Haitian Gourde",
+    "currencySymbol": "HTG",
+    "flag": "https://s3.amazonaws.com/rld-flags/ht.svg",
+    "callingCodes": [
+      "+509"
+    ]
+  },
+  {
+    "isoName": "HN",
+    "name": "Honduras",
+    "currencyCode": "HNL",
+    "currencyName": "Honduran Lempira",
+    "currencySymbol": "L",
+    "flag": "https://s3.amazonaws.com/rld-flags/hn.svg",
+    "callingCodes": [
+      "+504"
+    ]
+  },
+  {
+    "isoName": "IN",
+    "name": "India",
+    "currencyCode": "INR",
+    "currencyName": "Indian Rupee",
+    "currencySymbol": "₹",
+    "flag": "https://s3.amazonaws.com/rld-flags/in.svg",
+    "callingCodes": [
+      "+91"
+    ]
+  },
+  {
+    "isoName": "ID",
+    "name": "Indonesia",
+    "currencyCode": "IDR",
+    "currencyName": "Indonesian Rupiah",
+    "currencySymbol": "Rp",
+    "flag": "https://s3.amazonaws.com/rld-flags/id.svg",
+    "callingCodes": [
+      "+62"
+    ]
+  },
+  {
+    "isoName": "IQ",
+    "name": "Iraq",
+    "currencyCode": "IQD",
+    "currencyName": "Iraqi Dinar",
+    "currencySymbol": "د.ع.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/iq.svg",
+    "callingCodes": [
+      "+964"
+    ]
+  },
+  {
+    "isoName": "IT",
+    "name": "Italy",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/it.svg",
+    "callingCodes": [
+      "+39"
+    ]
+  },
+  {
+    "isoName": "JM",
+    "name": "Jamaica",
+    "currencyCode": "JMD",
+    "currencyName": "Jamaican Dollar",
+    "currencySymbol": "J$",
+    "flag": "https://s3.amazonaws.com/rld-flags/jm.svg",
+    "callingCodes": [
+      "+1876"
+    ]
+  },
+  {
+    "isoName": "JO",
+    "name": "Jordan",
+    "currencyCode": "JOD",
+    "currencyName": "Jordanian Dinar",
+    "currencySymbol": "د.أ.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/jo.svg",
+    "callingCodes": [
+      "+962"
+    ]
+  },
+  {
+    "isoName": "KZ",
+    "name": "Kazakhstan",
+    "currencyCode": "KZT",
+    "currencyName": "Kazakhstani Tenge",
+    "currencySymbol": "тңг.",
+    "flag": "https://s3.amazonaws.com/rld-flags/kz.svg",
+    "callingCodes": [
+      "+76",
+      "+77"
+    ]
+  },
+  {
+    "isoName": "KE",
+    "name": "Kenya",
+    "currencyCode": "KES",
+    "currencyName": "Kenyan Shilling",
+    "currencySymbol": "Ksh",
+    "flag": "https://s3.amazonaws.com/rld-flags/ke.svg",
+    "callingCodes": [
+      "+254"
+    ]
+  },
+  {
+    "isoName": "KW",
+    "name": "Kuwait",
+    "currencyCode": "KWD",
+    "currencyName": "Kuwaiti Dinar",
+    "currencySymbol": "د.ك.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/kw.svg",
+    "callingCodes": [
+      "+965"
+    ]
+  },
+  {
+    "isoName": "KG",
+    "name": "Kyrgyzstan",
+    "currencyCode": "KGS",
+    "currencyName": "Kyrgystani Som",
+    "currencySymbol": "KGS",
+    "flag": "https://s3.amazonaws.com/rld-flags/kg.svg",
+    "callingCodes": [
+      "+996"
+    ]
+  },
+  {
+    "isoName": "LA",
+    "name": "Laos",
+    "currencyCode": "LAK",
+    "currencyName": "Laotian Kip",
+    "currencySymbol": "LAK",
+    "flag": "https://s3.amazonaws.com/rld-flags/la.svg",
+    "callingCodes": [
+      "+856"
+    ]
+  },
+  {
+    "isoName": "LB",
+    "name": "Lebanon",
+    "currencyCode": "LBP",
+    "currencyName": "Lebanese Pound",
+    "currencySymbol": "ل.ل.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/lb.svg",
+    "callingCodes": [
+      "+961"
+    ]
+  },
+  {
+    "isoName": "LR",
+    "name": "Liberia",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/lr.svg",
+    "callingCodes": [
+      "+231"
+    ]
+  },
+  {
+    "isoName": "MK",
+    "name": "Macedonia",
+    "currencyCode": "MKD",
+    "currencyName": "Macedonian Denar",
+    "currencySymbol": "MKD",
+    "flag": "https://s3.amazonaws.com/rld-flags/mk.svg",
+    "callingCodes": [
+      "+389"
+    ]
+  },
+  {
+    "isoName": "MG",
+    "name": "Madagascar",
+    "currencyCode": "MGA",
+    "currencyName": "Malagasy Ariary",
+    "currencySymbol": "MGA",
+    "flag": "https://s3.amazonaws.com/rld-flags/mg.svg",
+    "callingCodes": [
+      "+261"
+    ]
+  },
+  {
+    "isoName": "MW",
+    "name": "Malawi",
+    "currencyCode": "MWK",
+    "currencyName": "Malawian Kwacha",
+    "currencySymbol": "MWK",
+    "flag": "https://s3.amazonaws.com/rld-flags/mw.svg",
+    "callingCodes": [
+      "+265"
+    ]
+  },
+  {
+    "isoName": "MY",
+    "name": "Malaysia",
+    "currencyCode": "MYR",
+    "currencyName": "Malaysian Ringgit",
+    "currencySymbol": "RM",
+    "flag": "https://s3.amazonaws.com/rld-flags/my.svg",
+    "callingCodes": [
+      "+60"
+    ]
+  },
+  {
+    "isoName": "ML",
+    "name": "Mali",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/ml.svg",
+    "callingCodes": [
+      "+223"
+    ]
+  },
+  {
+    "isoName": "MQ",
+    "name": "Martinique",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/mq.svg",
+    "callingCodes": [
+      "+596"
+    ]
+  },
+  {
+    "isoName": "MX",
+    "name": "Mexico",
+    "currencyCode": "MXN",
+    "currencyName": "Mexican Peso",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/mx.svg",
+    "callingCodes": [
+      "+52"
+    ]
+  },
+  {
+    "isoName": "MD",
+    "name": "Moldova",
+    "currencyCode": "MDL",
+    "currencyName": "Moldovan Leu",
+    "currencySymbol": "MDL",
+    "flag": "https://s3.amazonaws.com/rld-flags/md.svg",
+    "callingCodes": [
+      "+373"
+    ]
+  },
+  {
+    "isoName": "MA",
+    "name": "Morocco",
+    "currencyCode": "MAD",
+    "currencyName": "Moroccan Dirham",
+    "currencySymbol": "د.م.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/ma.svg",
+    "callingCodes": [
+      "+212"
+    ]
+  },
+  {
+    "isoName": "MZ",
+    "name": "Mozambique",
+    "currencyCode": "MZN",
+    "currencyName": "Mozambican Metical",
+    "currencySymbol": "MTn",
+    "flag": "https://s3.amazonaws.com/rld-flags/mz.svg",
+    "callingCodes": [
+      "+258"
+    ]
+  },
+  {
+    "isoName": "MM",
+    "name": "Myanmar",
+    "currencyCode": "MMK",
+    "currencyName": "Myanma Kyat",
+    "currencySymbol": "K",
+    "flag": "https://s3.amazonaws.com/rld-flags/mm.svg",
+    "callingCodes": [
+      "+95"
+    ]
+  },
+  {
+    "isoName": "NA",
+    "name": "Namibia",
+    "currencyCode": "NAD",
+    "currencyName": "Namibian Dollar",
+    "currencySymbol": "N$",
+    "flag": "https://s3.amazonaws.com/rld-flags/na.svg",
+    "callingCodes": [
+      "+264"
+    ]
+  },
+  {
+    "isoName": "NR",
+    "name": "Nauru",
+    "currencyCode": "AUD",
+    "currencyName": "Australian Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/nr.svg",
+    "callingCodes": [
+      "+674"
+    ]
+  },
+  {
+    "isoName": "NP",
+    "name": "Nepal",
+    "currencyCode": "NPR",
+    "currencyName": "Nepalese Rupee",
+    "currencySymbol": "नेरू",
+    "flag": "https://s3.amazonaws.com/rld-flags/np.svg",
+    "callingCodes": [
+      "+977"
+    ]
+  },
+  {
+    "isoName": "NL",
+    "name": "Netherlands",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/nl.svg",
+    "callingCodes": [
+      "+31"
+    ]
+  },
+  {
+    "isoName": "AN",
+    "name": "Netherlands Antilles",
+    "currencyCode": "ANG",
+    "currencyName": "Netherlands Antillean Guilder",
+    "currencySymbol": "ƒ",
+    "flag": "https://s3.amazonaws.com/rld-flags/ant.svg\n",
+    "callingCodes": [
+      "+599"
+    ]
+  },
+  {
+    "isoName": "NI",
+    "name": "Nicaragua",
+    "currencyCode": "NIO",
+    "currencyName": "Nicaraguan Córdoba",
+    "currencySymbol": "C$",
+    "flag": "https://s3.amazonaws.com/rld-flags/ni.svg",
+    "callingCodes": [
+      "+505"
+    ]
+  },
+  {
+    "isoName": "NE",
+    "name": "Niger",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/ne.svg",
+    "callingCodes": [
+      "+227"
+    ]
+  },
+  {
+    "isoName": "NG",
+    "name": "Nigeria",
+    "currencyCode": "NGN",
+    "currencyName": "Nigerian Naira",
+    "currencySymbol": "₦",
+    "flag": "https://s3.amazonaws.com/rld-flags/ng.svg",
+    "callingCodes": [
+      "+234"
+    ]
+  },
+  {
+    "isoName": "OM",
+    "name": "Oman",
+    "currencyCode": "OMR",
+    "currencyName": "Omani Rial",
+    "currencySymbol": "ر.ع.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/om.svg",
+    "callingCodes": [
+      "+968"
+    ]
+  },
+  {
+    "isoName": "PK",
+    "name": "Pakistan",
+    "currencyCode": "PKR",
+    "currencyName": "Pakistani Rupee",
+    "currencySymbol": "₨",
+    "flag": "https://s3.amazonaws.com/rld-flags/pk.svg",
+    "callingCodes": [
+      "+92"
+    ]
+  },
+  {
+    "isoName": "PS",
+    "name": "Palestine",
+    "currencyCode": "ILS",
+    "currencyName": "Israeli New Sheqel",
+    "currencySymbol": "₪",
+    "flag": "https://s3.amazonaws.com/rld-flags/ps.svg",
+    "callingCodes": [
+      "+970"
+    ]
+  },
+  {
+    "isoName": "PA",
+    "name": "Panama",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/pa.svg",
+    "callingCodes": [
+      "+507"
+    ]
+  },
+  {
+    "isoName": "PG",
+    "name": "Papua New Guinea",
+    "currencyCode": "PGK",
+    "currencyName": "Papua New Guinean Kina",
+    "currencySymbol": "PGK",
+    "flag": "https://s3.amazonaws.com/rld-flags/pg.svg",
+    "callingCodes": [
+      "+675"
+    ]
+  },
+  {
+    "isoName": "PY",
+    "name": "Paraguay",
+    "currencyCode": "PYG",
+    "currencyName": "Paraguayan Guarani",
+    "currencySymbol": "₲",
+    "flag": "https://s3.amazonaws.com/rld-flags/py.svg",
+    "callingCodes": [
+      "+595"
+    ]
+  },
+  {
+    "isoName": "PE",
+    "name": "Peru",
+    "currencyCode": "PEN",
+    "currencyName": "Peruvian Nuevo Sol",
+    "currencySymbol": "S/.",
+    "flag": "https://s3.amazonaws.com/rld-flags/pe.svg",
+    "callingCodes": [
+      "+51"
+    ]
+  },
+  {
+    "isoName": "PH",
+    "name": "Philippines",
+    "currencyCode": "PHP",
+    "currencyName": "Philippine Peso",
+    "currencySymbol": "₱",
+    "flag": "https://s3.amazonaws.com/rld-flags/ph.svg",
+    "callingCodes": [
+      "+63"
+    ]
+  },
+  {
+    "isoName": "PL",
+    "name": "Poland",
+    "currencyCode": "PLN",
+    "currencyName": "Polish Zloty",
+    "currencySymbol": "zł",
+    "flag": "https://s3.amazonaws.com/rld-flags/pl.svg",
+    "callingCodes": [
+      "+48"
+    ]
+  },
+  {
+    "isoName": "PT",
+    "name": "Portugal",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/pt.svg",
+    "callingCodes": [
+      "+351"
+    ]
+  },
+  {
+    "isoName": "PR",
+    "name": "Puerto Rico",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/pr.svg",
+    "callingCodes": [
+      "+1787",
+      "+1939"
+    ]
+  },
+  {
+    "isoName": "QA",
+    "name": "Qatar",
+    "currencyCode": "QAR",
+    "currencyName": "Qatari Rial",
+    "currencySymbol": "ر.ق.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/qa.svg",
+    "callingCodes": [
+      "+974"
+    ]
+  },
+  {
+    "isoName": "RO",
+    "name": "Romania",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/ro.svg",
+    "callingCodes": [
+      "+40"
+    ]
+  },
+  {
+    "isoName": "RU",
+    "name": "Russia",
+    "currencyCode": "RUB",
+    "currencyName": "Russian Ruble",
+    "currencySymbol": "руб.",
+    "flag": "https://s3.amazonaws.com/rld-flags/ru.svg",
+    "callingCodes": [
+      "+7"
+    ]
+  },
+  {
+    "isoName": "RW",
+    "name": "Rwanda",
+    "currencyCode": "RWF",
+    "currencyName": "Rwandan Franc",
+    "currencySymbol": "FR",
+    "flag": "https://s3.amazonaws.com/rld-flags/rw.svg",
+    "callingCodes": [
+      "+250"
+    ]
+  },
+  {
+    "isoName": "KN",
+    "name": "Saint Kitts And Nevis",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "currencySymbol": "XCD",
+    "flag": "https://s3.amazonaws.com/rld-flags/kn.svg",
+    "callingCodes": [
+      "+1869"
+    ]
+  },
+  {
+    "isoName": "LC",
+    "name": "Saint Lucia",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "currencySymbol": "XCD",
+    "flag": "https://s3.amazonaws.com/rld-flags/lc.svg",
+    "callingCodes": [
+      "+1758"
+    ]
+  },
+  {
+    "isoName": "VC",
+    "name": "Saint Vincent And The Grenadines",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "currencySymbol": "XCD",
+    "flag": "https://s3.amazonaws.com/rld-flags/vc.svg",
+    "callingCodes": [
+      "+1784"
+    ]
+  },
+  {
+    "isoName": "WS",
+    "name": "Samoa",
+    "currencyCode": "WST",
+    "currencyName": "Samoan Tala",
+    "currencySymbol": "WST",
+    "flag": "https://s3.amazonaws.com/rld-flags/ws.svg",
+    "callingCodes": [
+      "+685"
+    ]
+  },
+  {
+    "isoName": "SA",
+    "name": "Saudi Arabia",
+    "currencyCode": "SAR",
+    "currencyName": "Saudi Riyal",
+    "currencySymbol": "ر.س.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/sa.svg",
+    "callingCodes": [
+      "+966"
+    ]
+  },
+  {
+    "isoName": "SN",
+    "name": "Senegal",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/sn.svg",
+    "callingCodes": [
+      "+221"
+    ]
+  },
+  {
+    "isoName": "SL",
+    "name": "Sierra Leone",
+    "currencyCode": "SLL",
+    "currencyName": "Sierra Leonean Leone",
+    "currencySymbol": "SLL",
+    "flag": "https://s3.amazonaws.com/rld-flags/sl.svg",
+    "callingCodes": [
+      "+232"
+    ]
+  },
+  {
+    "isoName": "SG",
+    "name": "Singapore",
+    "currencyCode": "SGD",
+    "currencyName": "Singapore Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/sg.svg",
+    "callingCodes": [
+      "+65"
+    ]
+  },
+  {
+    "isoName": "ZA",
+    "name": "South Africa",
+    "currencyCode": "ZAR",
+    "currencyName": "South African Rand",
+    "currencySymbol": "R",
+    "flag": "https://s3.amazonaws.com/rld-flags/za.svg",
+    "callingCodes": [
+      "+27"
+    ]
+  },
+  {
+    "isoName": "ES",
+    "name": "Spain",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/es.svg",
+    "callingCodes": [
+      "+34"
+    ]
+  },
+  {
+    "isoName": "LK",
+    "name": "Sri Lanka",
+    "currencyCode": "LKR",
+    "currencyName": "Sri Lankan Rupee",
+    "currencySymbol": "SL Re",
+    "flag": "https://s3.amazonaws.com/rld-flags/lk.svg",
+    "callingCodes": [
+      "+94"
+    ]
+  },
+  {
+    "isoName": "SR",
+    "name": "Suriname",
+    "currencyCode": "SRD",
+    "currencyName": "Surinamese Dollar",
+    "currencySymbol": "SRD",
+    "flag": "https://s3.amazonaws.com/rld-flags/sr.svg",
+    "callingCodes": [
+      "+597"
+    ]
+  },
+  {
+    "isoName": "SZ",
+    "name": "Swaziland",
+    "currencyCode": "SZL",
+    "currencyName": "Swazi Lilangeni",
+    "currencySymbol": "SZL",
+    "flag": "https://s3.amazonaws.com/rld-flags/sz.svg",
+    "callingCodes": [
+      "+268"
+    ]
+  },
+  {
+    "isoName": "TJ",
+    "name": "Tajikistan",
+    "currencyCode": "TJS",
+    "currencyName": "Tajikistani Somoni",
+    "currencySymbol": "TJS",
+    "flag": "https://s3.amazonaws.com/rld-flags/tj.svg",
+    "callingCodes": [
+      "+992"
+    ]
+  },
+  {
+    "isoName": "TZ",
+    "name": "Tanzania",
+    "currencyCode": "TZS",
+    "currencyName": "Tanzanian Shilling",
+    "currencySymbol": "TSh",
+    "flag": "https://s3.amazonaws.com/rld-flags/tz.svg",
+    "callingCodes": [
+      "+255"
+    ]
+  },
+  {
+    "isoName": "TH",
+    "name": "Thailand",
+    "currencyCode": "THB",
+    "currencyName": "Thai Baht",
+    "currencySymbol": "฿",
+    "flag": "https://s3.amazonaws.com/rld-flags/th.svg",
+    "callingCodes": [
+      "+66"
+    ]
+  },
+  {
+    "isoName": "CD",
+    "name": "The Democratic Republic Of Congo",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/cd.svg",
+    "callingCodes": [
+      "+243"
+    ]
+  },
+  {
+    "isoName": "TG",
+    "name": "Togo",
+    "currencyCode": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "currencySymbol": "CFA",
+    "flag": "https://s3.amazonaws.com/rld-flags/tg.svg",
+    "callingCodes": [
+      "+228"
+    ]
+  },
+  {
+    "isoName": "TO",
+    "name": "Tonga",
+    "currencyCode": "TOP",
+    "currencyName": "Tongan Pa?anga",
+    "currencySymbol": "T$",
+    "flag": "https://s3.amazonaws.com/rld-flags/to.svg",
+    "callingCodes": [
+      "+676"
+    ]
+  },
+  {
+    "isoName": "TT",
+    "name": "Trinidad and Tobago",
+    "currencyCode": "TTD",
+    "currencyName": "Trinidad and Tobago Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/tt.svg",
+    "callingCodes": [
+      "+1868"
+    ]
+  },
+  {
+    "isoName": "TN",
+    "name": "Tunisia",
+    "currencyCode": "TND",
+    "currencyName": "Tunisian Dinar",
+    "currencySymbol": "د.ت.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/tn.svg",
+    "callingCodes": [
+      "+216"
+    ]
+  },
+  {
+    "isoName": "TR",
+    "name": "Turkey",
+    "currencyCode": "TRY",
+    "currencyName": "Turkish Lira",
+    "currencySymbol": "TL",
+    "flag": "https://s3.amazonaws.com/rld-flags/tr.svg",
+    "callingCodes": [
+      "+90"
+    ]
+  },
+  {
+    "isoName": "TC",
+    "name": "Turks And Caicos Islands",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/tc.svg",
+    "callingCodes": [
+      "+1649"
+    ]
+  },
+  {
+    "isoName": "UG",
+    "name": "Uganda",
+    "currencyCode": "UGX",
+    "currencyName": "Ugandan Shilling",
+    "currencySymbol": "USh",
+    "flag": "https://s3.amazonaws.com/rld-flags/ug.svg",
+    "callingCodes": [
+      "+256"
+    ]
+  },
+  {
+    "isoName": "UA",
+    "name": "Ukraine",
+    "currencyCode": "UAH",
+    "currencyName": "Ukrainian Hryvnia",
+    "currencySymbol": "₴",
+    "flag": "https://s3.amazonaws.com/rld-flags/ua.svg",
+    "callingCodes": [
+      "+380"
+    ]
+  },
+  {
+    "isoName": "AE",
+    "name": "United Arab Emirates",
+    "currencyCode": "AED",
+    "currencyName": "United Arab Emirates Dirham",
+    "currencySymbol": "د.إ.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/ae.svg",
+    "callingCodes": [
+      "+971"
+    ]
+  },
+  {
+    "isoName": "GB",
+    "name": "United Kingdom",
+    "currencyCode": "GBP",
+    "currencyName": "British Pound Sterling",
+    "currencySymbol": "£",
+    "flag": "https://s3.amazonaws.com/rld-flags/gb.svg",
+    "callingCodes": [
+      "+44"
+    ]
+  },
+  {
+    "isoName": "US",
+    "name": "United States",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/us.svg",
+    "callingCodes": [
+      "+1"
+    ]
+  },
+  {
+    "isoName": "UY",
+    "name": "Uruguay",
+    "currencyCode": "UYU",
+    "currencyName": "Uruguayan Peso",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/uy.svg",
+    "callingCodes": [
+      "+598"
+    ]
+  },
+  {
+    "isoName": "UZ",
+    "name": "Uzbekistan",
+    "currencyCode": "UZS",
+    "currencyName": "Uzbekistan Som",
+    "currencySymbol": "UZS",
+    "flag": "https://s3.amazonaws.com/rld-flags/uz.svg",
+    "callingCodes": [
+      "+998"
+    ]
+  },
+  {
+    "isoName": "VU",
+    "name": "Vanuatu",
+    "currencyCode": "VUV",
+    "currencyName": "Vanuatu Vatu",
+    "currencySymbol": "VUV",
+    "flag": "https://s3.amazonaws.com/rld-flags/vu.svg",
+    "callingCodes": [
+      "+678"
+    ]
+  },
+  {
+    "isoName": "VN",
+    "name": "Vietnam",
+    "currencyCode": "VND",
+    "currencyName": "Vietnamese Dong",
+    "currencySymbol": "₫",
+    "flag": "https://s3.amazonaws.com/rld-flags/vn.svg",
+    "callingCodes": [
+      "+84"
+    ]
+  },
+  {
+    "isoName": "YE",
+    "name": "Yemen",
+    "currencyCode": "YER",
+    "currencyName": "Yemeni Rial",
+    "currencySymbol": "ر.ي.‏",
+    "flag": "https://s3.amazonaws.com/rld-flags/ye.svg",
+    "callingCodes": [
+      "+967"
+    ]
+  },
+  {
+    "isoName": "ZM",
+    "name": "Zambia",
+    "currencyCode": "ZMW",
+    "currencyName": "ZMW",
+    "currencySymbol": "ZMW",
+    "flag": "https://s3.amazonaws.com/rld-flags/zm.svg",
+    "callingCodes": [
+      "+260"
+    ]
+  },
+  {
+    "isoName": "ZW",
+    "name": "Zimbabwe",
+    "currencyCode": "ZWL",
+    "currencyName": "Zimbabwean Dollar (2009)",
+    "currencySymbol": "ZWL",
+    "flag": "https://s3.amazonaws.com/rld-flags/zw.svg",
+    "callingCodes": [
+      "+263"
+    ]
+  },
+  {
+    "isoName": "VE",
+    "name": "Venezuela",
+    "currencyCode": "VEF",
+    "currencyName": "Bolivar Fuerte",
+    "currencySymbol": "Bs.F.",
+    "flag": "https://s3.amazonaws.com/rld-flags/ve.svg",
+    "callingCodes": [
+      "+58"
+    ]
+  },
+  {
+    "isoName": "GR",
+    "name": "Greece",
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencySymbol": "€",
+    "flag": "https://s3.amazonaws.com/rld-flags/gr.svg",
+    "callingCodes": [
+      "+30"
+    ]
+  },
+  {
+    "isoName": "SO",
+    "name": "Somalia",
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "currencySymbol": "$",
+    "flag": "https://s3.amazonaws.com/rld-flags/so.svg",
+    "callingCodes": [
+      "+252"
+    ]
+  },
+  {
+    "isoName": "BY",
+    "name": "Belarus",
+    "currencyCode": "BYN",
+    "currencyName": "Belarusian ruble",
+    "currencySymbol": "Br",
+    "flag": "https://s3.amazonaws.com/rld-flags/by.svg",
+    "callingCodes": [
+      "+375"
+    ]
+  },
+  {
+    "isoName": "KM",
+    "name": "Comoros",
+    "currencyCode": "KMF",
+    "currencyName": "Comorian Franc",
+    "currencySymbol": "FC",
+    "flag": "https://s3.amazonaws.com/rld-flags/km.svg",
+    "callingCodes": []
+  },
+  {
+    "isoName": "MR",
+    "name": "Mauritania",
+    "currencyCode": "MRU",
+    "currencyName": "Mauritanian Ouguiya",
+    "currencySymbol": "UM",
+    "flag": "https://s3.amazonaws.com/rld-flags/mr.svg",
+    "callingCodes": []
+  }
+]

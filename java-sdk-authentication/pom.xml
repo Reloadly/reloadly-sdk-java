@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>software.reloadly</groupId>
+        <artifactId>java-sdk</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>java-sdk-authentication</artifactId>
+    <version>1.0.0</version>
+
+    <name>Reloadly Java SDK :: Services :: Reloadly Authentication Service</name>
+    <description>Reloadly Java SDK for the Authentication API. The module holds the client classes
+        that are used for communicating with Reloadly Authentication Service.
+    </description>
+
+    <properties>
+        <sdk-core.version>1.0.0</sdk-core.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>software.reloadly</groupId>
+            <artifactId>java-sdk-core</artifactId>
+            <version>${sdk-core.version}</version>
+            <optional>false</optional>
+        </dependency>
+    </dependencies>
+
+
+</project>

@@ -1,0 +1,26 @@
+{
+  "transactionId": 10670,
+  "operatorTransactionId": null,
+  "customIdentifier": "fe8c5a90-691a-452a-a9a6-19045f7f7a7c",
+  "recipientPhone": "50936377111",
+  "recipientEmail": null,
+  "senderPhone": null,
+  "countryCode": "HT",
+  "operatorId": 173,
+  "operatorName": "Digicel Haiti",
+  "discount": 1.8,
+  "discountCurrencyCode": "USD",
+  "requestedAmount": 15,
+  "requestedAmountCurrencyCode": "USD",
+  "deliveredAmount": 1089.31,
+  "deliveredAmountCurrencyCode": "HTG",
+  "transactionDate": "2021-01-16 03:39:56",
+  "pinDetail": null,
+  "balanceInfo": {
+    "oldBalance": 1648.56,
+    "newBalance": 1635.36,
+    "currencyCode": "USD",
+    "currencyName": "US Dollar",
+    "updatedAt": "2021-01-16 08:39:56"
+  }
+}

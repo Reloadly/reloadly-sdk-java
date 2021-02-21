@@ -1,0 +1,4529 @@
+{
+  "content": [
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 706,
+        "operatorId": 706,
+        "name": "Salaam Afghanistan",
+        "countryCode": "AF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 1,
+        "operatorId": 1,
+        "name": "Afghan Wireless Afghanistan",
+        "countryCode": "AF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 2,
+        "operatorId": 2,
+        "name": "MTN Afghanistan",
+        "countryCode": "AF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 3,
+        "operatorId": 3,
+        "name": "Etisalat Afghanistan",
+        "countryCode": "AF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 4,
+        "operatorId": 4,
+        "name": "Roshan Afghanistan",
+        "countryCode": "AF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 5,
+        "operatorId": 5,
+        "name": "Vodafone Albania",
+        "countryCode": "AL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 6,
+        "operatorId": 6,
+        "name": "Mobilis Algeria",
+        "countryCode": "DZ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 7,
+        "operatorId": 7,
+        "name": "Ooredoo Algeria",
+        "countryCode": "DZ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 8,
+        "operatorId": 8,
+        "name": "Djezzy Algeria",
+        "countryCode": "DZ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 9,
+        "operatorId": 9,
+        "name": "BlueSky American Samoa",
+        "countryCode": "AS",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 10,
+        "operatorId": 10,
+        "name": "Movicel Angola",
+        "countryCode": "AO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 12,
+        "operatorId": 12,
+        "name": "Flow Anguilla",
+        "countryCode": "AI",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 11,
+        "operatorId": 11,
+        "name": "Digicel Anguilla",
+        "countryCode": "AI",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 13.4,
+      "internationalPercentage": 13.4,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 13,
+        "operatorId": 13,
+        "name": "Digicel Antigua and Barbuda",
+        "countryCode": "AG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 14,
+        "operatorId": 14,
+        "name": "Flow Antigua and Barbuda",
+        "countryCode": "AG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 739,
+        "operatorId": 739,
+        "name": "Personal Argentina Bundles",
+        "countryCode": "AR",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 16,
+        "operatorId": 16,
+        "name": "Movistar Argentina",
+        "countryCode": "AR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 736,
+        "operatorId": 736,
+        "name": "Claro Agentina Bundles",
+        "countryCode": "AR",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 17,
+        "operatorId": 17,
+        "name": "Personal Argentina",
+        "countryCode": "AR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 737,
+        "operatorId": 737,
+        "name": "Movistar Argentina Bundles",
+        "countryCode": "AR",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 738,
+        "operatorId": 738,
+        "name": "Tuenti Argentina",
+        "countryCode": "AR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 19,
+        "operatorId": 19,
+        "name": "VivaCell-MTS Armenia",
+        "countryCode": "AM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 18,
+        "operatorId": 18,
+        "name": "UCom Armenia",
+        "countryCode": "AM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 20,
+        "operatorId": 20,
+        "name": "Digicel Aruba",
+        "countryCode": "AW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 727,
+        "operatorId": 727,
+        "name": "Aliv Bahamas",
+        "countryCode": "BS",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 21,
+        "operatorId": 21,
+        "name": "BTC Bahamas",
+        "countryCode": "BS",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 728,
+        "operatorId": 728,
+        "name": "Aliv Bahamas Bundles",
+        "countryCode": "BS",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 22,
+        "operatorId": 22,
+        "name": "Batelco PIN Bahrain",
+        "countryCode": "BH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 833,
+        "operatorId": 833,
+        "name": "GrameenPhone Bangladesh Data",
+        "countryCode": "BD",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 27,
+        "operatorId": 27,
+        "name": "Teletalk Bangladesh",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 834,
+        "operatorId": 834,
+        "name": "GrameenPhone Bangladesh Bundles",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 28,
+        "operatorId": 28,
+        "name": "Banglalink Bangladesh",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 687,
+        "operatorId": 687,
+        "name": "Banglalink Bangladesh Data",
+        "countryCode": "BD",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 835,
+        "operatorId": 835,
+        "name": "Robi Bangladesh Data",
+        "countryCode": "BD",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 688,
+        "operatorId": 688,
+        "name": "Banglalink Bangladesh Bundles",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 836,
+        "operatorId": 836,
+        "name": "Robi Bangladesh Bundles",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 689,
+        "operatorId": 689,
+        "name": "Airtel Bangladesh Data",
+        "countryCode": "BD",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 23,
+        "operatorId": 23,
+        "name": "GrameenPhone Bangladesh",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 837,
+        "operatorId": 837,
+        "name": "Airtel Bangladesh Bundles",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 25,
+        "operatorId": 25,
+        "name": "Robi Bangladesh",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 26,
+        "operatorId": 26,
+        "name": "Airtel Bangladesh",
+        "countryCode": "BD",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 29,
+        "operatorId": 29,
+        "name": "Digicel Barbados",
+        "countryCode": "BB",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 30,
+        "operatorId": 30,
+        "name": "Flow Barbados",
+        "countryCode": "BB",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 740,
+        "operatorId": 740,
+        "name": "JLLC MTS Belarus",
+        "countryCode": "BY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 741,
+        "operatorId": 741,
+        "name": "Life Belarus",
+        "countryCode": "BY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 31,
+        "operatorId": 31,
+        "name": "Telemedia Belize",
+        "countryCode": "BZ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 33,
+        "operatorId": 33,
+        "name": "Moov Benin",
+        "countryCode": "BJ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 32,
+        "operatorId": 32,
+        "name": "MTN Benin",
+        "countryCode": "BJ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 34,
+        "operatorId": 34,
+        "name": "Digicel Bermuda",
+        "countryCode": "BM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 35,
+        "operatorId": 35,
+        "name": "Viva Bolivia",
+        "countryCode": "BO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 36,
+        "operatorId": 36,
+        "name": "Entel Bolivia",
+        "countryCode": "BO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:06",
+      "operator": {
+        "id": 37,
+        "operatorId": 37,
+        "name": "Tigo Bolivia",
+        "countryCode": "BO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 634,
+        "operatorId": 634,
+        "name": "Orange Botswana",
+        "countryCode": "BW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 38,
+        "operatorId": 38,
+        "name": "BeMobile PIN Botswana",
+        "countryCode": "BW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 39,
+        "operatorId": 39,
+        "name": "Mascom PIN Botswana",
+        "countryCode": "BW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 40,
+        "operatorId": 40,
+        "name": "OI Brazil",
+        "countryCode": "BR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 41,
+        "operatorId": 41,
+        "name": "Vivo Brazil",
+        "countryCode": "BR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 42,
+        "operatorId": 42,
+        "name": "TIM Brazil",
+        "countryCode": "BR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 43,
+        "operatorId": 43,
+        "name": "Nextel Brazil",
+        "countryCode": "BR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 44,
+        "operatorId": 44,
+        "name": "Claro Brazil",
+        "countryCode": "BR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 14.0,
+      "internationalPercentage": 14.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 46,
+        "operatorId": 46,
+        "name": "Flow British Virgin Islands",
+        "countryCode": "VG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 45,
+        "operatorId": 45,
+        "name": "Digicel British Virgin Islands",
+        "countryCode": "VG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 685,
+        "operatorId": 685,
+        "name": "Telecel Burkina Faso",
+        "countryCode": "BF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 47,
+        "operatorId": 47,
+        "name": "Orange Burkina Faso",
+        "countryCode": "BF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 48,
+        "operatorId": 48,
+        "name": "Onatel Burkina Faso",
+        "countryCode": "BF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 49,
+        "operatorId": 49,
+        "name": "Econet Leo Burundi",
+        "countryCode": "BI",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 50,
+        "operatorId": 50,
+        "name": "Smart Burundi",
+        "countryCode": "BI",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 52,
+        "operatorId": 52,
+        "name": "CellCard (CamGSM) Cambodia",
+        "countryCode": "KH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 794,
+        "operatorId": 794,
+        "name": "Smart Axiata Cambodia",
+        "countryCode": "KH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 51,
+        "operatorId": 51,
+        "name": "Metfone Cambodia",
+        "countryCode": "KH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 678,
+        "operatorId": 678,
+        "name": "MTN Cameroon Data",
+        "countryCode": "CM",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 679,
+        "operatorId": 679,
+        "name": "Nexttel Cameroon",
+        "countryCode": "CM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 53,
+        "operatorId": 53,
+        "name": "MTN Cameroon",
+        "countryCode": "CM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 680,
+        "operatorId": 680,
+        "name": "Yoomee Cameroon",
+        "countryCode": "CM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 54,
+        "operatorId": 54,
+        "name": "Orange Cameroon",
+        "countryCode": "CM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 677,
+        "operatorId": 677,
+        "name": "Camtel Cameroon",
+        "countryCode": "CM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 59,
+        "operatorId": 59,
+        "name": "Koodo Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 61,
+        "operatorId": 61,
+        "name": "Freedom Mobile Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 62,
+        "operatorId": 62,
+        "name": "Rogers Wireless Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 55,
+        "operatorId": 55,
+        "name": "Telus Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 675,
+        "operatorId": 675,
+        "name": "Lucky Mobile Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 63,
+        "operatorId": 63,
+        "name": "ChatR Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 56,
+        "operatorId": 56,
+        "name": "Bell Mobility Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 676,
+        "operatorId": 676,
+        "name": "SaskTel Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 64,
+        "operatorId": 64,
+        "name": "Public Mobile Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 11.5,
+      "internationalPercentage": 11.5,
+      "localPercentage": 11.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 57,
+        "operatorId": 57,
+        "name": "Bell MTS Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 65,
+        "operatorId": 65,
+        "name": "Virgin Mobile Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.5,
+      "internationalPercentage": 2.5,
+      "localPercentage": 2.5,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 58,
+        "operatorId": 58,
+        "name": "Fido Canada",
+        "countryCode": "CA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 66,
+        "operatorId": 66,
+        "name": "CV Movel Cape Verde",
+        "countryCode": "CV",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 67,
+        "operatorId": 67,
+        "name": "Digicel Cayman Islands",
+        "countryCode": "KY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 13.5,
+      "internationalPercentage": 13.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 69,
+        "operatorId": 69,
+        "name": "Flow Cayman Islands",
+        "countryCode": "KY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 18.0,
+      "internationalPercentage": 18.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 71,
+        "operatorId": 71,
+        "name": "Orange Central African Republic",
+        "countryCode": "CF",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 82,
+        "operatorId": 82,
+        "name": "VTR BAM Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 75,
+        "operatorId": 75,
+        "name": "Claro BAM Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 83,
+        "operatorId": 83,
+        "name": "Virgin Mobile Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 77,
+        "operatorId": 77,
+        "name": "Entel Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 84,
+        "operatorId": 84,
+        "name": "Wom Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 78,
+        "operatorId": 78,
+        "name": "Movistar Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 79,
+        "operatorId": 79,
+        "name": "Nextel BAM Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 72,
+        "operatorId": 72,
+        "name": "Entel BAM Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 80,
+        "operatorId": 80,
+        "name": "Movistar BAM Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 73,
+        "operatorId": 73,
+        "name": "Telsur Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 81,
+        "operatorId": 81,
+        "name": "Claro Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 74,
+        "operatorId": 74,
+        "name": "VTR Chile",
+        "countryCode": "CL",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 791,
+        "operatorId": 791,
+        "name": "China Mobile Data",
+        "countryCode": "CN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 792,
+        "operatorId": 792,
+        "name": "China Telecom Data",
+        "countryCode": "CN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.5,
+      "internationalPercentage": 1.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 85,
+        "operatorId": 85,
+        "name": "China Telecom China",
+        "countryCode": "CN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 793,
+        "operatorId": 793,
+        "name": "China Unicom Data",
+        "countryCode": "CN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.5,
+      "internationalPercentage": 1.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 86,
+        "operatorId": 86,
+        "name": "China Unicom China",
+        "countryCode": "CN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.5,
+      "internationalPercentage": 1.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 87,
+        "operatorId": 87,
+        "name": "China Mobile China",
+        "countryCode": "CN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:07",
+      "operator": {
+        "id": 88,
+        "operatorId": 88,
+        "name": "Movistar Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 89,
+        "operatorId": 89,
+        "name": "Avantel Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 92,
+        "operatorId": 92,
+        "name": "Tigo Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 93,
+        "operatorId": 93,
+        "name": "Etb Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 94,
+        "operatorId": 94,
+        "name": "Claro Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 95,
+        "operatorId": 95,
+        "name": "Virgin Mobile Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 624,
+        "operatorId": 624,
+        "name": "CellVoz Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 625,
+        "operatorId": 625,
+        "name": "Flash Mobile Colombia",
+        "countryCode": "CO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 784,
+        "operatorId": 784,
+        "name": "Telma Comoros",
+        "countryCode": "KM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 11.0,
+      "internationalPercentage": 11.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 779,
+        "operatorId": 779,
+        "name": "Comores Telecom Comoros",
+        "countryCode": "KM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 96,
+        "operatorId": 96,
+        "name": "MTN Congo",
+        "countryCode": "CG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 13.0,
+      "internationalPercentage": 13.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 97,
+        "operatorId": 97,
+        "name": "Claro Costa Rica",
+        "countryCode": "CR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 98,
+        "operatorId": 98,
+        "name": "Kolbi Costa Rica",
+        "countryCode": "CR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 99,
+        "operatorId": 99,
+        "name": "Claro Costa Rica Data",
+        "countryCode": "CR",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 100,
+        "operatorId": 100,
+        "name": "Movistar Costa Rica",
+        "countryCode": "CR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 101,
+        "operatorId": 101,
+        "name": "Claro Costa Rica Bundles",
+        "countryCode": "CR",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 252,
+        "operatorId": 252,
+        "name": "Orange Ivory Coast",
+        "countryCode": "CI",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 253,
+        "operatorId": 253,
+        "name": "MTN Ivory Coast",
+        "countryCode": "CI",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 254,
+        "operatorId": 254,
+        "name": "Moov Ivory Coast",
+        "countryCode": "CI",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 644,
+        "operatorId": 644,
+        "name": "MTN Ivory Coast Data",
+        "countryCode": "CI",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 104,
+        "operatorId": 104,
+        "name": "Cubacel SIM Activation",
+        "countryCode": "CU",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 683,
+        "operatorId": 683,
+        "name": "Nauta Cuba",
+        "countryCode": "CU",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 103,
+        "operatorId": 103,
+        "name": "CubaCel Cuba",
+        "countryCode": "CU",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 105,
+        "operatorId": 105,
+        "name": "MTN Cyprus",
+        "countryCode": "CY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 107,
+        "operatorId": 107,
+        "name": "Flow Dominica",
+        "countryCode": "DM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 108,
+        "operatorId": 108,
+        "name": "Digicel Dominica",
+        "countryCode": "DM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 112,
+        "operatorId": 112,
+        "name": "Moun DR",
+        "countryCode": "DO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 9.0,
+      "internationalPercentage": 9.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 113,
+        "operatorId": 113,
+        "name": "Claro DR",
+        "countryCode": "DO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 110,
+        "operatorId": 110,
+        "name": "Orange DR (Altice)",
+        "countryCode": "DO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 111,
+        "operatorId": 111,
+        "name": "Viva DR",
+        "countryCode": "DO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 114,
+        "operatorId": 114,
+        "name": "Movistar Ecuador",
+        "countryCode": "EC",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 681,
+        "operatorId": 681,
+        "name": "Claro Ecuador Bundles",
+        "countryCode": "EC",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 115,
+        "operatorId": 115,
+        "name": "Claro Ecuador",
+        "countryCode": "EC",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 116,
+        "operatorId": 116,
+        "name": "CNT Ecuador",
+        "countryCode": "EC",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 117,
+        "operatorId": 117,
+        "name": "Tuenti Ecuador",
+        "countryCode": "EC",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 118,
+        "operatorId": 118,
+        "name": "Orange (Mobinil) Egypt",
+        "countryCode": "EG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 119,
+        "operatorId": 119,
+        "name": "Vodafone Egypt",
+        "countryCode": "EG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 13.0,
+      "internationalPercentage": 13.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 120,
+        "operatorId": 120,
+        "name": "Etisalat Egypt",
+        "countryCode": "EG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 125,
+        "operatorId": 125,
+        "name": "Movistar El Salvador",
+        "countryCode": "SV",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 126,
+        "operatorId": 126,
+        "name": "Digicel El Salvador Bundles",
+        "countryCode": "SV",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 127,
+        "operatorId": 127,
+        "name": "Claro El Salvador Data",
+        "countryCode": "SV",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.25,
+      "internationalPercentage": 10.25,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 128,
+        "operatorId": 128,
+        "name": "Tigo El Salvador Bundles (Paquetigo)",
+        "countryCode": "SV",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 14.5,
+      "internationalPercentage": 14.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 121,
+        "operatorId": 121,
+        "name": "Digicel El Salvador",
+        "countryCode": "SV",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 129,
+        "operatorId": 129,
+        "name": "Tigo El Salvador",
+        "countryCode": "SV",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 9.0,
+      "internationalPercentage": 9.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 122,
+        "operatorId": 122,
+        "name": "Claro El Salvador",
+        "countryCode": "SV",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 123,
+        "operatorId": 123,
+        "name": "Claro El Salvador Bundles",
+        "countryCode": "SV",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 4.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 130,
+        "operatorId": 130,
+        "name": "Ethiotelecom Ethiopia",
+        "countryCode": "ET",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 19.7,
+      "internationalPercentage": 19.7,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 132,
+        "operatorId": 132,
+        "name": "Digicel Fiji",
+        "countryCode": "FJ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 131,
+        "operatorId": 131,
+        "name": "Vodafone Fiji",
+        "countryCode": "FJ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 656,
+        "operatorId": 656,
+        "name": "Bouygues PIN France International",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 658,
+        "operatorId": 658,
+        "name": "Syma Mobile PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 133,
+        "operatorId": 133,
+        "name": "Orange PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 661,
+        "operatorId": 661,
+        "name": "La Poste PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 136,
+        "operatorId": 136,
+        "name": "SFR PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 662,
+        "operatorId": 662,
+        "name": "Lebara PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 663,
+        "operatorId": 663,
+        "name": "Vectone Mobile PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 651,
+        "operatorId": 651,
+        "name": "Lyca PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 652,
+        "operatorId": 652,
+        "name": "Bouygues PIN France",
+        "countryCode": "FR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 726,
+        "operatorId": 726,
+        "name": "Gamcel Gambia",
+        "countryCode": "GM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 139,
+        "operatorId": 139,
+        "name": "Qcell Gambia",
+        "countryCode": "GM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 140,
+        "operatorId": 140,
+        "name": "Africell Gambia",
+        "countryCode": "GM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 724,
+        "operatorId": 724,
+        "name": "Africell Gambia Data",
+        "countryCode": "GM",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 725,
+        "operatorId": 725,
+        "name": "Comium Gambia",
+        "countryCode": "GM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 142,
+        "operatorId": 142,
+        "name": "Geocell Ltd Georgia",
+        "countryCode": "GE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 144,
+        "operatorId": 144,
+        "name": "GPhone Georgia",
+        "countryCode": "GE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 141,
+        "operatorId": 141,
+        "name": "MyPhone Georgia",
+        "countryCode": "GE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:08",
+      "operator": {
+        "id": 149,
+        "operatorId": 149,
+        "name": "Lifecell PIN Germany",
+        "countryCode": "DE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 664,
+        "operatorId": 664,
+        "name": "Deutsche Telekom PIN Germany",
+        "countryCode": "DE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 665,
+        "operatorId": 665,
+        "name": "Ortel PIN Germany",
+        "countryCode": "DE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 771,
+        "operatorId": 771,
+        "name": "Surfline Ghana Data",
+        "countryCode": "GH",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 155,
+        "operatorId": 155,
+        "name": "Vodafone Ghana",
+        "countryCode": "GH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 642,
+        "operatorId": 642,
+        "name": "Glo Ghana Data",
+        "countryCode": "GH",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 150,
+        "operatorId": 150,
+        "name": "MTN Ghana",
+        "countryCode": "GH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 643,
+        "operatorId": 643,
+        "name": "MTN Ghana Data",
+        "countryCode": "GH",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 151,
+        "operatorId": 151,
+        "name": "Expresso Ghana",
+        "countryCode": "GH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 769,
+        "operatorId": 769,
+        "name": "Surfline Ghana",
+        "countryCode": "GH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 152,
+        "operatorId": 152,
+        "name": "Glo Ghana",
+        "countryCode": "GH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 770,
+        "operatorId": 770,
+        "name": "Vodafone Ghana Data",
+        "countryCode": "GH",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 153,
+        "operatorId": 153,
+        "name": "Airtel-Tigo Ghana",
+        "countryCode": "GH",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 672,
+        "operatorId": 672,
+        "name": "Wind PIN Greece",
+        "countryCode": "GR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 667,
+        "operatorId": 667,
+        "name": "Q-Telecom PIN Greece",
+        "countryCode": "GR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 668,
+        "operatorId": 668,
+        "name": "Wind PIN Greece Data",
+        "countryCode": "GR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 669,
+        "operatorId": 669,
+        "name": "Vodafone PIN Greece",
+        "countryCode": "GR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 670,
+        "operatorId": 670,
+        "name": "Cosmote PIN Greece",
+        "countryCode": "GR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 671,
+        "operatorId": 671,
+        "name": "Cosmote PIN Greece Data",
+        "countryCode": "GR",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.5,
+      "internationalPercentage": 12.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 156,
+        "operatorId": 156,
+        "name": "Digicel Grenada",
+        "countryCode": "GD",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 157,
+        "operatorId": 157,
+        "name": "Flow Grenada",
+        "countryCode": "GD",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 161,
+        "operatorId": 161,
+        "name": "Tigo Guatemala Data",
+        "countryCode": "GT",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 162,
+        "operatorId": 162,
+        "name": "Tigo Guatemala Bundles (Paquetigo)",
+        "countryCode": "GT",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 163,
+        "operatorId": 163,
+        "name": "Movistar Guatemala",
+        "countryCode": "GT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 15.5,
+      "internationalPercentage": 15.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 164,
+        "operatorId": 164,
+        "name": "Claro Guatemala Bundles",
+        "countryCode": "GT",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 9.0,
+      "internationalPercentage": 9.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 158,
+        "operatorId": 158,
+        "name": "Tigo Guatemala",
+        "countryCode": "GT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 15.5,
+      "internationalPercentage": 15.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 165,
+        "operatorId": 165,
+        "name": "Claro Guatemala",
+        "countryCode": "GT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 15.5,
+      "internationalPercentage": 15.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 159,
+        "operatorId": 159,
+        "name": "Claro Guatemala Data",
+        "countryCode": "GT",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 160,
+        "operatorId": 160,
+        "name": "Claro TV Guatemala",
+        "countryCode": "GT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 167,
+        "operatorId": 167,
+        "name": "Cellcom Guinea-Conakry",
+        "countryCode": "GN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 20.0,
+      "internationalPercentage": 20.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 168,
+        "operatorId": 168,
+        "name": "Orange Guinea-Conakry",
+        "countryCode": "GN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 11.0,
+      "internationalPercentage": 11.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 166,
+        "operatorId": 166,
+        "name": "MTN Guinea-Conakry",
+        "countryCode": "GN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 9.0,
+      "internationalPercentage": 9.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 169,
+        "operatorId": 169,
+        "name": "Orange Guinea-Bissau",
+        "countryCode": "GW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 170,
+        "operatorId": 170,
+        "name": "MTN Guinea-Bissau",
+        "countryCode": "GW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 14.0,
+      "internationalPercentage": 14.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 171,
+        "operatorId": 171,
+        "name": "Digicel Guyana",
+        "countryCode": "GY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 13.0,
+      "internationalPercentage": 13.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 174,
+        "operatorId": 174,
+        "name": "Natcom Haiti",
+        "countryCode": "HT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 682,
+        "operatorId": 682,
+        "name": "Natcom Haiti Bundles",
+        "countryCode": "HT",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 172,
+        "operatorId": 172,
+        "name": "Digicel Haiti Bundles",
+        "countryCode": "HT",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 12.0,
+      "internationalPercentage": 12.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 173,
+        "operatorId": 173,
+        "name": "Digicel Haiti",
+        "countryCode": "HT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 175,
+        "operatorId": 175,
+        "name": "Tigo Honduras Bundles (Paquetigo)",
+        "countryCode": "HN",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 11.0,
+      "internationalPercentage": 11.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 177,
+        "operatorId": 177,
+        "name": "Claro Honduras Data",
+        "countryCode": "HN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 9.0,
+      "internationalPercentage": 9.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 178,
+        "operatorId": 178,
+        "name": "Tigo Honduras",
+        "countryCode": "HN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 9.0,
+      "internationalPercentage": 9.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 179,
+        "operatorId": 179,
+        "name": "Claro Honduras Bundles",
+        "countryCode": "HN",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 630,
+        "operatorId": 630,
+        "name": "Tigo Honduras Super Recarga",
+        "countryCode": "HN",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 9.0,
+      "internationalPercentage": 9.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 180,
+        "operatorId": 180,
+        "name": "Claro Honduras",
+        "countryCode": "HN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 186,
+        "operatorId": 186,
+        "name": "Reliance-Jio Bundles India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 777,
+        "operatorId": 777,
+        "name": "BSNL India Bundles",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 220,
+        "operatorId": 220,
+        "name": "DTH Airtel India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 193,
+        "operatorId": 193,
+        "name": "BSNL India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 778,
+        "operatorId": 778,
+        "name": "BSNL India Data",
+        "countryCode": "IN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 228,
+        "operatorId": 228,
+        "name": "DTH Tata-Sky India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 785,
+        "operatorId": 785,
+        "name": "Reliance-Jio Data India",
+        "countryCode": "IN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 195,
+        "operatorId": 195,
+        "name": "MTNL India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 773,
+        "operatorId": 773,
+        "name": "Vodafone-Idea India Bundles",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 786,
+        "operatorId": 786,
+        "name": "Reliance-Jio India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 197,
+        "operatorId": 197,
+        "name": "DTH Dish TV India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 774,
+        "operatorId": 774,
+        "name": "Vodafone-Idea India Data",
+        "countryCode": "IN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 198,
+        "operatorId": 198,
+        "name": "DTH Videocon India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 2.0,
+      "updatedAt": "2020-12-26 06:57:19",
+      "operator": {
+        "id": 716,
+        "operatorId": 716,
+        "name": "Vodafone-Idea India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 0.5,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 775,
+        "operatorId": 775,
+        "name": "Airtel India Bundles",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 0.5,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 200,
+        "operatorId": 200,
+        "name": "Airtel India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 17.0,
+      "internationalPercentage": 17.0,
+      "localPercentage": 0.5,
+      "updatedAt": "2020-12-26 06:57:20",
+      "operator": {
+        "id": 776,
+        "operatorId": 776,
+        "name": "Airtel India Data",
+        "countryCode": "IN",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 211,
+        "operatorId": 211,
+        "name": "DTH Sun Direct India",
+        "countryCode": "IN",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 242,
+        "operatorId": 242,
+        "name": "Hutchison 3 Indonesia Data",
+        "countryCode": "ID",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 692,
+        "operatorId": 692,
+        "name": "Bakrie Telecom Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 235,
+        "operatorId": 235,
+        "name": "Telkomsel Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 699,
+        "operatorId": 699,
+        "name": "Telkomsel Indonesia Data",
+        "countryCode": "ID",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 243,
+        "operatorId": 243,
+        "name": "Axis Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 797,
+        "operatorId": 797,
+        "name": "XL HotRod Indonesia Data",
+        "countryCode": "ID",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 236,
+        "operatorId": 236,
+        "name": "Hutchison 3 Indonesia Bundles",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 700,
+        "operatorId": 700,
+        "name": "Axis Indonesia Bundles",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 244,
+        "operatorId": 244,
+        "name": "Viber Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 237,
+        "operatorId": 237,
+        "name": "Indosat Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 701,
+        "operatorId": 701,
+        "name": "Indosat Indonesia Bundles",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 230,
+        "operatorId": 230,
+        "name": "XL Indonesia Data",
+        "countryCode": "ID",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 239,
+        "operatorId": 239,
+        "name": "XL Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 702,
+        "operatorId": 702,
+        "name": "Indosat Indonesia Data",
+        "countryCode": "ID",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 231,
+        "operatorId": 231,
+        "name": "Axis Indonesia Data",
+        "countryCode": "ID",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 240,
+        "operatorId": 240,
+        "name": "Hutchison 3 Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 703,
+        "operatorId": 703,
+        "name": "SmartFren Indonesia Bundles",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 232,
+        "operatorId": 232,
+        "name": "Net1 Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 241,
+        "operatorId": 241,
+        "name": "XL Indonesia Bundles",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:21",
+      "operator": {
+        "id": 795,
+        "operatorId": 795,
+        "name": "Telkomsel Simpati Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 704,
+        "operatorId": 704,
+        "name": "SmartFren Indonesia Data",
+        "countryCode": "ID",
+        "data": true,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:09",
+      "operator": {
+        "id": 234,
+        "operatorId": 234,
+        "name": "SmartFren Indonesia",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 698,
+        "operatorId": 698,
+        "name": "Telkomsel Indonesia Bundles",
+        "countryCode": "ID",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 246,
+        "operatorId": 246,
+        "name": "Asia Cell Telecom Iraq",
+        "countryCode": "IQ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 6.0,
+      "internationalPercentage": 6.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 247,
+        "operatorId": 247,
+        "name": "Korek Iraq",
+        "countryCode": "IQ",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 250,
+        "operatorId": 250,
+        "name": "Wind Italy",
+        "countryCode": "IT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 248,
+        "operatorId": 248,
+        "name": "Vodafone Italy",
+        "countryCode": "IT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 249,
+        "operatorId": 249,
+        "name": "TIM Italy",
+        "countryCode": "IT",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.0,
+      "internationalPercentage": 10.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 257,
+        "operatorId": 257,
+        "name": "Digicel Jamaica",
+        "countryCode": "JM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 10.5,
+      "internationalPercentage": 10.5,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 255,
+        "operatorId": 255,
+        "name": "Flow Jamaica",
+        "countryCode": "JM",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 256,
+        "operatorId": 256,
+        "name": "Digicel Jamaica Bundles",
+        "countryCode": "JM",
+        "data": false,
+        "bundle": true,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 666,
+        "operatorId": 666,
+        "name": "Zain Jordan",
+        "countryCode": "JO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 258,
+        "operatorId": 258,
+        "name": "Umniah Jordan",
+        "countryCode": "JO",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 264,
+        "operatorId": 264,
+        "name": "Telkom Kenya",
+        "countryCode": "KE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 265,
+        "operatorId": 265,
+        "name": "Airtel Kenya",
+        "countryCode": "KE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 266,
+        "operatorId": 266,
+        "name": "Safaricom Kenya",
+        "countryCode": "KE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 636,
+        "operatorId": 636,
+        "name": "Orange Kenya",
+        "countryCode": "KE",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 267,
+        "operatorId": 267,
+        "name": "STC Kuwait",
+        "countryCode": "KW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 268,
+        "operatorId": 268,
+        "name": "Zain Kuwait",
+        "countryCode": "KW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 269,
+        "operatorId": 269,
+        "name": "O! Kyrgyzstan",
+        "countryCode": "KG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 270,
+        "operatorId": 270,
+        "name": "Beeline Kyrgyzstan",
+        "countryCode": "KG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 2.0,
+      "internationalPercentage": 2.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 272,
+        "operatorId": 272,
+        "name": "MegaCom Kyrgyzstan",
+        "countryCode": "KG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 273,
+        "operatorId": 273,
+        "name": "Etl Laos",
+        "countryCode": "LA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 274,
+        "operatorId": 274,
+        "name": "Beeline Laos",
+        "countryCode": "LA",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 1.0,
+      "internationalPercentage": 1.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 276,
+        "operatorId": 276,
+        "name": "Touch Lebanon",
+        "countryCode": "LB",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 5.0,
+      "internationalPercentage": 5.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 277,
+        "operatorId": 277,
+        "name": "Orange (Cellcom) Liberia",
+        "countryCode": "LR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 278,
+        "operatorId": 278,
+        "name": "MTN Liberia",
+        "countryCode": "LR",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 15.0,
+      "internationalPercentage": 15.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 280,
+        "operatorId": 280,
+        "name": "Orange Madagascar",
+        "countryCode": "MG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 8.0,
+      "internationalPercentage": 8.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 281,
+        "operatorId": 281,
+        "name": "Airtel Madagascar",
+        "countryCode": "MG",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:17",
+      "operator": {
+        "id": 649,
+        "operatorId": 649,
+        "name": "TNM Malawi",
+        "countryCode": "MW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 4.0,
+      "internationalPercentage": 4.0,
+      "localPercentage": 1.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 282,
+        "operatorId": 282,
+        "name": "Airtel Malawi",
+        "countryCode": "MW",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 284,
+        "operatorId": 284,
+        "name": "Maxis Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 285,
+        "operatorId": 285,
+        "name": "UMobile Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 693,
+        "operatorId": 693,
+        "name": "Altel Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 286,
+        "operatorId": 286,
+        "name": "TuneTalk Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 694,
+        "operatorId": 694,
+        "name": "MerchantTrade Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 3.0,
+      "internationalPercentage": 3.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 287,
+        "operatorId": 287,
+        "name": "DiGi Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 695,
+        "operatorId": 695,
+        "name": "Tron Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 7.0,
+      "internationalPercentage": 7.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:10",
+      "operator": {
+        "id": 288,
+        "operatorId": 288,
+        "name": "Viber Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 696,
+        "operatorId": 696,
+        "name": "Xox Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    },
+    {
+      "percentage": 0.0,
+      "internationalPercentage": 0.0,
+      "localPercentage": 0.0,
+      "updatedAt": "2020-12-26 06:57:18",
+      "operator": {
+        "id": 697,
+        "operatorId": 697,
+        "name": "Yes-Prepaid Malaysia",
+        "countryCode": "MY",
+        "data": false,
+        "bundle": false,
+        "status": true
+      }
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 300,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": false,
+  "totalElements": 656,
+  "totalPages": 3,
+  "size": 300,
+  "number": 0,
+  "numberOfElements": 300,
+  "sort": {
+    "unsorted": true,
+    "sorted": false,
+    "empty": true
+  },
+  "first": true,
+  "empty": false
+}

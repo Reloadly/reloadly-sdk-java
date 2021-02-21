@@ -1,0 +1,11 @@
+{
+  "isoName": "US",
+  "name": "United States",
+  "currencyCode": "USD",
+  "currencyName": "US Dollar",
+  "currencySymbol": "$",
+  "flag": "https://s3.amazonaws.com/rld-flags/us.svg",
+  "callingCodes": [
+    "+1"
+  ]
+}

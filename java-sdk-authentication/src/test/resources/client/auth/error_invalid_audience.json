@@ -1,0 +1,8 @@
+{
+  "timeStamp": "2020-12-27 08:26:25",
+  "message": "The provided audience is not valid",
+  "path": "/oauth/token",
+  "errorCode": "INVALID_AUDIENCE",
+  "infoLink": null,
+  "details": []
+}

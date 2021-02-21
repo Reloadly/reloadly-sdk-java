@@ -1,0 +1,15 @@
+{
+  "percentage": 13.0,
+  "internationalPercentage": 13.0,
+  "localPercentage": 0.0,
+  "updatedAt": "2020-12-26 06:57:09",
+  "operator": {
+    "id": 174,
+    "operatorId": 174,
+    "name": "Natcom Haiti",
+    "countryCode": "HT",
+    "data": false,
+    "bundle": false,
+    "status": true
+  }
+}

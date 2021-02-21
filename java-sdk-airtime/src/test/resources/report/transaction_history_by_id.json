@@ -1,0 +1,20 @@
+{
+  "transactionId": 10657,
+  "operatorTransactionId": null,
+  "customIdentifier": null,
+  "recipientPhone": "13058989796",
+  "recipientEmail": null,
+  "senderPhone": "13056154908",
+  "countryCode": "US",
+  "operatorId": 548,
+  "operatorName": "T-Mobile USA RTR",
+  "discount": 0,
+  "discountCurrencyCode": "USD",
+  "requestedAmount": 20,
+  "requestedAmountCurrencyCode": "USD",
+  "deliveredAmount": 20,
+  "deliveredAmountCurrencyCode": "USD",
+  "transactionDate": "2021-01-16 01:59:22",
+  "pinDetail": null,
+  "balanceInfo": null
+}

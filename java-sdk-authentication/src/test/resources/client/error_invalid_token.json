@@ -1,0 +1,8 @@
+{
+  "timeStamp": "2020-12-27 08:26:25",
+  "message": "Invalid token, make sure token is valid for the given environment",
+  "path": "/phone-intel",
+  "errorCode": "INVALID_TOKEN",
+  "infoLink": null,
+  "details": []
+}
