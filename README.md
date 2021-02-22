@@ -1,6 +1,6 @@
 # Reloadly SDK for Java
 
-[![Build-Circle][circle-ci-badge]][circle-ci-url]
+[![CircleCI][circle-ci-badge]][circle-ci-url]
 [![MIT][mit-badge]][mit-url]
 [![Maven][maven-badge]][maven-url]
 [![JCenter][jcenter-badge]][jcenter-url]
@@ -176,7 +176,7 @@ This project is licensed under the MIT license. See the [LICENSE](LICENSE) file 
 
 [circle-ci-badge] https://circleci.com/gh/Reloadly/reloadly-sdk-java.svg?style=svg&circle-token=654d949431c1d699084ebfe053f0372e163ba400
 
-[circle-ci-url]: https://app.circleci.com/pipelines/github/Reloadly/reloadly-sdk-java?branch=main
+[circle-ci-url]: https://circleci.com/gh/Reloadly/reloadly-sdk-java/tree/main
 
 [codecov-badge]: https://codecov.io/gh/reloadly/reloadly-sdk-java/branch/main/graph/badge.svg?token=8U89VKQ2BF
 
