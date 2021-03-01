@@ -5,7 +5,6 @@ import lombok.Setter;
 import software.reloadly.sdk.core.internal.net.Telemetry;
 import okhttp3.Interceptor;
 import okhttp3.Response;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 
@@ -21,9 +20,8 @@ public class TelemetryInterceptor implements Interceptor {
         this.enabled = true;
     }
 
-    @NotNull
     @Override
-    public Response intercept(@NotNull Chain chain) throws IOException {
+    public Response intercept(Chain chain) throws IOException {
         if (!enabled) {
             return chain.proceed(chain.request());
         }

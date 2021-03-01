@@ -94,7 +94,7 @@ public class CustomRequest<T> extends BaseRequest<T> implements CustomizableRequ
         }
         try {
             byte[] jsonBody = mapper.writeValueAsBytes(body != null ? body : parameters);
-            return RequestBody.create(jsonBody, MediaType.parse(APPLICATION_JSON));
+            return RequestBody.create(MediaType.parse(APPLICATION_JSON), jsonBody);
         } catch (JsonProcessingException e) {
             throw new ReloadlyException("Couldn't create the request body.", e);
         }
