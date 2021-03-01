@@ -13,6 +13,8 @@ import software.reloadly.sdk.core.net.HttpOptions;
 import java.io.FileReader;
 import java.util.List;
 
+import static org.apache.commons.lang3.StringUtils.isBlank;
+
 /**
  * Class that provides an implementation of some of the Authentication and Authorization API methods
  */
@@ -47,7 +49,6 @@ public class AuthenticationAPI extends API {
         return new OAuth2ClientCredentialsOperation(baseUrl, clientId, service, clientSecret, client);
     }
 
-    @Nullable
     private static String getSDKVersion() {
         MavenXpp3Reader reader = new MavenXpp3Reader();
         Model model;
@@ -57,14 +58,14 @@ public class AuthenticationAPI extends API {
             try {
                 model = reader.read(new FileReader("../java-sdk-authentication/pom.xml"));
             } catch (Exception ex) {
-                return null;
+                return "MISSING";
             }
 
             if (model == null) {
-                return null;
+                return "MISSING";
             }
         }
 
-        return model.getVersion();
+        return isBlank(model.getVersion()) ? "MISSING" : model.getVersion();
     }
 }

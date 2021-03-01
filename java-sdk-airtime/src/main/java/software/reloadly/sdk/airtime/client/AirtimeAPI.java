@@ -21,6 +21,7 @@ import software.reloadly.sdk.core.net.HttpOptions;
 import java.io.FileReader;
 import java.util.List;
 
+import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 import static software.reloadly.sdk.core.enums.Environment.LIVE;
 import static software.reloadly.sdk.core.enums.Service.AIRTIME;
@@ -119,7 +120,6 @@ public class AirtimeAPI extends ServiceAPI {
                 .build().clientCredentials().getAccessToken().execute().getToken();
     }
 
-    @Nullable
     private static String getSDKVersion() {
         MavenXpp3Reader reader = new MavenXpp3Reader();
         Model model;
@@ -130,14 +130,14 @@ public class AirtimeAPI extends ServiceAPI {
             try {
                 model = reader.read(new FileReader("../java-sdk-airtime/pom.xml"));
             } catch (Exception ex) {
-                return null;
+                return "MISSING";
             }
 
             if (model == null) {
-                return null;
+                return "MISSING";
             }
         }
 
-        return model.getVersion();
+        return isBlank(model.getVersion()) ? "MISSING" : model.getVersion();
     }
 }
