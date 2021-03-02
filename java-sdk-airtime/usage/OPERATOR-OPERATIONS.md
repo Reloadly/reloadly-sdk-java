@@ -22,7 +22,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
         
-Request<Page<Operator>> request = airtimeAPI.operators().list();
+Request<Page<Operator>> request;
+
+try {
+    request = airtimeAPI.operators().list();
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<Operator> operatorsPage = null;
 try {
@@ -100,7 +106,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
         
-Request<Operator> request = airtimeAPI.operators().getById(103L);
+Request<Operator> request;
+
+try {
+    request = airtimeAPI.operators().getById(103L);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Operator operator = null;
 try {
@@ -127,7 +139,13 @@ OperatorFilter filter = new OperatorFilter()
         .includeSuggestedAmounts(true)
         .includeSuggestedAmountsMap(true); //Suggested amounts map will get populated only when possible
                         
-Request<Operator> request = airtimeAPI.operators().getById(103L, filter);
+Request<Operator> request;
+
+try {
+        request = airtimeAPI.operators().getById(103L, filter);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Operator operator = null;
 try {
@@ -150,7 +168,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<List<Operator>> request = airtimeAPI.operators().listByCountryCode(CountryCode.ES);
+Request<List<Operator>> request;
+
+try {
+    request = airtimeAPI.operators().listByCountryCode(CountryCode.ES);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 List<Operator> operators = null;
 try {
@@ -182,7 +206,13 @@ OperatorFilter filter = new OperatorFilter().withPage(pageNumber, pageSize)
         .includeRangeDenominationType(false) 
         .includeFixedDenominationType(false); 
 
-Request<List<Operator>> request = airtimeAPI.operators().listByCountryCode(CountryCode.ES, filter);
+Request<List<Operator>> request;
+
+try {
+    request = airtimeAPI.operators().listByCountryCode(CountryCode.ES, filter);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 List<Operator> operators = null;
 try {
@@ -208,7 +238,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .build();
 
 String phoneNumber = "+50936377111";
-Request<Operator> request = airtimeAPI.operators().autoDetect(phoneNumber, CountryCode.HT);
+Request<Operator> request;
+
+try {
+    request = airtimeAPI.operators().autoDetect(phoneNumber, CountryCode.HT);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Operator operator = null;
 try {
@@ -236,7 +272,13 @@ OperatorFilter filter = new OperatorFilter()
         .includeSuggestedAmountsMap(true);
 
 String phoneNumber = "+50936377111";
-Request<Operator> request = airtimeAPI.operators().autoDetect(phoneNumber, CountryCode.HT, filter);
+Request<Operator> request;
+
+try {
+    request = airtimeAPI.operators().autoDetect(phoneNumber, CountryCode.HT, filter);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Operator operator = null;
 try {
@@ -265,7 +307,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
 
 Long operatorId = 342L //Operator.id
 double amount = 5.00; //Amount to calculate fx for. This amount is assumed to be in your Reloadly account currency
-Request<OperatorFxRate> request = airtimeAPI.operators().calculateFxRate(operatorId, amount);
+Request<OperatorFxRate> request;
+
+try {
+    request = airtimeAPI.operators().calculateFxRate(operatorId, amount);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 OperatorFxRate operatorFxRate = null;
 try {

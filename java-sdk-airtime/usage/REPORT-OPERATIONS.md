@@ -11,7 +11,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<Page<TopupTransaction>> request = airtimeAPI.reports().transactionsHistory().list();
+Request<Page<TopupTransaction>> request;
+
+try {
+    request = airtimeAPI.reports().transactionsHistory().list();
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<TopupTransaction> transactionHistoryPage = null;
 try {
@@ -47,7 +53,13 @@ TransactionHistoryFilter filter = new TransactionHistoryFilter().withPage(1, 5)
         .operatorName("Digicel Haiti")
         .customIdentifier("Your-Transaction-Custom-Identifier");*/
                 
-Request<Page<TopupTransaction>> request = airtimeAPI.reports().transactionsHistory().list(filter);
+Request<Page<TopupTransaction>> request;
+
+try {
+    request = airtimeAPI.reports().transactionsHistory().list(filter);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<TopupTransaction> transactionHistoryPage = null;
 try {
@@ -71,7 +83,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .build();
                 
 Long transactionId = 10658L;//From Transaction.id                
-Request<TopupTransaction> request = airtimeAPI.reports().transactionsHistory().getById(transactionId);
+Request<TopupTransaction> request;
+
+try {
+    request = airtimeAPI.reports().transactionsHistory().getById(transactionId);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 TopupTransaction transaction = null;
 try {

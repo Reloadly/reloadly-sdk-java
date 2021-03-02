@@ -11,7 +11,12 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<AccountBalanceInfo> request = airtimeAPI.accounts().getBalance();
+Request<AccountBalanceInfo> request;
+try {
+    request = airtimeAPI.accounts().getBalance();
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 AccountBalanceInfo accountBalanceInfo = null;
 try {
