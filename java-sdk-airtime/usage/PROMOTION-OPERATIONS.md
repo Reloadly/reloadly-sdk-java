@@ -13,7 +13,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<Page<Promotion>> request = airtimeAPI.promotions().list();
+Request<Page<Promotion>> request;
+
+try {
+    request = airtimeAPI.promotions().list();
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<Promotion> promotionPage = null;
 try {
@@ -39,7 +45,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
 int pageNumber = 1;
 int pageSize = 5;
 QueryFilter filter = new QueryFilter().withPage(pageNumber, pageSize);
-Request<Page<Promotion>> request = airtimeAPI.promotions().list(filter);
+Request<Page<Promotion>> request;
+
+try {
+    request = airtimeAPI.promotions().list(filter);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<Promotion> promotionPage = null;
 try {
@@ -63,7 +75,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .build();
 
 Long promotionId = 5441L;//From Promotion.id
-Request<Promotion> request = airtimeAPI.promotions().getById(promotionId);
+Request<Promotion> request;
+
+try {
+    request = airtimeAPI.promotions().getById(promotionId);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Promotion promotion = null;
 try {
@@ -87,7 +105,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .build();
 
 Long operatorId = 681L;//From Operator.id
-Request<List<Promotion>> request = airtimeAPI.promotions().getByOperatorId(operatorId);
+Request<List<Promotion>> request;
+
+try {
+    request = airtimeAPI.promotions().getByOperatorId(operatorId);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 List<Promotion> promotions = null;
 try {
@@ -110,7 +134,14 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<List<Promotion>> request = airtimeAPI.promotions().getByCountryCode(CountryCode.EC);
+Request<List<Promotion>> request;
+
+try {
+    request = airtimeAPI.promotions().getByCountryCode(CountryCode.EC);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
+
 
 List<Promotion> promotions = null;
 try {
