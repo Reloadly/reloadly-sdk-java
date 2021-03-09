@@ -18,7 +18,13 @@ PhoneTopupRequest topupRequest = PhoneTopupRequest.builder()
         .recipientPhone(new Phone("+50936377111", CountryCode.HT))
         .build();
         
-Request<TopupTransaction> request = airtimeAPI.topups().send(topupRequest);
+Request<TopupTransaction> request; 
+
+try {
+    request = airtimeAPI.topups().send(topupRequest);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 TopupTransaction transaction = null;
 try {
@@ -56,7 +62,14 @@ PhoneTopupRequest topupRequest = PhoneTopupRequest.builder()
         .recipientPhone(new Phone("+2349045150334", CountryCode.NG))
         .build();
         
-Request<TopupTransaction> request = airtimeAPI.topups().send(topupRequest);
+Request<TopupTransaction> request;
+
+try {
+    request = airtimeAPI.topups().send(topupRequest);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
+
 
 TopupTransaction transaction = null;
 try {
@@ -92,7 +105,13 @@ EmailTopupRequest topupRequest = EmailTopupRequest.builder()
         .recipientEmail("example@nauta.com.cu")
         .build();
         
-Request<TopupTransaction> request = airtimeAPI.topups().send(topupRequest);
+Request<TopupTransaction> request;
+
+try {
+    request = airtimeAPI.topups().send(topupRequest);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 TopupTransaction transaction = null;
 try {

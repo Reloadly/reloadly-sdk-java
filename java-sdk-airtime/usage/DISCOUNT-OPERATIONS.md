@@ -21,7 +21,12 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<Page<Discount>> request = airtimeAPI.discounts().list();
+Request<Page<Discount>> request;
+try {
+        request = airtimeAPI.discounts().list();
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<Discount> discountPage = null;
 try {
@@ -47,7 +52,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
 int pageNumber = 1;
 int pageSize = 5;
 QueryFilter filter = new QueryFilter().withPage(pageNumber, pageSize);
-Request<Page<Discount>> request = airtimeAPI.discounts().list(filter);
+Request<Page<Discount>> request;
+
+try {
+    request = airtimeAPI.discounts().list(filter);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<Discount> discountPage = null;
 try {
@@ -71,7 +82,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .build();
 
 Long operatorId = 174L; //From Operator.id
-Request<Discount> request = airtimeAPI.discounts().getByOperatorId(operatorId);
+Request<Discount> request;
+
+try {
+    request = airtimeAPI.discounts().getByOperatorId(operatorId);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Page<Discount> discount = null;
 try {

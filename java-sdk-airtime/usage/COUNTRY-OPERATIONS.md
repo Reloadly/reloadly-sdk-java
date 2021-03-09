@@ -14,7 +14,12 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<List<Country>> request = airtimeAPI.countries().list();
+Request<List<Country>> request;
+try {
+    request = airtimeAPI.countries().list();
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 List<Country> countries = null;
 try {
@@ -37,7 +42,13 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-Request<Country> request = airtimeAPI.countries().getByCode(CountryCode.CO);
+Request<Country> request;
+
+try {
+    request = airtimeAPI.countries().getByCode(CountryCode.CO);
+} catch (ReloadlyException e) {
+    // api error retrieving access_token
+}
 
 Country country = null;
 try {
