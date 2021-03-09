@@ -29,7 +29,7 @@ Contributions are made to this repo via Issues and Pull Requests (PRs). A few ge
 - To report security vulnerabilities, please email us oss@reloadly.com
 - Search for existing Issues and PRs before creating your own.
 - We work hard to makes sure issues are handled in a timely manner but, depending on the impact, it could take a while
-  to investigate the root cause. A friendly ping in the comment thread to the submitter or a contributor can help draw
+  to investigate the root cause. A friendly ping in the comment thread to the submitter, or a contributor can help draw
   attention if your issue is blocking.
 
 ### Issues

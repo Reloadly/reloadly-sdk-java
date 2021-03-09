@@ -17,7 +17,7 @@ labels: bug, needs-triage
 
 <!--- Include full errors, uncaught exceptions, stack traces, and relevant logs -->
 <!--- To turn on SDK logging, follow instructions here: https://github.com/reloadly/reloadly-sdk-java/blob/master/reloadly-java-sdk-airtime/USAGE.md#logging-request--response -->
-<!--- If service responses are relevant, please include wirelogs -->
+<!--- If service responses are relevant, please include logs -->
 
 ## Steps to Reproduce
 <!--- Provide a self-contained, concise snippet of code that can be used to reproduce the issue -->
