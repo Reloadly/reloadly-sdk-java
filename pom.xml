@@ -41,7 +41,7 @@
     <scm>
         <connection>scm:git:https://github.com/reloadly/reloadly-sdk-java.git</connection>
         <developerConnection>scm:git:git@github.com:reloadly/reloadly-sdk-java.git</developerConnection>
-        <url>https://github.com/reloadly/reloadly-sdk-java</url>
+        <url>https://github.com/reloadly/reloadly-sdk-java/tree/main</url>
     </scm>
 
     <properties>
@@ -57,11 +57,15 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <commons-codec.version>1.15</commons-codec.version>
         <junit-jupiter.version>5.7.1</junit-jupiter.version>
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <jackson-databind.version>2.12.1</jackson-databind.version>
+        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <google-code-findbugs-annotations.version>3.0.1</google-code-findbugs-annotations.version>
     </properties>
 
     <dependencies>
@@ -99,6 +103,11 @@
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-model</artifactId>
             <version>${maven-model.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>annotations</artifactId>
+            <version>${google-code-findbugs-annotations.version}</version>
         </dependency>
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>

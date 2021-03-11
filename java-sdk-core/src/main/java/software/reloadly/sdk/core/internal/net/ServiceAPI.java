@@ -40,7 +40,9 @@ public abstract class ServiceAPI extends API {
     /**
      * Retrieve a new API access token to use on new calls.
      * This is useful when the token is about to expire or already has.
+     *
      * @param request - The request to refresh the token for
+     * @throws ReloadlyException - Error captured when executing an http request to the Reloadly Server
      */
     public abstract void refreshAccessToken(Request<?> request) throws ReloadlyException;
 

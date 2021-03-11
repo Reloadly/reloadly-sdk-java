@@ -21,6 +21,8 @@ public class ProxyOptions {
     /**
      * Builds a new instance using the given Proxy.
      * The Proxy will not have authentication unless {@link #basicAuthentication} is set.
+     *
+     * @param proxy - The proxy setting
      */
     public ProxyOptions(Proxy proxy) {
         Asserter.assertNotNull(proxy, "proxy");

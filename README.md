@@ -28,30 +28,7 @@ your [Reloadly APIs credentials][api-credentials-help].
 
 To run the SDK you will need **Java 1.8+**
 
-## Using the SDK
-
-### Gradle users
-
-Add the dependencies to your project's build file:
-
-```groovy
-implementation "software.reloadly:java-sdk:1.0.0"
-```
-
-### Maven users
-
-Add this dependency to your project's POM:
-
-```xml
-
-<dependency>
-    <groupId>software.reloadly</groupId>
-    <artifactId>java-sdk</artifactId>
-    <version>1.0.0</version>
-</dependency>
-```
-
-### Alternatives
+## Using the SDK Modules
 
 The SDK is made up of several modules such as **Authentication, Airtime, etc...**, you can alternatively add
 dependencies for the specific services you use only. For example : Authentication & Airtime
