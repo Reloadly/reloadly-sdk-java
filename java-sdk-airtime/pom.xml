@@ -12,8 +12,9 @@
 
     <artifactId>java-sdk-airtime</artifactId>
     <version>1.0.0</version>
-
     <name>Reloadly Java SDK :: Services :: Reloadly Airtime Service</name>
+    <url>https://github.com/reloadly/reloadly-sdk-java</url>
+
     <description>The Reloadly Java SDK for the Auth API. The module holds the client classes
         that are used for communicating with Reloadly Airtime Service.
     </description>

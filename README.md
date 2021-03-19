@@ -3,6 +3,7 @@
 [![CircleCI][circle-ci-badge]][circle-ci-url]
 [![MIT][mit-badge]][mit-url]
 [![codecov][codecov-badge]][codecov-url]
+<!--[![Maven][maven-badge]][maven-url]-->
 
 The **Reloadly SDK for Java** enables Java developers to easily work with [Reloadly Services][reloadly-main-site]
 and build scalable solutions. You can get started in minutes using Maven or any build system that supports MavenCentral
@@ -145,7 +146,7 @@ This project is licensed under the MIT license. See the [LICENSE](LICENSE) file 
 
 [mit-url]: https://github.com/reloadly/reloadly-sdk-java/raw/master/LICENSE
 
-[maven-badge]: https://img.shields.io/maven-central/v/software.reloadly/reloadly-java/reloadly.svg
+[maven-badge]: https://img.shields.io/maven-central/v/software.reloadly/java-sdk-airtime.svg?label=Maven%20Central
 
 [maven-url]: https://search.maven.org/search?q=g:software.reloadly
 

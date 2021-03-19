@@ -40,6 +40,7 @@ OAuth2ClientCredentialsRequest request = AuthenticationAPI.builder()
         .enableLogging(true)
         ....    
 
+TokenHolder tokenHolder = null;
 try {       
     request.execute();    
 } catch (APIException e) {
@@ -66,6 +67,7 @@ OAuth2ClientCredentialsRequest request = AuthenticationAPI.builder()
         )
         ....
 
+TokenHolder tokenHolder = null;
 try {       
     request.execute();    
 } catch (APIException e) {
@@ -102,6 +104,7 @@ OAuth2ClientCredentialsRequest request = AuthenticationAPI.builder()
         )
         ....        
 
+TokenHolder tokenHolder = null;
 try {       
     request.execute();    
 } catch (APIException e) {
@@ -124,6 +127,8 @@ You can disable this behavior if you prefer:
 OAuth2ClientCredentialsRequest request = AuthenticationAPI.builder()
             .enableTelemetry(false)
             ....
+            
+TokenHolder tokenHolder = null;
 try {    
     request.execute();
 } catch (APIException e) {
