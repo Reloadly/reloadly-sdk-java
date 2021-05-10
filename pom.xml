@@ -7,7 +7,7 @@
 
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>Reloadly Java SDK :: POM</name>
     <url>https://github.com/reloadly/reloadly-sdk-java</url>
 
@@ -47,7 +47,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <sdk-java.version>1.0.0</sdk-java.version>
+        <sdk-java.version>1.0.2-SNAPSHOT</sdk-java.version>
         <lombok.version>1.18.16</lombok.version>
         <okhttp3.version>3.14.9</okhttp3.version>
         <hamcrest.version>2.2</hamcrest.version>
