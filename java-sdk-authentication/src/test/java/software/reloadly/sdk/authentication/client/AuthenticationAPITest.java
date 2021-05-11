@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.authentication.AuthenticationAPIMockServer;
 import software.reloadly.sdk.authentication.dto.request.OAuth2ClientCredentialsRequest;
 import software.reloadly.sdk.authentication.dto.response.TokenHolder;
+import software.reloadly.sdk.core.constant.ServiceURLs;
 import software.reloadly.sdk.core.enums.Service;
 import software.reloadly.sdk.core.exception.oauth.OAuthException;
 import software.reloadly.sdk.core.internal.constant.GrantType;
@@ -188,6 +189,38 @@ public class AuthenticationAPITest {
         baseUrlField.set(oAuthOperation, HttpUrl.parse(server.getBaseUrl()));
 
         OAuth2ClientCredentialsRequest tokenRequest = oAuthOperation.getAccessToken();
+        assertThat(tokenRequest, is(notNullValue()));
+        server.jsonResponse(SUCCESS_RESPONSE, 200);
+        TokenHolder response = tokenRequest.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("POST", "/oauth/token"));
+        assertThat(recordedRequest, hasHeader(HttpHeader.CONTENT_TYPE, APPLICATION_JSON));
+        assertThat(recordedRequest, hasHeader(HttpHeader.ACCEPT, APPLICATION_JSON));
+
+        Map<String, Object> body = AuthenticationAPIMockServer.bodyFromRequest(recordedRequest);
+        assertThat(body, hasEntry("grant_type", GrantType.CLIENT_CREDENTIALS));
+        assertThat(body, hasEntry("client_id", CLIENT_ID));
+        assertThat(body, hasEntry("client_secret", CLIENT_SECRET));
+
+        assertThat(response, is(notNullValue()));
+        assertThat(response.getToken(), not(emptyOrNullString()));
+        assertThat(response.getTokenType(), not(emptyOrNullString()));
+        assertThat(response.getExpiresIn(), is(notNullValue()));
+    }
+
+    @Test
+    public void shouldCreateOAuth2ClientCredentialsTokenRequestWithAudience() throws Exception {
+
+        AuthenticationAPI authenticationAPI = getAuthenticationAPIBuilder().build();
+
+        OAuth2ClientCredentialsOperation oAuthOperation = authenticationAPI.clientCredentials();
+        Field baseUrlField = oAuthOperation.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(oAuthOperation, HttpUrl.parse(server.getBaseUrl()));
+
+        OAuth2ClientCredentialsRequest tokenRequest = oAuthOperation.getAccessToken();
+        tokenRequest.setAudience(ServiceURLs.AIRTIME);
         assertThat(tokenRequest, is(notNullValue()));
         server.jsonResponse(SUCCESS_RESPONSE, 200);
         TokenHolder response = tokenRequest.execute();

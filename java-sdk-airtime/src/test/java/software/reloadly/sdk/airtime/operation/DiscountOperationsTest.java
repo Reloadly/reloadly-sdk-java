@@ -13,6 +13,7 @@ import software.reloadly.sdk.airtime.dto.response.Discount;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.enums.Version;
+import software.reloadly.sdk.core.internal.filter.QueryFilter;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -63,6 +64,28 @@ public class DiscountOperationsTest {
         MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
 
         assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
+        discountPage.getContent().forEach(this::assertIsValidDiscount);
+    }
+
+    @Test
+    public void testListDiscountsWithFilters() throws Exception {
+
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
+        Field baseUrlField = airtimeAPI.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(airtimeAPI, HttpUrl.parse(server.getBaseUrl()));
+
+        QueryFilter filter = new QueryFilter().withPage(1, 200);
+        Request<Page<Discount>> request = airtimeAPI.discounts().list(filter);
+        assertThat(request, is(notNullValue()));
+        server.jsonResponse(DISCOUNT_PAGE, 200);
+        Page<Discount> discountPage = request.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("GET", "/operators/commissions"));
+        MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
+
+        assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(2));
         discountPage.getContent().forEach(this::assertIsValidDiscount);
     }
 

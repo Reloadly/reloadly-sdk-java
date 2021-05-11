@@ -1,17 +1,6 @@
 package software.reloadly.sdk.airtime.operation;
 
 import com.neovisionaries.i18n.CountryCode;
-import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
-import software.reloadly.sdk.airtime.client.AirtimeAPI;
-import software.reloadly.sdk.airtime.dto.response.Operator;
-import software.reloadly.sdk.airtime.dto.response.OperatorFxRate;
-import software.reloadly.sdk.airtime.filter.OperatorFilter;
-import software.reloadly.sdk.airtime.enums.DenominationType;
-import software.reloadly.sdk.airtime.util.RecordedRequestMatcher;
-import software.reloadly.sdk.core.dto.response.Page;
-import software.reloadly.sdk.core.internal.constant.MediaType;
-import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
-import software.reloadly.sdk.core.internal.enums.Version;
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.RecordedRequest;
 import org.hamcrest.MatcherAssert;
@@ -19,6 +8,17 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
+import software.reloadly.sdk.airtime.client.AirtimeAPI;
+import software.reloadly.sdk.airtime.dto.response.GeographicalRechargePlan;
+import software.reloadly.sdk.airtime.dto.response.Operator;
+import software.reloadly.sdk.airtime.dto.response.OperatorFxRate;
+import software.reloadly.sdk.airtime.filter.OperatorFilter;
+import software.reloadly.sdk.airtime.util.RecordedRequestMatcher;
+import software.reloadly.sdk.core.dto.response.Page;
+import software.reloadly.sdk.core.internal.constant.MediaType;
+import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
+import software.reloadly.sdk.core.internal.enums.Version;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -27,11 +27,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import static software.reloadly.sdk.core.internal.constant.HttpHeader.ACCEPT;
-import static software.reloadly.sdk.core.internal.constant.HttpHeader.CONTENT_TYPE;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static software.reloadly.sdk.airtime.enums.DenominationType.FIXED;
+import static software.reloadly.sdk.airtime.enums.DenominationType.RANGE;
+import static software.reloadly.sdk.core.internal.constant.HttpHeader.ACCEPT;
+import static software.reloadly.sdk.core.internal.constant.HttpHeader.CONTENT_TYPE;
 
 public class OperatorOperationsTest {
 
@@ -54,6 +56,8 @@ public class OperatorOperationsTest {
     private static final String PATH = "src/test/resources/operator";
     private static final String OPERATORS_PAGED_UNFILTERED = PATH + "/operators_paged_unfiltered_response.json";
     private static final String OPERATOR_UNFILTERED = PATH + "/operator_unfiltered_response.json";
+    private static final String OPERATOR_UNFILTERED_WITH_GEO_PLANS = PATH + "/operator_unfiltered_with_" +
+            "geographical_recharge_plans.json";
     private static final String OPERATOR_FILTERED = PATH + "/operator_filtered_response.json";
     private static final String OPERATORS_BY_COUNTRY_UNFILTERED = PATH + "/operators_by_country_code_unfiltered.json";
     private static final String OPERATORS_BY_COUNTRY_FILTERED_EXCLUDE_BUNDLES = PATH +
@@ -416,6 +420,49 @@ public class OperatorOperationsTest {
         Assertions.assertEquals("Filter page size must greater than zero", exception.getMessage());
     }
 
+    @Test
+    public void testGetOperatorByIdWithGeographicalRechargePlan() throws Exception {
+
+        Long operatorId = 200L;
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
+        Field baseUrlField = airtimeAPI.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(airtimeAPI, HttpUrl.parse(server.getBaseUrl()));
+
+        Request<Operator> request = airtimeAPI.operators().getById(operatorId);
+        assertThat(request, is(notNullValue()));
+        server.jsonResponse(OPERATOR_UNFILTERED_WITH_GEO_PLANS, 200);
+        Operator operator = request.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        String path = "/operators/" + operatorId;
+        MatcherAssert.assertThat(recordedRequest, RecordedRequestMatcher.hasMethodAndPath("GET", path));
+        MatcherAssert.assertThat(recordedRequest, RecordedRequestMatcher.hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
+        assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
+        assertIsValidOperator(operator);
+        assertThat(operator.getId(), equalTo(operatorId));
+        assertThat(operator.getGeographicalRechargePlans(), is(notNullValue()));
+        assertThat(operator.getGeographicalRechargePlans(), is(not(empty())));
+
+        Set<GeographicalRechargePlan> geoRechargePlans = operator.getGeographicalRechargePlans();
+        List<String> geoRechargePlansFields = Arrays.asList("locationCode", "locationName", "fixedAmounts",
+                "localAmounts", "fixedAmountsDescriptions", "localFixedAmountsDescriptions");
+
+        geoRechargePlans.forEach(geoRechargePlan -> {
+            assertThat(geoRechargePlan.getLocationCode(), is(notNullValue()));
+            assertThat(geoRechargePlan.getLocationName(), is(notNullValue()));
+            assertThat(geoRechargePlan.getFixedAmounts(), is(notNullValue()));
+            assertThat(geoRechargePlan.getFixedAmounts(), is(not(empty())));
+            assertThat(geoRechargePlan.getLocalAmounts(), is(notNullValue()));
+            assertThat(geoRechargePlan.getLocalAmounts(), is(not(empty())));
+            assertThat(geoRechargePlan.getFixedAmountsDescriptions(), is(notNullValue()));
+            assertThat(geoRechargePlan.getFixedAmountsDescriptions(), is(not(anEmptyMap())));
+            assertThat(geoRechargePlan.getLocalFixedAmountsDescriptions(), is(notNullValue()));
+            assertThat(geoRechargePlan.getLocalFixedAmountsDescriptions(), is(not(anEmptyMap())));
+            geoRechargePlansFields.forEach(field -> assertThat(geoRechargePlan, hasProperty(field)));
+        });
+    }
+
     private void assertIsValidOperator(Operator operator) {
 
         List<String> operatorFields = Arrays.asList("id", "name", "bundle", "data", "pinBased", "supportsLocalAmounts",
@@ -423,7 +470,8 @@ public class OperatorOperationsTest {
                 "destinationCurrencySymbol", "internationalDiscount", "localDiscount", "mostPopularInternationalAmount",
                 "mostPopularLocalAmount", "country", "fxRate", "suggestedAmounts", "suggestedAmountsMap", "minAmount",
                 "maxAmount", "localMinAmount", "localMaxAmount", "fixedAmounts", "localFixedAmounts",
-                "fixedAmountsDescriptions", "localFixedAmountsDescriptions", "logoUrls", "promotions");
+                "fixedAmountsDescriptions", "localFixedAmountsDescriptions", "logoUrls", "promotions",
+                "supportsGeographicalRechargePlans", "geographicalRechargePlans");
 
         operatorFields.forEach(field -> assertThat(operator, hasProperty(field)));
 
@@ -434,12 +482,13 @@ public class OperatorOperationsTest {
         assertThat(operator.isPinBased(), is(notNullValue()));
         assertThat(operator.isSupportsLocalAmounts(), is(notNullValue()));
         assertThat(operator.getDenominationType(), is(notNullValue()));
-        assertThat(operator.getDenominationType(), anyOf(equalTo(DenominationType.RANGE), equalTo(DenominationType.FIXED)));
+        assertThat(operator.getDenominationType(), anyOf(equalTo(RANGE), equalTo(FIXED)));
         assertThat(operator.getSenderCurrencyCode(), is(notNullValue()));
         assertThat(operator.getSenderCurrencySymbol(), is(notNullValue()));
         assertThat(operator.getDestinationCurrencyCode(), is(notNullValue()));
         assertThat(operator.getDestinationCurrencySymbol(), is(notNullValue()));
         assertThat(operator.getInternationalDiscount(), is(notNullValue()));
         assertThat(operator.getCountry(), is(notNullValue()));
+        assertThat(operator.isSupportsGeographicalRechargePlans(), is(notNullValue()));
     }
 }
