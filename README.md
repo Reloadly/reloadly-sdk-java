@@ -1,4 +1,4 @@
-<img src="icon.png" width="130" height="137" align="right" alt="reloadly-java-icon"/>
+<img src="icon.png" width="100" height="105" align="right" alt="reloadly-java-icon"/>
 
 # Reloadly SDK for Java
 
