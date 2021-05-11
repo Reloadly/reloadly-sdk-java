@@ -7,11 +7,11 @@
     <parent>
         <groupId>software.reloadly</groupId>
         <artifactId>java-sdk</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>java-sdk-airtime</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>Reloadly Java SDK :: Services :: Reloadly Airtime Service</name>
     <url>https://github.com/reloadly/reloadly-sdk-java</url>
 
@@ -21,7 +21,7 @@
 
     <properties>
         <nv-i18n.version>1.27</nv-i18n.version>
-        <sdk-authentication.version>1.0.2-SNAPSHOT</sdk-authentication.version>
+        <sdk-authentication.version>1.0.2</sdk-authentication.version>
     </properties>
 
     <dependencies>
