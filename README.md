@@ -1,3 +1,5 @@
+<img src="icon.png" width="100" height="105" align="right" alt="reloadly-java-icon"/>
+
 # Reloadly SDK for Java
 
 [![CircleCI][circle-ci-badge]][circle-ci-url]
@@ -39,13 +41,13 @@ dependencies for the specific services you use only. For example : Authenticatio
 Add specific dependencies to your project's build file:
 
 ```groovy
-implementation "software.reloadly:java-sdk-authentication:1.0.0"
+implementation "software.reloadly:java-sdk-authentication:1.0.2"
 ```
 
 **OR**
 
 ```groovy
-implementation "software.reloadly:java-sdk-airtime:1.0.0"
+implementation "software.reloadly:java-sdk-airtime:1.0.2"
 ```
 
 ### Maven users
@@ -57,7 +59,7 @@ Add specific dependencies to your project's POM:
 <dependency>
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk-authentication</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
@@ -68,7 +70,7 @@ Add specific dependencies to your project's POM:
 <dependency>
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk-airtime</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
