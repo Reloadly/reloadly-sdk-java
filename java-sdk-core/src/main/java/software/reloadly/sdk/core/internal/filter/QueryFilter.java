@@ -14,15 +14,15 @@ public class QueryFilter extends BaseFilter {
      * @return this filter instance
      */
     public QueryFilter withPage(int pageNumber, int pageSize) {
-        Asserter.assertNotNull(pageNumber, "Page number must not be null");
-        Asserter.assertNotNull(pageSize, "Amount per page must not be null");
+        Asserter.assertNotNull(pageNumber, "Page number");
+        Asserter.assertNotNull(pageSize, "Page size");
 
         if (pageNumber <= 0) {
-            throw new IllegalArgumentException("Filter page number must greater than zero");
+            throw new IllegalArgumentException("Filter page number must be greater than zero");
         }
 
         if (pageSize <= 0) {
-            throw new IllegalArgumentException("Filter page size must greater than zero");
+            throw new IllegalArgumentException("Filter page size must be greater than zero");
         }
 
         parameters.put("page", pageNumber);

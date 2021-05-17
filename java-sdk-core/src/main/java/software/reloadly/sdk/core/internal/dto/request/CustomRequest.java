@@ -105,6 +105,10 @@ public class CustomRequest<T> extends BaseRequest<T> implements CustomizableRequ
             return createRateLimitException(response);
         }
 
+        return doCreateResponseException(response);
+    }
+
+    private APIException doCreateResponseException(Response response) {
         Reader streamReader;
         try (ResponseBody body = response.body()) {
 
@@ -123,7 +127,7 @@ public class CustomRequest<T> extends BaseRequest<T> implements CustomizableRequ
 
     private RateLimitException createRateLimitException(Response response) {
 
-        RateLimitException rateLimitException = (RateLimitException) createResponseException(response);
+        RateLimitException rateLimitException = (RateLimitException) doCreateResponseException(response);
 
         // -1 as default value if the header could not be found.
         String resetValue = response.header("X-RateLimit-Reset", "-1");

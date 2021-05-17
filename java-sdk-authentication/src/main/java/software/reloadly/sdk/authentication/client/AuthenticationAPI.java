@@ -5,6 +5,7 @@ import okhttp3.HttpUrl;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import software.reloadly.sdk.core.enums.Service;
+import software.reloadly.sdk.core.internal.enums.Version;
 import software.reloadly.sdk.core.internal.net.API;
 import software.reloadly.sdk.core.internal.util.Asserter;
 import software.reloadly.sdk.core.net.HttpOptions;
@@ -29,7 +30,9 @@ public class AuthenticationAPI extends API {
                              Service service, boolean enableLogging,
                              List<String> redactHeaders, HttpOptions options, Boolean enableTelemetry) {
 
-        super(clientId, clientSecret, enableLogging, redactHeaders, options, enableTelemetry, getSDKVersion());
+        super(clientId, clientSecret, enableLogging, redactHeaders, options, enableTelemetry, getSDKVersion(),
+                Version.AUTHENTICATION_V1.getValue()
+        );
 
         Asserter.assertNotBlank(clientId, "Client id");
         Asserter.assertNotBlank(clientSecret, "Client secret");

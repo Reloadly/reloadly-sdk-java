@@ -409,7 +409,7 @@ public class OperatorOperationsTest {
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> airtimeAPI.operators()
                 .list(new OperatorFilter().withPage(0, 5)));
-        Assertions.assertEquals("Filter page number must greater than zero", exception.getMessage());
+        Assertions.assertEquals("Filter page number must be greater than zero", exception.getMessage());
     }
 
     @Test
@@ -417,7 +417,7 @@ public class OperatorOperationsTest {
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> airtimeAPI.operators()
                 .list(new OperatorFilter().withPage(1, 0)));
-        Assertions.assertEquals("Filter page size must greater than zero", exception.getMessage());
+        Assertions.assertEquals("Filter page size must be greater than zero", exception.getMessage());
     }
 
     @Test
