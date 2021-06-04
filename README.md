@@ -1,3 +1,9 @@
+<!--
+  Title: Reloadly SDK for Java
+  Description: Reloadly Java SDK for sending Airtime Topups to over 4 billion mobile phones.
+  Author: Reloadly
+  -->
+  
 # Reloadly SDK for Java
 
 [![CircleCI][circle-ci-badge]][circle-ci-url]
@@ -6,8 +12,8 @@
 <!--[![Maven][maven-badge]][maven-url]-->
 
 The **Reloadly SDK for Java** enables Java developers to easily work with [Reloadly Services][reloadly-main-site]
-and build scalable solutions. You can get started in minutes using Maven or any build system that supports MavenCentral
-as an artifact source.
+and build scalable solutions. For example, you can start sending **Airtime topups** in minutes instead of days by using the **Reloadly SDK for Java**. 
+You can get started by using Maven or any build system that supports MavenCentral as an artifact source.
 
 * [SDK Homepage][sdk-website] (Coming soon)
 * [Sample Code][sample-code]
