@@ -8,7 +8,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum Service {
     AIRTIME(ServiceURLs.AIRTIME),
-    AIRTIME_SANDBOX(ServiceURLs.AIRTIME_SANDBOX);
+    GIFTCARD(ServiceURLs.GIFTCARD),
+    AIRTIME_SANDBOX(ServiceURLs.AIRTIME_SANDBOX),
+    GIFTCARD_SANDBOX(ServiceURLs.GIFTCARD_SANDBOX);
 
     private final String url;
 }
