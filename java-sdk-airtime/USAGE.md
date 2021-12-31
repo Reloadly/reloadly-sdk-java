@@ -26,14 +26,14 @@ Set the client id & client secret; this is probably the most straight-forward or
 acquired automatically before the API call is made.
 
 ```java
-Request<AccountBalance> request = AirtimeAPI.builder()
+Request<AccountBalanceInfo> request = AirtimeAPI.builder()
         .clientId(clientId)
         .clientSecret(clientSecret)
         .environment(Environment.SANDBOX) //Airtime service has 2 environments, LIVE and SANDBOX. If not environment is specified, the SDK defaults to SANDBOX
         .build()
         .accounts().getBalance();
         
-AccountBalance accountBalance = null;
+AccountBalanceInfo accountBalance = null;
 try {
     accountBalance = request.execute();                                                       
 } catch (APIException e) {
@@ -71,7 +71,7 @@ try {
     // all others
 }
 
-Request<AccountBalance> request = AirtimeAPI.builder()
+Request<AccountBalanceInfo> request = AirtimeAPI.builder()
         .clientId(clientId)
         .clientSecret(clientSecret)
         .accessToken(tokenHolder.getAccessToken()) //Set the access token to be used by here
@@ -79,7 +79,7 @@ Request<AccountBalance> request = AirtimeAPI.builder()
         .build()
         .accounts().getBalance();
         
-AccountBalance accountBalance = null;
+AccountBalanceInfo accountBalance = null;
 try {
     accountBalance = request.execute();                                                       
 } catch (APIException e) {
@@ -139,8 +139,8 @@ AirtimeAPI airtimeAPI = AirtimeAPI.builder()
         .environment(Environment.SANDBOX)
         .build();
 
-AccountBalance balance = null;
-Request<AccountBalance> request = airtimeAPI.accounts().getBalance();
+AccountBalanceInfo balance = null;
+Request<AccountBalanceInfo> request = airtimeAPI.accounts().getBalance();
 try {
     balance = request.execute();
 } catch (APIException e) {
