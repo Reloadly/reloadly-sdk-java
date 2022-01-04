@@ -22,8 +22,8 @@ import java.util.Objects;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static software.reloadly.sdk.airtime.util.RecordedRequestMatcher.hasHeader;
-import static software.reloadly.sdk.airtime.util.RecordedRequestMatcher.hasMethodAndPath;
+import static software.reloadly.sdk.core.internal.util.RecordedRequestMatcher.hasHeader;
+import static software.reloadly.sdk.core.internal.util.RecordedRequestMatcher.hasMethodAndPath;
 import static software.reloadly.sdk.core.internal.constant.HttpHeader.ACCEPT;
 
 public class AccountOperationsTest {

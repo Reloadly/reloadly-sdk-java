@@ -4,7 +4,7 @@ import com.neovisionaries.i18n.CountryCode;
 import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.Promotion;
-import software.reloadly.sdk.airtime.util.RecordedRequestMatcher;
+import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.enums.Version;

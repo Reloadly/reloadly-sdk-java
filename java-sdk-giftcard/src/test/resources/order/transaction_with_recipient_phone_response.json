@@ -1,0 +1,26 @@
+{
+  "transactionId": 820,
+  "amount": 17.45,
+  "discount": 0.49,
+  "currencyCode": "USD",
+  "fee": 0.50,
+  "recipientEmail": null,
+  "customIdentifier": "34344567hy6566776",
+  "status": "SUCCESSFUL",
+  "product": {
+    "productId": 10,
+    "productName": "App Store & iTunes Austria",
+    "countryCode": "AU",
+    "quantity": 1,
+    "unitPrice": 15.00,
+    "totalPrice": 15.00,
+    "currencyCode": "EUR",
+    "brand": {
+      "brandId": 3,
+      "brandName": "App Store & iTunes"
+    }
+  },
+  "smsFee": 0.01,
+  "recipientPhone": "13058989796",
+  "transactionCreatedTime": "2022-01-04 00:25:20"
+}

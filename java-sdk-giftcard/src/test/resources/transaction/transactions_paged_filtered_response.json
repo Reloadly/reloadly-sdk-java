@@ -1,0 +1,81 @@
+{
+  "content": [
+    {
+      "transactionId": 814,
+      "amount": 57.24,
+      "discount": 1.65,
+      "currencyCode": "USD",
+      "fee": 0.50,
+      "recipientEmail": "empi2b@gmail.com",
+      "customIdentifier": null,
+      "status": "SUCCESSFUL",
+      "product": {
+        "productId": 14,
+        "productName": "App Store & iTunes DE",
+        "countryCode": "DE",
+        "quantity": 1,
+        "unitPrice": 50.00,
+        "totalPrice": 50.00,
+        "currencyCode": "EUR",
+        "brand": {
+          "brandId": 3,
+          "brandName": "App Store & iTunes"
+        }
+      },
+      "smsFee": 0.00,
+      "recipientPhone": null,
+      "transactionCreatedTime": "2022-01-03 22:25:57"
+    },
+    {
+      "transactionId": 813,
+      "amount": 17.52,
+      "discount": 0.49,
+      "currencyCode": "USD",
+      "fee": 0.50,
+      "recipientEmail": "empi2b@gmail.com",
+      "customIdentifier": null,
+      "status": "SUCCESSFUL",
+      "product": {
+        "productId": 10,
+        "productName": "App Store & iTunes Austria",
+        "countryCode": "AU",
+        "quantity": 1,
+        "unitPrice": 15.00,
+        "totalPrice": 15.00,
+        "currencyCode": "EUR",
+        "brand": {
+          "brandId": 3,
+          "brandName": "App Store & iTunes"
+        }
+      },
+      "smsFee": 0.00,
+      "recipientPhone": null,
+      "transactionCreatedTime": "2022-01-03 22:25:39"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "pageNumber": 0,
+    "pageSize": 50,
+    "offset": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalElements": 2,
+  "totalPages": 1,
+  "last": true,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 2,
+  "first": true,
+  "size": 50,
+  "number": 0,
+  "empty": false
+}

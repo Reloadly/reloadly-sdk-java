@@ -14,7 +14,7 @@ import software.reloadly.sdk.airtime.dto.response.GeographicalRechargePlan;
 import software.reloadly.sdk.airtime.dto.response.Operator;
 import software.reloadly.sdk.airtime.dto.response.OperatorFxRate;
 import software.reloadly.sdk.airtime.filter.OperatorFilter;
-import software.reloadly.sdk.airtime.util.RecordedRequestMatcher;
+import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.internal.constant.MediaType;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;

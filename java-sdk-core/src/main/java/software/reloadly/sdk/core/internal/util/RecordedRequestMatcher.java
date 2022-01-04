@@ -1,4 +1,4 @@
-package software.reloadly.sdk.airtime.util;
+package software.reloadly.sdk.core.internal.util;
 
 import okhttp3.mockwebserver.RecordedRequest;
 import org.hamcrest.Description;

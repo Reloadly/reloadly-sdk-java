@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>software.reloadly</groupId>
         <artifactId>java-sdk</artifactId>
+        <groupId>software.reloadly</groupId>
         <version>1.0.2</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>java-sdk-airtime</artifactId>
+    <artifactId>java-sdk-giftcard</artifactId>
     <version>1.0.2</version>
-    <name>Reloadly Java SDK :: Services :: Reloadly Airtime Service</name>
+    <name>Reloadly Java SDK :: Services :: Reloadly Giftcard Service</name>
     <url>https://github.com/reloadly/reloadly-sdk-java</url>
 
-    <description>The Reloadly Java SDK for the Airtime API. The module holds the client classes
-        that are used for communicating with Reloadly Airtime Service.
+    <description>The Reloadly Java SDK for the Giftcard API. The module holds the client classes
+        that are used for communicating with Reloadly Giftcard Service.
     </description>
 
     <properties>

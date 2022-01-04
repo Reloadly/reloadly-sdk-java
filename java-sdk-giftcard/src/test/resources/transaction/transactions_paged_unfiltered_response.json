@@ -1,0 +1,55 @@
+{
+  "content": [
+    {
+      "transactionId": 812,
+      "amount": 25.50,
+      "discount": 1.88,
+      "currencyCode": "USD",
+      "fee": 0.50,
+      "recipientEmail": "empi2b@gmail.com",
+      "customIdentifier": null,
+      "status": "SUCCESSFUL",
+      "product": {
+        "productId": 1,
+        "productName": "1-800-PetSupplies",
+        "countryCode": "US",
+        "quantity": 1,
+        "unitPrice": 25.00,
+        "totalPrice": 25.00,
+        "currencyCode": "USD",
+        "brand": {
+          "brandId": 1,
+          "brandName": "1-800-PetSupplies"
+        }
+      },
+      "smsFee": 0.00,
+      "recipientPhone": null,
+      "transactionCreatedTime": "2022-01-03 20:28:55"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "pageNumber": 0,
+    "pageSize": 50,
+    "offset": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalElements": 1,
+  "totalPages": 1,
+  "last": true,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 1,
+  "first": true,
+  "size": 50,
+  "number": 0,
+  "empty": false
+}
