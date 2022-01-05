@@ -41,7 +41,7 @@ public class AirtimeAPI extends ServiceAPI {
 
         validateCredentials();
         this.environment = environment;
-        baseUrl = createBaseUrl();
+        baseUrl = createBaseUrl(environment);
     }
 
     public OperatorOperations operators() throws ReloadlyException {
@@ -86,7 +86,7 @@ public class AirtimeAPI extends ServiceAPI {
         customizableRequest.addHeader(HttpHeader.AUTHORIZATION, "Bearer " + newAccessToken);
     }
 
-    private HttpUrl createBaseUrl() {
+    private HttpUrl createBaseUrl(Environment environment) {
         Service service = getServiceByEnvironment(environment);
         Asserter.assertNotNull(service, "Service");
         HttpUrl url = HttpUrl.parse(service.getUrl());

@@ -41,7 +41,7 @@ public class GiftcardAPI extends ServiceAPI {
 
         validateCredentials();
         this.environment = environment;
-        baseUrl = createBaseUrl();
+        baseUrl = createBaseUrl(environment);
     }
 
     public GiftcardProductOperations products() throws ReloadlyException {
@@ -96,7 +96,7 @@ public class GiftcardAPI extends ServiceAPI {
                 .build().clientCredentials().getAccessToken().execute().getToken();
     }
 
-    private HttpUrl createBaseUrl() {
+    private HttpUrl createBaseUrl(Environment environment) {
         Service service = getServiceByEnvironment(environment);
         Asserter.assertNotNull(service, "Service");
         HttpUrl url = HttpUrl.parse(service.getUrl());
