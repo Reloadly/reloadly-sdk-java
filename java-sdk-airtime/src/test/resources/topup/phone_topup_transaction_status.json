@@ -1,0 +1,32 @@
+{
+  "code": null,
+  "message": null,
+  "status": "SUCCESSFUL",
+  "transaction": {
+    "transactionId": 1,
+    "status": "SUCCESSFUL",
+    "operatorTransactionId": null,
+    "customIdentifier": null,
+    "recipientPhone": "50936377111",
+    "recipientEmail": null,
+    "senderPhone": null,
+    "countryCode": "HT",
+    "operatorId": 174,
+    "operatorName": "Natcom Haiti",
+    "discount": 2.6,
+    "discountCurrencyCode": "USD",
+    "requestedAmount": 20,
+    "requestedAmountCurrencyCode": "USD",
+    "deliveredAmount": 1977.12,
+    "deliveredAmountCurrencyCode": "HTG",
+    "transactionDate": "2022-01-05 13:26:20",
+    "pinDetail": null,
+    "balanceInfo": {
+      "oldBalance": 1000.00,
+      "newBalance": 982.60,
+      "currencyCode": "USD",
+      "currencyName": "US Dollar",
+      "updatedAt": "2022-01-05 18:26:20"
+    }
+  }
+}

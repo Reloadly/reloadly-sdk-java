@@ -13,7 +13,8 @@ import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.Phone;
 import software.reloadly.sdk.airtime.dto.request.EmailTopupRequest;
 import software.reloadly.sdk.airtime.dto.request.PhoneTopupRequest;
-import software.reloadly.sdk.airtime.dto.response.TopupTransaction;
+import software.reloadly.sdk.airtime.dto.response.*;
+import software.reloadly.sdk.airtime.enums.AirtimeTransactionStatus;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.enums.Version;
 
@@ -23,9 +24,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static software.reloadly.sdk.core.internal.util.RecordedRequestMatcher.hasHeader;
 import static software.reloadly.sdk.core.internal.util.RecordedRequestMatcher.hasMethodAndPath;
@@ -36,6 +39,10 @@ public class TopupOperationsTest {
     private static final String PATH = "src/test/resources/topup";
     private static final String PHONE_TOPUP = PATH + "/phone_topup_transaction.json";
     private static final String EMAIL_TOPUP = PATH + "/email_topup_transaction.json";
+    private static final String EMAIL_TOPUP_ASYNC = PATH + "/email_topup_transaction_async.json";
+    private static final String PHONE_TOPUP_ASYNC = PATH + "/phone_topup_transaction_async.json";
+    private static final String PHONE_TOPUP_STATUS = PATH + "/phone_topup_transaction_status.json";
+    private static final String EMAIL_TOPUP_STATUS = PATH + "/email_topup_transaction_status.json";
     private static final String PHONE_TOPUP_PIN_DETAIL = PATH + "/phone_topup_transaction_with_pin_detail.json";
 
     private AirtimeAPIMockServer server;
@@ -74,7 +81,7 @@ public class TopupOperationsTest {
         MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
 
         assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
-        assertIsValidTransactionHistory(topupTransaction);
+        assertIsValidTransaction(topupTransaction);
         assertThat(topupTransaction.getRecipientEmail(), is(nullValue()));
     }
 
@@ -102,7 +109,7 @@ public class TopupOperationsTest {
         MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
 
         assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
-        assertIsValidTransactionHistory(topupTransaction);
+        assertIsValidTransaction(topupTransaction);
         assertThat(topupTransaction.getPinDetail(), is(notNullValue()));
         assertThat(topupTransaction.getRecipientEmail(), is(nullValue()));
 
@@ -132,9 +139,117 @@ public class TopupOperationsTest {
         MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
 
         assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
-        assertIsValidTransactionHistory(topupTransaction);
+        assertIsValidTransaction(topupTransaction);
         assertThat(topupTransaction.getRecipientEmail(), is(notNullValue()));
         assertThat(topupTransaction.getRecipientPhone(), is(nullValue()));
+    }
+
+    @Test
+    public void testSendPhoneTopupAsync() throws Exception {
+
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
+        Field baseUrlField = airtimeAPI.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(airtimeAPI, HttpUrl.parse(server.getBaseUrl()));
+
+        PhoneTopupRequest phoneTopupRequest = PhoneTopupRequest.builder()
+                .recipientPhone(new Phone("+50936377111", CountryCode.HT))
+                .customIdentifier(UUID.randomUUID().toString())
+                .amount(15.00)
+                .operatorId(173L).build();
+
+        Request<AsyncAirtimeResponse> request = airtimeAPI.topups().sendAsync(phoneTopupRequest);
+        assertThat(request, is(notNullValue()));
+        server.jsonResponse(PHONE_TOPUP_ASYNC, 200);
+        AsyncAirtimeResponse airtimeResponse = request.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("POST", "/topups-async"));
+        MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
+
+        assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
+        assertThat(airtimeResponse, is(notNullValue()));
+        assertThat(airtimeResponse.getTransactionId(), is(notNullValue()));
+        assertThat(airtimeResponse.getTransactionId(), is(greaterThan(0L)));
+    }
+
+    @Test
+    public void testSendEmailTopupAsync() throws Exception {
+
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
+        Field baseUrlField = airtimeAPI.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(airtimeAPI, HttpUrl.parse(server.getBaseUrl()));
+
+        EmailTopupRequest emailTopupRequest = EmailTopupRequest.builder()
+                .recipientEmail("testing@nauta.com.cu")
+                .customIdentifier(UUID.randomUUID().toString())
+                .amount(30.00)
+                .operatorId(683L).build();
+
+        Request<AsyncAirtimeResponse> request = airtimeAPI.topups().sendAsync(emailTopupRequest);
+        assertThat(request, is(notNullValue()));
+        server.jsonResponse(EMAIL_TOPUP_ASYNC, 200);
+        AsyncAirtimeResponse airtimeResponse = request.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("POST", "/topups-async"));
+        MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
+
+        assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
+        assertThat(airtimeResponse, is(notNullValue()));
+        assertThat(airtimeResponse.getTransactionId(), is(notNullValue()));
+        assertThat(airtimeResponse.getTransactionId(), is(greaterThan(0L)));
+    }
+
+    @Test
+    public void testRetrievePhoneTransactionStatus() throws Exception {
+
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
+        Field baseUrlField = airtimeAPI.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(airtimeAPI, HttpUrl.parse(server.getBaseUrl()));
+
+        Long transactionId = 1L;
+        Request<AirtimeTransactionStatusResponse> request = airtimeAPI.topups().getStatus(transactionId);
+        assertThat(request, is(notNullValue()));
+        server.jsonResponse(PHONE_TOPUP_STATUS, 200);
+        AirtimeTransactionStatusResponse transactionStatus = request.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        String endPoint = "/topups/" + transactionId + "/status";
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("GET", endPoint));
+        MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
+
+        assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
+        assertIsValidTransactionStatusResponse(transactionStatus);
+        assertThat(transactionStatus.getTransaction().getRecipientEmail(), is(emptyOrNullString()));
+        assertThat(transactionStatus.getTransaction().getRecipientPhone(), is(not(emptyOrNullString())));
+    }
+
+    @Test
+    public void testRetrieveEmailTransactionStatus() throws Exception {
+
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(AirtimeAPIMockServer.ACCESS_TOKEN).build();
+        Field baseUrlField = airtimeAPI.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(airtimeAPI, HttpUrl.parse(server.getBaseUrl()));
+
+        Long transactionId = 2L;
+        Request<AirtimeTransactionStatusResponse> request = airtimeAPI.topups().getStatus(transactionId);
+        assertThat(request, is(notNullValue()));
+        server.jsonResponse(EMAIL_TOPUP_STATUS, 200);
+        AirtimeTransactionStatusResponse transactionStatus = request.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        String endPoint = "/topups/" + transactionId + "/status";
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("GET", endPoint));
+        MatcherAssert.assertThat(recordedRequest, hasHeader(ACCEPT, Version.AIRTIME_V1.getValue()));
+
+        assertThat(Objects.requireNonNull(recordedRequest.getRequestUrl()).querySize(), equalTo(0));
+        assertIsValidTransactionStatusResponse(transactionStatus);
+        assertThat(transactionStatus.getTransaction().getRecipientPhone(), is(emptyOrNullString()));
+        assertThat(transactionStatus.getTransaction().getRecipientEmail(), is(not(emptyOrNullString())));
     }
 
     @Test
@@ -320,38 +435,102 @@ public class TopupOperationsTest {
         Assertions.assertEquals("'Recipient email' is not a valid email address!", exception.getMessage());
     }
 
-    private void assertIsValidTransactionHistory(TopupTransaction topupTransaction) {
+    private void assertIsValidTransaction(TopupTransaction transaction) {
 
+        int expectedPinDetailFieldsCount = 8;
+        int expectedBalanceInfoFieldsCount = 5;
+        int expectedTransactionFieldsCount = 19;
         List<String> topupTransactionFields = Arrays.asList("id", "operatorTransactionId", "customIdentifier",
                 "recipientPhone", "recipientEmail", "senderPhone", "countryCode", "operatorId", "operatorName",
                 "discount", "discountCurrencyCode", "requestedAmount", "requestedAmountCurrencyCode",
-                "deliveredAmount", "deliveredAmountCurrencyCode", "date", "pinDetail"
+                "deliveredAmount", "deliveredAmountCurrencyCode", "date", "balanceInfo", "balanceInfo", "status"
         );
 
         List<String> pinDetailFields = Arrays.asList(
                 "serial", "info", "infoPart2", "infoPart3", "value", "code", "ivr", "validity");
 
-        topupTransactionFields.forEach(field -> assertThat(topupTransaction, hasProperty(field)));
+        List<String> balanceInfoFields = Arrays.asList(
+                "previousBalance", "currentBalance", "currencyCode", "currencyName", "updatedAt");
 
-        if (topupTransaction.getPinDetail() != null) {
-            pinDetailFields.forEach(field -> assertThat(topupTransaction.getPinDetail(), hasProperty(field)));
+        assertThat(transaction, is(notNullValue()));
+        List<String> transFields = Arrays.stream(transaction.getClass().getDeclaredFields())
+                .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
+                        !f.getName().equalsIgnoreCase("$jacocoData")))
+                .map(Field::getName).collect(Collectors.toList());
+
+        int actualTransactionFieldsCount = transFields.size();
+        String errorMsg = "Failed asserting that TopupTransaction::class contains " + expectedTransactionFieldsCount;
+        errorMsg += " fields. It actually contains " + actualTransactionFieldsCount + " fields";
+        assertThat(errorMsg, expectedTransactionFieldsCount == actualTransactionFieldsCount);
+
+        topupTransactionFields.forEach(field -> assertThat(transaction, hasProperty(field)));
+
+        if (transaction.getPinDetail() != null) {
+            PinDetail pinDetail = transaction.getPinDetail();
+            List<String> pinDFields = Arrays.stream(pinDetail.getClass().getDeclaredFields())
+                    .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
+                            !f.getName().equalsIgnoreCase("$jacocoData")))
+                    .map(Field::getName).collect(Collectors.toList());
+            int actualPinDetailFieldsCount = pinDFields.size();
+            errorMsg = "Failed asserting that PinDetail::class contains " + expectedPinDetailFieldsCount;
+            errorMsg += " fields. It actually contains " + actualPinDetailFieldsCount + " fields";
+            assertThat(errorMsg, expectedPinDetailFieldsCount == actualPinDetailFieldsCount);
+            pinDetailFields.forEach(field -> assertThat(pinDetail, hasProperty(field)));
         }
 
-        assertThat(topupTransaction.getId(), is(notNullValue()));
-        if (topupTransaction.getOperatorName().contains("Nauta Cuba")) {
-            assertThat(topupTransaction.getRecipientEmail(), is(notNullValue()));
+        assertThat(transaction.getBalanceInfo(), is(notNullValue()));
+        TransactionBalanceInfo balanceInfo = transaction.getBalanceInfo();
+        List<String> balInfoDFields = Arrays.stream(balanceInfo.getClass().getDeclaredFields())
+                .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
+                        !f.getName().equalsIgnoreCase("$jacocoData")))
+                .map(Field::getName).collect(Collectors.toList());
+        int actualBalanceInfoFieldsCount = balInfoDFields.size();
+        errorMsg = "Failed asserting that PinDetail::class contains " + expectedBalanceInfoFieldsCount;
+        errorMsg += " fields. It actually contains " + actualBalanceInfoFieldsCount + " fields";
+        assertThat(errorMsg, expectedBalanceInfoFieldsCount == actualBalanceInfoFieldsCount);
+        balanceInfoFields.forEach(field -> assertThat(balanceInfo, hasProperty(field)));
+
+        assertThat(transaction.getId(), is(notNullValue()));
+        if (transaction.getOperatorName().contains("Nauta Cuba")) {
+            assertThat(transaction.getRecipientEmail(), is(notNullValue()));
         } else {
-            assertThat(topupTransaction.getRecipientPhone(), is(notNullValue()));
+            assertThat(transaction.getRecipientPhone(), is(notNullValue()));
         }
-        assertThat(topupTransaction.getCountryCode(), is(notNullValue()));
-        assertThat(topupTransaction.getOperatorId(), is(notNullValue()));
-        assertThat(topupTransaction.getOperatorName(), is(notNullValue()));
-        assertThat(topupTransaction.getDiscount(), is(notNullValue()));
-        assertThat(topupTransaction.getDiscountCurrencyCode(), is(notNullValue()));
-        assertThat(topupTransaction.getRequestedAmount(), is(notNullValue()));
-        assertThat(topupTransaction.getRequestedAmountCurrencyCode(), is(notNullValue()));
-        assertThat(topupTransaction.getDeliveredAmount(), is(notNullValue()));
-        assertThat(topupTransaction.getDeliveredAmountCurrencyCode(), is(notNullValue()));
-        assertThat(topupTransaction.getDate(), is(notNullValue()));
+        assertThat(transaction.getCountryCode(), is(notNullValue()));
+        assertThat(transaction.getOperatorId(), is(notNullValue()));
+        assertThat(transaction.getOperatorName(), is(notNullValue()));
+        assertThat(transaction.getDiscount(), is(notNullValue()));
+        assertThat(transaction.getDiscountCurrencyCode(), is(notNullValue()));
+        assertThat(transaction.getRequestedAmount(), is(notNullValue()));
+        assertThat(transaction.getRequestedAmountCurrencyCode(), is(notNullValue()));
+        assertThat(transaction.getDeliveredAmount(), is(notNullValue()));
+        assertThat(transaction.getDeliveredAmountCurrencyCode(), is(notNullValue()));
+        assertThat(transaction.getDate(), is(notNullValue()));
+    }
+
+    private void assertIsValidTransactionStatusResponse(AirtimeTransactionStatusResponse response) {
+
+        int expectedResponseFieldsCount = 4;
+        List<String> responseFields = Arrays.asList("errorCode", "errorMessage", "transaction", "status");
+
+        assertThat(response, is(notNullValue()));
+        List<String> transFields = Arrays.stream(response.getClass().getDeclaredFields())
+                .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
+                        !f.getName().equalsIgnoreCase("$jacocoData")))
+                .map(Field::getName).collect(Collectors.toList());
+
+        int actualResponseFieldsCount = transFields.size();
+        String errorMsg = "Failed asserting that TopupTransaction::class contains " + expectedResponseFieldsCount;
+        errorMsg += " fields. It actually contains " + actualResponseFieldsCount + " fields";
+        assertThat(errorMsg, expectedResponseFieldsCount == actualResponseFieldsCount);
+
+        responseFields.forEach(field -> assertThat(response, hasProperty(field)));
+
+        assertThat(response.getErrorCode(), is(emptyOrNullString()));
+        assertThat(response.getErrorMessage(), is(emptyOrNullString()));
+        assertThat(response.getStatus(), is(notNullValue()));
+        assertEquals(AirtimeTransactionStatus.SUCCESSFUL, response.getStatus());
+        assertThat(response.getTransaction(), is(notNullValue()));
+        assertIsValidTransaction(response.getTransaction());
     }
 }

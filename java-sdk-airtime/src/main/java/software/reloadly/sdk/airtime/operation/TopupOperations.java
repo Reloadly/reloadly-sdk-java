@@ -7,6 +7,8 @@ import software.reloadly.sdk.airtime.dto.Phone;
 import software.reloadly.sdk.airtime.dto.request.EmailTopupRequest;
 import software.reloadly.sdk.airtime.dto.request.PhoneTopupRequest;
 import software.reloadly.sdk.airtime.dto.request.TopupRequest;
+import software.reloadly.sdk.airtime.dto.response.AirtimeTransactionStatusResponse;
+import software.reloadly.sdk.airtime.dto.response.AsyncAirtimeResponse;
 import software.reloadly.sdk.airtime.dto.response.TopupTransaction;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.util.Asserter;
@@ -15,7 +17,8 @@ import okhttp3.OkHttpClient;
 
 public class TopupOperations extends BaseAirtimeOperation {
 
-    private static final String END_POINT = "topups";
+    private static final String SYNC_END_POINT = "topups";
+    private static final String ASYNC_END_POINT = "topups-async";
 
     public TopupOperations(OkHttpClient client, HttpUrl baseUrl, String apiToken) {
         super(baseUrl, apiToken, client);
@@ -23,8 +26,26 @@ public class TopupOperations extends BaseAirtimeOperation {
 
     public Request<TopupTransaction> send(TopupRequest request) {
         validateTopupRequest(request);
-        return createPostRequest(getBuilder(END_POINT).build().toString(), request,
+        return createPostRequest(getBuilder(SYNC_END_POINT).build().toString(), request,
                 new TypeReference<TopupTransaction>() {
+                }
+        );
+    }
+
+    public Request<AsyncAirtimeResponse> sendAsync(TopupRequest request) {
+        validateTopupRequest(request);
+        return createPostRequest(getBuilder(ASYNC_END_POINT).build().toString(), request,
+                new TypeReference<AsyncAirtimeResponse>() {
+                }
+        );
+    }
+
+    public Request<AirtimeTransactionStatusResponse> getStatus(Long transactionId) {
+        Asserter.assertNotNull(transactionId, "Transaction id");
+        Asserter.assertGreaterThanZero(transactionId, "Transaction id");
+        String endPoint = SYNC_END_POINT + "/" + transactionId + "/status";
+        return createGetRequest(getBuilder(endPoint).build().toString(),
+                new TypeReference<AirtimeTransactionStatusResponse>() {
                 }
         );
     }

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import software.reloadly.sdk.airtime.enums.AirtimeTransactionStatus;
 import software.reloadly.sdk.core.internal.adapter.JackSonDateDeserializer;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -114,4 +115,9 @@ public class TopupTransaction implements Serializable {
      * PIN detail info for PIN-based transactions
      */
     private PinDetail pinDetail;
+
+    /**
+     * The transaction status (PROCESSING, SUCCESSFUL, REFUNDED, FAILED)
+     */
+    private AirtimeTransactionStatus status;
 }
