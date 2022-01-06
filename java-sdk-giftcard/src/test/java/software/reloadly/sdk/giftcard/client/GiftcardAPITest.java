@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.internal.interceptor.TelemetryInterceptor;
-import software.reloadly.sdk.giftcard.GiftcardAPIMockServer;
+import software.reloadly.sdk.giftcard.util.GiftcardAPIMockServer;
 
 import java.io.IOException;
 import java.lang.reflect.Field;

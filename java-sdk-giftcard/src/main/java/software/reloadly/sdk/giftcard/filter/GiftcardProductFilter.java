@@ -43,6 +43,7 @@ public class GiftcardProductFilter extends QueryFilter {
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardProductFilter simplified(boolean simplified) {
         parameters.put(INCLUDE_SIMPLIFY, simplified);
         return this;

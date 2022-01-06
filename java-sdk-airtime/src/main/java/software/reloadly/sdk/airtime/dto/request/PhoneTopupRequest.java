@@ -23,6 +23,7 @@ public class PhoneTopupRequest extends TopupRequest implements Serializable {
     private final Phone recipientPhone;
 
     @Builder
+    @SuppressWarnings("unused")
     public PhoneTopupRequest(Double amount, Long operatorId,
                              Phone recipientPhone, boolean useLocalAmount, Phone senderPhone, String customIdentifier) {
 

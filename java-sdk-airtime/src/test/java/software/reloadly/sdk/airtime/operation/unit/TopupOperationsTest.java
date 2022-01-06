@@ -1,4 +1,4 @@
-package software.reloadly.sdk.airtime.operation;
+package software.reloadly.sdk.airtime.operation.unit;
 
 import com.neovisionaries.i18n.CountryCode;
 import okhttp3.HttpUrl;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
+import software.reloadly.sdk.airtime.util.AirtimeAPIMockServer;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.Phone;
 import software.reloadly.sdk.airtime.dto.request.EmailTopupRequest;
@@ -34,6 +34,7 @@ import static software.reloadly.sdk.core.internal.util.RecordedRequestMatcher.ha
 import static software.reloadly.sdk.core.internal.util.RecordedRequestMatcher.hasMethodAndPath;
 import static software.reloadly.sdk.core.internal.constant.HttpHeader.ACCEPT;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class TopupOperationsTest {
 
     private static final String PATH = "src/test/resources/topup";

@@ -25,6 +25,7 @@ public class GiftCardOrderRequest implements Serializable {
     private final String customIdentifier;
 
     @Builder
+    @SuppressWarnings("unused")
     public GiftCardOrderRequest(int quantity,
                                 Long productId,
                                 String senderName,

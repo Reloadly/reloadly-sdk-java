@@ -1,4 +1,4 @@
-package software.reloadly.sdk.airtime.operation;
+package software.reloadly.sdk.airtime.operation.unit;
 
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.RecordedRequest;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
+import software.reloadly.sdk.airtime.util.AirtimeAPIMockServer;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.TopupTransaction;
 import software.reloadly.sdk.airtime.filter.TransactionHistoryFilter;

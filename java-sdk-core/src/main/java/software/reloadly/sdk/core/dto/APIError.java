@@ -10,7 +10,7 @@ import java.util.List;
 
 
 /**
- * Class that represents an Reloadly Server error captured from a http response. Provides different methods to get a clue of why the request failed.
+ * Class that represents a Reloadly Server error captured from a http response. Provides different methods to get a clue of why the request failed.
  * i.e.:
  * <pre>
  * {@code

@@ -1,4 +1,4 @@
-package software.reloadly.sdk.giftcard.operation;
+package software.reloadly.sdk.giftcard.operation.unit;
 
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.RecordedRequest;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;
-import software.reloadly.sdk.giftcard.GiftcardAPIMockServer;
+import software.reloadly.sdk.giftcard.util.GiftcardAPIMockServer;
 import software.reloadly.sdk.giftcard.client.GiftcardAPI;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardRedeemInstruction;
 

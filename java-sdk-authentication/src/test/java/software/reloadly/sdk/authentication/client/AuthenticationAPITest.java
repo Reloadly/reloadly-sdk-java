@@ -34,7 +34,6 @@ import static software.reloadly.sdk.core.internal.constant.MediaType.APPLICATION
 public class AuthenticationAPITest {
 
     private static final String CLIENT_ID = "some-client-id";
-    private static final String END_POINT = "/oauth/token";
     private static final String CLIENT_SECRET = "some-client-secret";
     private static final String ACCESS_DENIED_ERROR_RESPONSE = "src/test/resources/client/auth/error_access_denied.json";
     private static final String SUCCESS_RESPONSE = "src/test/resources/client/auth/success_token_response.json";

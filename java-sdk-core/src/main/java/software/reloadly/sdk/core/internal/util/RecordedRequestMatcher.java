@@ -4,6 +4,7 @@ import okhttp3.mockwebserver.RecordedRequest;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeDiagnosingMatcher;
 
+@SuppressWarnings("unused")
 public class RecordedRequestMatcher extends TypeSafeDiagnosingMatcher<RecordedRequest> {
 
     private static final int METHOD_PATH = 0;
@@ -71,15 +72,8 @@ public class RecordedRequestMatcher extends TypeSafeDiagnosingMatcher<RecordedRe
     }
 
     private boolean matchesQueryParameter(RecordedRequest item, Description mismatchDescription) {
-        String path = item.getPath();
-        boolean hasQuery = path != null && path.indexOf("?") > 0;
-        if (!hasQuery) {
-            mismatchDescription.appendText(" query was empty");
-            return false;
-        }
-
-        String query = path.substring(path.indexOf("?") + 1);
-        String[] parameters = query.split("&");
+        String[] parameters = getParameters(item, mismatchDescription);
+        if (parameters == null) return false;
         for (String p : parameters) {
             if (p.equals(String.format("%s=%s", first, second))) {
                 return true;
@@ -90,15 +84,8 @@ public class RecordedRequestMatcher extends TypeSafeDiagnosingMatcher<RecordedRe
     }
 
     private boolean hasQueryParameter(RecordedRequest item, Description mismatchDescription) {
-        String path = item.getPath();
-        boolean hasQuery = path != null && path.indexOf("?") > 0;
-        if (!hasQuery) {
-            mismatchDescription.appendText(" query was empty");
-            return false;
-        }
-
-        String query = path.substring(path.indexOf("?") + 1);
-        String[] parameters = query.split("&");
+        String[] parameters = getParameters(item, mismatchDescription);
+        if (parameters == null) return false;
         for (String p : parameters) {
             if (p.startsWith(String.format("%s=", first))) {
                 return true;
@@ -106,6 +93,18 @@ public class RecordedRequestMatcher extends TypeSafeDiagnosingMatcher<RecordedRe
         }
         mismatchDescription.appendValueList("Query parameters were {", ", ", "}.", parameters);
         return false;
+    }
+
+    private String[] getParameters(RecordedRequest item, Description mismatchDescription) {
+        String path = item.getPath();
+        boolean hasQuery = path != null && path.indexOf("?") > 0;
+        if (!hasQuery) {
+            mismatchDescription.appendText(" query was empty");
+            return null;
+        }
+
+        String query = path.substring(path.indexOf("?") + 1);
+        return query.split("&");
     }
 
     @Override

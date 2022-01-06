@@ -1,4 +1,4 @@
-package software.reloadly.sdk.giftcard;
+package software.reloadly.sdk.giftcard.util;
 
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;

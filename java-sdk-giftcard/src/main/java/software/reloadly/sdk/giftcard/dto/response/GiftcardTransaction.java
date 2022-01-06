@@ -39,6 +39,7 @@ public class GiftcardTransaction implements Serializable {
 
     @Getter
     @EqualsAndHashCode
+    @SuppressWarnings("unused")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class GiftcardTransactionProduct implements Serializable {

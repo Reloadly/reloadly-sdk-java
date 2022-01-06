@@ -1,4 +1,4 @@
-package software.reloadly.sdk.giftcard.operation;
+package software.reloadly.sdk.giftcard.operation.unit;
 
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.RecordedRequest;
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;
-import software.reloadly.sdk.giftcard.GiftcardAPIMockServer;
+import software.reloadly.sdk.giftcard.util.GiftcardAPIMockServer;
 import software.reloadly.sdk.giftcard.client.GiftcardAPI;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardDiscount;
 
@@ -18,7 +18,6 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

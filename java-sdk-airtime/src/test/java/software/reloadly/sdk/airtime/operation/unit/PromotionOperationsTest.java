@@ -1,7 +1,7 @@
-package software.reloadly.sdk.airtime.operation;
+package software.reloadly.sdk.airtime.operation.unit;
 
 import com.neovisionaries.i18n.CountryCode;
-import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
+import software.reloadly.sdk.airtime.util.AirtimeAPIMockServer;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.Promotion;
 import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;

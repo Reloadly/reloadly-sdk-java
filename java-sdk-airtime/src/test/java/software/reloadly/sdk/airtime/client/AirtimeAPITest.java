@@ -1,6 +1,6 @@
 package software.reloadly.sdk.airtime.client;
 
-import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
+import software.reloadly.sdk.airtime.util.AirtimeAPIMockServer;
 import software.reloadly.sdk.core.internal.interceptor.TelemetryInterceptor;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -122,9 +122,5 @@ public class AirtimeAPITest {
 
     private AirtimeAPI.AirtimeAPIBuilder getAirtimeAPIBuilder() {
         return AirtimeAPI.builder().accessToken(AirtimeAPITest.ACCESS_TOKEN);
-    }
-
-    private AirtimeAPI.AirtimeAPIBuilder getAirtimeAPIBuilder(String clientId, String clientSecret) {
-        return AirtimeAPI.builder().clientId(clientId).clientSecret(clientSecret);
     }
 }

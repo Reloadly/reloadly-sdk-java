@@ -22,7 +22,7 @@ as an artifact source.
 
 #### Sign up for Reloadly ####
 
-Before you begin, you need a Reloadly account. Please see the [Sign Up for Reloadly][reloadly-signup-help] section of
+Before you begin, you need a Reloadly account. Please see the [Sign-Up for Reloadly][reloadly-signup-help] section of
 the knowledge-base for information about how to create a Reloadly account and retrieve
 your [Reloadly APIs credentials][api-credentials-help].
 
@@ -89,7 +89,7 @@ getting help:
 * Talk to us live on our chat tool on our [website][reloadly-main-site] (bottom right)
 * Ask a question on [StackOverflow][stack-overflow] and tag it with `reloadly-java-sdk`
 * Articulate your feature request or upvote existing ones on our [Issues][features] page
-* Take a look at our [youtube series][youtube-series] for plenty of helpful walkthroughs and tips
+* Take a look at our [YouTube series][youtube-series] for plenty of helpful walkthroughs and tips
 * Open a case via with the [Reloadly Support Center][support-center]
 * If it turns out that you may have found a bug, please open an [issue][sdk-issues]
 

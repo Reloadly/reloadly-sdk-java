@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
+@SuppressWarnings("SpellCheckingInspection")
 public enum Version {
 
     AIRTIME_V1("application/com.reloadly.topups-v1+json"),

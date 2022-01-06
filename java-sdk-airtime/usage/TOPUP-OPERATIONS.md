@@ -85,7 +85,7 @@ try {
 
 ## Topups - Send Nauta Cuba topups
 
-Reloadly also supports Nauta Cuba for top-ups. However the process is a bit different from sending phone topups. Instead
+Reloadly also supports Nauta Cuba for top-ups. However, the process is a bit different from sending phone topups. Instead
 of using ```PhoneTopupRequest``` use ```EmailTopupRequest```, substitute ```recipientPhone(phone)``` with
 ```recipientEmail(email)``` and that's it. The rest of the process is exactly the same as sending any other topup.
 

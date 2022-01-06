@@ -16,7 +16,7 @@ import java.util.List;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 
 /**
- * Class that provides an implementation of some of the Authentication and Authorization API methods
+ * Class that provides an implementation of some Authentication and Authorization API methods
  */
 public class AuthenticationAPI extends API {
 
@@ -25,6 +25,7 @@ public class AuthenticationAPI extends API {
     private final HttpUrl baseUrl;
     private final Service service;
 
+    @SuppressWarnings("unused")
     @Builder
     public AuthenticationAPI(String clientId, String clientSecret,
                              Service service, boolean enableLogging,

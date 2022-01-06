@@ -23,6 +23,7 @@ public class EmailTopupRequest extends TopupRequest implements Serializable {
     private final String recipientEmail;
 
     @Builder
+    @SuppressWarnings("unused")
     public EmailTopupRequest(Double amount, Long operatorId, String recipientEmail,
                              Phone senderPhone, boolean useLocalAmount, String customIdentifier) {
 

@@ -1,4 +1,4 @@
-package software.reloadly.sdk.giftcard.operation;
+package software.reloadly.sdk.giftcard.operation.unit;
 
 import com.neovisionaries.i18n.CountryCode;
 import okhttp3.HttpUrl;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.internal.constant.MediaType;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;
-import software.reloadly.sdk.giftcard.GiftcardAPIMockServer;
+import software.reloadly.sdk.giftcard.util.GiftcardAPIMockServer;
 import software.reloadly.sdk.giftcard.client.GiftcardAPI;
 import software.reloadly.sdk.giftcard.dto.request.GiftCardOrderRequest;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardInfo;
@@ -292,6 +292,7 @@ public class GiftcardOrdersOperationsTests {
     }
 
     @Test
+    @SuppressWarnings("SpellCheckingInspection")
     public void testPlaceOrderShouldThrowExceptionWhenRequestRecipientPhoneNumberIsNotValid() {
 
         GiftCardOrderRequest orderRequest = GiftCardOrderRequest.builder().productId(10L)

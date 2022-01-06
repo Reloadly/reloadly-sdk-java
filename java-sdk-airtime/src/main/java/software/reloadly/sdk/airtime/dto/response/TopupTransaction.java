@@ -24,18 +24,18 @@ public class TopupTransaction implements Serializable {
     private static final long serialVersionUID = 4524613307993713291L;
 
     /**
-     * Unique Id of the transaction
+     * Unique ID of the transaction
      */
     @JsonProperty("transactionId")
     private Long id;
 
     /**
-     * Unique Id of the transaction from the mobile operator if available
+     * Unique ID of the transaction from the mobile operator if available
      */
     private String operatorTransactionId;
 
     /**
-     * Unique Id of the transaction provided by the user during at transaction request if any
+     * Unique ID of the transaction provided by the user during at transaction request if any
      */
     private String customIdentifier;
 

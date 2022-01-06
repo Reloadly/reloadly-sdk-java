@@ -14,7 +14,7 @@
     <description>The Reloadly SDK for Java provides Java APIs
         for building software, integrating Reloadly's cost-effective, scalable, and reliable
         products and APIs. The Reloadly Java SDK allows developers to code
-        against APIs for all of Reloadly's web services (Airtime, OAuth, Voucher, Gifting, Data, Bundles, etc).
+        against APIs for all of Reloadly's web services (Airtime, OAuth, Voucher, Gifting, Data, Bundles, etc.).
     </description>
 
     <licenses>

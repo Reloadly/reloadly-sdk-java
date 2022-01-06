@@ -1,4 +1,4 @@
-package software.reloadly.sdk.airtime.operation;
+package software.reloadly.sdk.airtime.operation.unit;
 
 import com.neovisionaries.i18n.CountryCode;
 import okhttp3.HttpUrl;
@@ -8,17 +8,17 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import software.reloadly.sdk.airtime.AirtimeAPIMockServer;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.GeographicalRechargePlan;
 import software.reloadly.sdk.airtime.dto.response.Operator;
 import software.reloadly.sdk.airtime.dto.response.OperatorFxRate;
 import software.reloadly.sdk.airtime.filter.OperatorFilter;
-import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;
+import software.reloadly.sdk.airtime.util.AirtimeAPIMockServer;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.internal.constant.MediaType;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.core.internal.enums.Version;
+import software.reloadly.sdk.core.internal.util.RecordedRequestMatcher;
 
 import java.io.IOException;
 import java.lang.reflect.Field;

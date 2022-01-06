@@ -34,12 +34,14 @@ public class GiftcardTransactionFilter extends QueryFilter {
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter status(GiftCardTransactionStatus status) {
         Asserter.assertNotNull(status, "Status");
         parameters.put(STATUS, status.name());
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter brandId(Long brandId) {
         Asserter.assertNotNull(brandId, "Brand id");
         Asserter.assertGreaterThanZero(brandId, "Brand id");
@@ -47,24 +49,28 @@ public class GiftcardTransactionFilter extends QueryFilter {
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter startDate(LocalDateTime date) {
         Asserter.assertNotNull(date, "Start date");
         parameters.put(START_DATE, date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter endDate(LocalDateTime date) {
         Asserter.assertNotNull(date, "End date");
         parameters.put(END_DATE, date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter brandName(String brandName) {
         Asserter.assertNotBlank(brandName, "Brand name");
         parameters.put(BRAND_NAME, brandName);
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter productId(Long productId) {
         Asserter.assertNotNull(productId, "Product id");
         Asserter.assertGreaterThanZero(productId, "Product id");
@@ -78,6 +84,7 @@ public class GiftcardTransactionFilter extends QueryFilter {
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter recipientEmail(String email) {
         Asserter.assertNotBlank(email, "Recipient email");
         Asserter.assertValidEmail(email, "Recipient email");
@@ -85,6 +92,7 @@ public class GiftcardTransactionFilter extends QueryFilter {
         return this;
     }
 
+    @SuppressWarnings("unused")
     public GiftcardTransactionFilter customIdentifier(String customIdentifier) {
         Asserter.assertNotBlank(customIdentifier, "Custom Identifier");
         parameters.put(CUSTOM_IDENTIFIER, customIdentifier);

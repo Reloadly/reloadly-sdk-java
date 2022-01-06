@@ -9,6 +9,7 @@ import java.io.Serializable;
 
 @Getter
 @EqualsAndHashCode
+@SuppressWarnings("unused")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SimplifiedOperator implements Serializable {

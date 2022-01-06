@@ -7,10 +7,11 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum Service {
-    AIRTIME(ServiceURLs.AIRTIME),
-    GIFTCARD(ServiceURLs.GIFTCARD),
-    AIRTIME_SANDBOX(ServiceURLs.AIRTIME_SANDBOX),
-    GIFTCARD_SANDBOX(ServiceURLs.GIFTCARD_SANDBOX);
+    GIFTCARD(ServiceURLs.GIFTCARD, ServiceURLs.GIFTCARD),
+    GIFTCARD_SANDBOX(ServiceURLs.GIFTCARD_SANDBOX, ServiceURLs.GIFTCARD_SANDBOX),
+    AIRTIME(ServiceURLs.AIRTIME, "https://topups-hs256.reloadly.com"),
+    AIRTIME_SANDBOX(ServiceURLs.AIRTIME_SANDBOX, "https://topups-hs256-sandbox.reloadly.com");
 
-    private final String url;
+    private final String audience;
+    private final String audienceInternal;
 }

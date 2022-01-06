@@ -12,7 +12,7 @@ Some key things to keep in mind regarding the Airtime API :
 * The API has 2 environments, SANDBOX (for development & testing) and LIVE.
 * If neither environment is specified, the SDK defaults to SANDBOX
 * Each environment has a set of credentials (client id & secret) that are different from the other.<br />
-    * SANBOX credentials can only be used for SANDBOX environment
+    * SANDBOX credentials can only be used for SANDBOX environment
     * LIVE credentials can only be used for LIVE environment
 * If not environment is specified the SDK defaults to SANDBOX
 * You MUST supply either the credentials, or an access token in order to call the API

@@ -1,4 +1,4 @@
-package software.reloadly.sdk.airtime;
+package software.reloadly.sdk.airtime.util;
 
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;

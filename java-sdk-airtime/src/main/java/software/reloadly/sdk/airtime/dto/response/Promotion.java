@@ -26,7 +26,7 @@ public class Promotion implements Serializable {
     private Long id;
 
     /**
-     * Id of operator to which the promotion applies
+     * ID of operator to which the promotion applies
      */
     private Long operatorId;
 

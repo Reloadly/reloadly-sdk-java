@@ -94,7 +94,7 @@ Request<Page<Operator>> request = airtimeAPI.operators().list(filter);
 ...   
 ```
 
-By default all the above filters are set to ```true``` except for ```includeSuggestedAmounts```
+By default, all the above filters are set to ```true``` except for ```includeSuggestedAmounts```
 and ```includeSuggestedAmountsMap```
 
 ## Operators - Get by id
