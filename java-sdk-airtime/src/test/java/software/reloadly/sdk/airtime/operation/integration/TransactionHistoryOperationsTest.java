@@ -34,9 +34,10 @@ public class TransactionHistoryOperationsTest extends BaseIntegrationTest {
 
         int page = 1;
         int pageSize = 5;
+        LocalDateTime startDate = LocalDateTime.of(2022, 1, 5, 0, 0, 0);
+        LocalDateTime endDate = LocalDateTime.of(2022, 1, 5, 23, 59, 59);
         TransactionHistoryFilter filter = new TransactionHistoryFilter().withPage(page, pageSize)
-                .startDate(LocalDateTime.now().withHour(0).withMinute(0).withSecond(0))
-                .endDate(LocalDateTime.now().withHour(23).withMinute(59).withSecond(59));
+                .startDate(startDate).endDate(endDate);
 
         Request<Page<TopupTransaction>> request = airtimeAPI.reports().transactionsHistory().list(filter);
         assertThat(request, is(notNullValue()));
