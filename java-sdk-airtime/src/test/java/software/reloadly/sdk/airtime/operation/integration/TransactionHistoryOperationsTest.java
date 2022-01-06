@@ -1,5 +1,6 @@
 package software.reloadly.sdk.airtime.operation.integration;
 
+import com.neovisionaries.i18n.CountryCode;
 import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.TopupTransaction;
@@ -33,16 +34,36 @@ public class TransactionHistoryOperationsTest extends BaseIntegrationTest {
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(sandboxAccessToken).build();
 
         int page = 1;
-        int pageSize = 5;
+        int pageSize = 100;
         LocalDateTime startDate = LocalDateTime.of(2022, 1, 5, 0, 0, 0);
         LocalDateTime endDate = LocalDateTime.of(2022, 1, 5, 23, 59, 59);
         TransactionHistoryFilter filter = new TransactionHistoryFilter().withPage(page, pageSize)
-                .startDate(startDate).endDate(endDate);
+                .startDate(startDate).endDate(endDate).operatorId(173L).countryCode(CountryCode.HT)
+                .operatorName("Digicel Haiti");
 
         Request<Page<TopupTransaction>> request = airtimeAPI.reports().transactionsHistory().list(filter);
         assertThat(request, is(notNullValue()));
         Page<TopupTransaction> transactionHistoryPage = request.execute();
-        assertThat(transactionHistoryPage.getContent().size(), equalTo(pageSize));
+        assertThat(transactionHistoryPage.getContent().size(), is(greaterThan(0)));
+        transactionHistoryPage.getContent().forEach(this::assertIsValidTransactionHistory);
+    }
+
+    @Test
+    public void testListTransactionHistoryFilteredByCustomIdentifier() throws Exception {
+
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(sandboxAccessToken).build();
+
+        int page = 1;
+        int pageSize = 100;
+        LocalDateTime startDate = LocalDateTime.of(2022, 1, 5, 0, 0, 0);
+        LocalDateTime endDate = LocalDateTime.of(2022, 1, 5, 23, 59, 59);
+        TransactionHistoryFilter filter = new TransactionHistoryFilter().withPage(page, pageSize)
+                .startDate(startDate).endDate(endDate).customIdentifier("c5bddf94-f279-44a3-bcf1-2b5a9b5fe531");
+
+        Request<Page<TopupTransaction>> request = airtimeAPI.reports().transactionsHistory().list(filter);
+        assertThat(request, is(notNullValue()));
+        Page<TopupTransaction> transactionHistoryPage = request.execute();
+        assertThat(transactionHistoryPage.getContent().size(), is(greaterThan(0)));
         transactionHistoryPage.getContent().forEach(this::assertIsValidTransactionHistory);
     }
 
