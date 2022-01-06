@@ -1,6 +1,11 @@
-package software.reloadly.sdk.airtime.client;
+package software.reloadly.sdk.airtime.client.unit;
 
+import okhttp3.HttpUrl;
+import org.mockito.MockedStatic;
+import org.mockito.Mockito;
+import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.util.AirtimeAPIMockServer;
+import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.internal.interceptor.TelemetryInterceptor;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -16,6 +21,7 @@ import java.lang.reflect.Field;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.anyString;
 
 public class AirtimeAPITest {
 
@@ -118,6 +124,21 @@ public class AirtimeAPITest {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> AirtimeAPI.builder().build());
         String expected = "Either a valid access token or both client id & client secret must be provided";
         Assertions.assertEquals(expected, exception.getMessage());
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenServiceUrlIsMissingMissing() {
+        String clientId = System.getenv("LIVE_CLIENT_ID");
+        String clientSecret = System.getenv("LIVE_CLIENT_SECRET");
+
+        try (MockedStatic<HttpUrl> theMock = Mockito.mockStatic(HttpUrl.class)) {
+            theMock.when(() -> HttpUrl.parse(anyString())).thenReturn(null);
+            Throwable exception = assertThrows(IllegalArgumentException.class, () -> AirtimeAPI.builder().clientId(clientId).clientSecret(clientSecret)
+                    .environment(Environment.LIVE)
+                    .build());
+            String expected = "The airtime base url had an invalid format and couldn't be parsed as a URL.";
+            Assertions.assertEquals(expected, exception.getMessage());
+        }
     }
 
     private AirtimeAPI.AirtimeAPIBuilder getAirtimeAPIBuilder() {

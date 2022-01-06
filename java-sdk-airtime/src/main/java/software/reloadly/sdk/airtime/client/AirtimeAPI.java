@@ -90,7 +90,7 @@ public class AirtimeAPI extends ServiceAPI {
     private HttpUrl createBaseUrl(Environment environment) {
         Service service = getServiceByEnvironment(environment);
         Asserter.assertNotNull(service, "Service");
-        HttpUrl url = HttpUrl.parse(service.getAudience());
+        HttpUrl url = HttpUrl.parse(service.getServiceUrl());
         if (url == null) {
             throw new IllegalArgumentException(
                     "The airtime base url had an invalid format and couldn't be parsed as a URL."

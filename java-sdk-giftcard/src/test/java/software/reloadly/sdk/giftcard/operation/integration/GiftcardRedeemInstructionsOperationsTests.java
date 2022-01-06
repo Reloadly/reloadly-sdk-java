@@ -44,8 +44,9 @@ public class GiftcardRedeemInstructionsOperationsTests extends BaseIntegrationTe
 
         List<String> fields = Arrays.stream(redeemInstruction.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         int actualFieldsCount = fields.size();
         String errorMsg = "Failed asserting that GiftcardRedeemInstruction::class contains " + expectedFieldsCount;

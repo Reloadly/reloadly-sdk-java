@@ -317,8 +317,9 @@ public class GiftcardOrdersOperationsTests {
         List<String> transactionFields = Arrays.asList("pinCode", "cardNumber");
         List<String> fields = Arrays.stream(giftcardInfo.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         int actualFieldsCount = fields.size();
         String errorMsg = "Failed asserting that GiftcardInfo::class contains " + expectedFieldsCount;
@@ -339,8 +340,9 @@ public class GiftcardOrdersOperationsTests {
 
         List<String> fields = Arrays.stream(transaction.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         int actualFieldsCount = fields.size();
         String errorMsg = "Failed asserting that GiftcardTransaction::class contains " + expectedFieldsCount;
@@ -367,8 +369,9 @@ public class GiftcardOrdersOperationsTests {
         expectedFieldsCount = 8;
         fields = Arrays.stream(transaction.getProduct().getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         actualFieldsCount = fields.size();
         errorMsg = "Failed asserting that GiftcardTransactionProduct::class contains " + expectedFieldsCount;

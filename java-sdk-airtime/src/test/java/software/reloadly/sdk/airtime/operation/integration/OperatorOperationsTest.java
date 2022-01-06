@@ -1,6 +1,7 @@
 package software.reloadly.sdk.airtime.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.GeographicalRechargePlan;
@@ -9,14 +10,22 @@ import software.reloadly.sdk.airtime.dto.response.OperatorFxRate;
 import software.reloadly.sdk.airtime.filter.OperatorFilter;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.enums.Environment;
+import software.reloadly.sdk.core.exception.ReloadlyException;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
+import software.reloadly.sdk.core.net.HttpOptions;
+import software.reloadly.sdk.core.net.ProxyOptions;
 
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static software.reloadly.sdk.airtime.enums.DenominationType.FIXED;
 import static software.reloadly.sdk.airtime.enums.DenominationType.RANGE;
 
@@ -25,7 +34,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     @Test
     public void testListOperatorsWithNoFilters() throws Exception {
 
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
         Request<Page<Operator>> request = airtimeAPI.operators().list();
         assertThat(request, is(notNullValue()));
         Page<Operator> operatorsPage = request.execute();
@@ -44,7 +53,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
                 .includeSuggestedAmounts(true)
                 .includeSuggestedAmountsMap(true);
 
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         Request<Page<Operator>> request = airtimeAPI.operators().list(filter);
         assertThat(request, is(notNullValue()));
@@ -55,7 +64,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     @Test
     public void testListOperatorsByCountryCodeWithNoFilters() throws Exception {
 
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         Request<List<Operator>> request = airtimeAPI.operators().listByCountryCode(CountryCode.HT);
         assertThat(request, is(notNullValue()));
@@ -67,7 +76,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     @Test
     public void testListOperatorsByCountryCodeWithFilters() throws Exception {
 
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         OperatorFilter filter = new OperatorFilter().includeBundles(false).includeSuggestedAmountsMap(true);
         Request<List<Operator>> request = airtimeAPI.operators().listByCountryCode(CountryCode.HT, filter);
@@ -85,7 +94,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     public void testGetOperatorByIdWithNoFilters() throws Exception {
 
         Long operatorId = 174L;
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         Request<Operator> request = airtimeAPI.operators().getById(operatorId);
         assertThat(request, is(notNullValue()));
@@ -99,7 +108,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     public void testGetOperatorByIdWithFilters() throws Exception {
 
         Long operatorId = 174L;
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         OperatorFilter filter = new OperatorFilter().includeSuggestedAmountsMap(true);
         Request<Operator> request = airtimeAPI.operators().getById(operatorId, filter);
@@ -114,7 +123,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     public void testAutoDetectOperatorWithNoFilters() throws Exception {
 
         String phone = "+50936377111";
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         Request<Operator> request = airtimeAPI.operators().autoDetect(phone, CountryCode.HT);
         assertThat(request, is(notNullValue()));
@@ -127,7 +136,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     public void testAutoDetectOperatorWithFilters() throws Exception {
 
         String phone = "+50936377111";
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         OperatorFilter filter = new OperatorFilter().includeSuggestedAmountsMap(true);
         Request<Operator> request = airtimeAPI.operators().autoDetect(phone, CountryCode.HT, filter);
@@ -142,7 +151,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
 
         Double amount = 5.00;
         Long operatorId = 174L;
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
         Request<OperatorFxRate> request = airtimeAPI.operators().calculateFxRate(operatorId, amount);
         assertThat(request, is(notNullValue()));
         OperatorFxRate operatorFxRate = request.execute();
@@ -157,7 +166,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
     public void testGetOperatorByIdWithGeographicalRechargePlan() throws Exception {
 
         Long operatorId = 200L;
-        AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
         Request<Operator> request = airtimeAPI.operators().getById(operatorId);
         assertThat(request, is(notNullValue()));
@@ -185,6 +194,60 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
             assertThat(geoRechargePlan.getLocalFixedAmountsDescriptions(), is(not(anEmptyMap())));
             geoRechargePlansFields.forEach(field -> assertThat(geoRechargePlan, hasProperty(field)));
         });
+    }
+
+    @Test
+    public void testRequestWithProxyAuthentication() throws ReloadlyException {
+
+        String host = System.getenv("PROXY_HOST");
+        String username = System.getenv("PROXY_USERNAME");
+        String password = System.getenv("PROXY_PASSWORD");
+        int port = Integer.parseInt(System.getenv("PROXY_PORT"));
+
+        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(host, port));
+        ProxyOptions options = new ProxyOptions(proxy, username, password.toCharArray());
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder()
+                .accessToken(accessToken)
+                .environment(Environment.LIVE)
+                .options(HttpOptions.builder()
+                        .readTimeout(Duration.ofSeconds(60))
+                        .writeTimeout(Duration.ofSeconds(60))
+                        .connectTimeout(Duration.ofSeconds(60))
+                        .proxyOptions(options)
+                        .build()
+                ).build();
+
+        Operator operator = airtimeAPI.operators().getById(174L).execute();
+        assertThat(operator, is(notNullValue()));
+    }
+
+    @Test
+    public void testRequestWithoutProxyAuthentication() {
+
+        String host = System.getenv("PROXY_HOST");
+        int port = Integer.parseInt(System.getenv("PROXY_PORT"));
+
+        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(host, port));
+        ProxyOptions options = new ProxyOptions(proxy);
+        AirtimeAPI airtimeAPI = AirtimeAPI.builder()
+                .accessToken(accessToken)
+                .environment(Environment.LIVE)
+                .options(HttpOptions.builder()
+                        .readTimeout(Duration.ofSeconds(60))
+                        .writeTimeout(Duration.ofSeconds(60))
+                        .connectTimeout(Duration.ofSeconds(60))
+                        .proxyOptions(options)
+                        .build()
+                ).build();
+
+        Throwable exception = assertThrows(ReloadlyException.class, () -> airtimeAPI.operators()
+                .getById(174L).execute());
+
+        Assertions.assertInstanceOf(IOException.class, exception.getCause());
+        String errorMessage = "Failed to execute request";
+        String rootErrorMessage = "Failed to authenticate with proxy";
+        Assertions.assertEquals(errorMessage, exception.getMessage());
+        Assertions.assertEquals(rootErrorMessage, exception.getCause().getMessage());
     }
 
     private void assertIsValidOperator(Operator operator) {

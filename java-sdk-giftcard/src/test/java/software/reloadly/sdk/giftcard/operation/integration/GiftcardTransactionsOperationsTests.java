@@ -32,7 +32,7 @@ public class GiftcardTransactionsOperationsTests extends BaseIntegrationTest {
 
     @Test
     public void testListGiftcardTransactionsWithFilters() throws Exception {
-        
+
         int page = 1;
         int pageSize = 200;
         GiftcardAPI giftcardAPI = GiftcardAPI.builder().environment(LIVE).accessToken(accessToken).build();
@@ -65,8 +65,9 @@ public class GiftcardTransactionsOperationsTests extends BaseIntegrationTest {
 
         List<String> fields = Arrays.stream(transaction.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         int actualFieldsCount = fields.size();
         String errorMsg = "Failed asserting that GiftcardTransaction::class contains " + expectedFieldsCount;
@@ -93,8 +94,9 @@ public class GiftcardTransactionsOperationsTests extends BaseIntegrationTest {
         expectedFieldsCount = 8;
         fields = Arrays.stream(transaction.getProduct().getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         actualFieldsCount = fields.size();
         errorMsg = "Failed asserting that GiftcardTransactionProduct::class contains " + expectedFieldsCount;

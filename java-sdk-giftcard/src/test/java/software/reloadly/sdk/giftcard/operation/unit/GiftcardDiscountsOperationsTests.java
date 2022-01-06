@@ -120,13 +120,15 @@ public class GiftcardDiscountsOperationsTests {
 
         int actualDiscountFieldsCount = (int) Arrays.stream(discount.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).count();
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).count();
 
         int actualProductSimplifiedFieldsCount = (int) Arrays.stream(discount.getProduct().getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).count();
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).count();
 
         String errorMsg = "Failed asserting that GiftcardDiscount::class contains " + expectedDiscountFieldsCount;
         errorMsg += " fields. It actually contains " + actualDiscountFieldsCount;

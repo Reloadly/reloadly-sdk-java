@@ -8,6 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.util.StringUtils;
 import software.reloadly.sdk.airtime.util.AirtimeAPIMockServer;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.Phone;
@@ -456,13 +457,16 @@ public class TopupOperationsTest {
         assertThat(transaction, is(notNullValue()));
         List<String> transFields = Arrays.stream(transaction.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         int actualTransactionFieldsCount = transFields.size();
         String errorMsg = "Failed asserting that TopupTransaction::class contains " + expectedTransactionFieldsCount;
         errorMsg += " fields. It actually contains " + actualTransactionFieldsCount + " fields";
+        errorMsg += "Field are : " + StringUtils.collectionToCommaDelimitedString(transFields);
         assertThat(errorMsg, expectedTransactionFieldsCount == actualTransactionFieldsCount);
+
 
         topupTransactionFields.forEach(field -> assertThat(transaction, hasProperty(field)));
 
@@ -470,8 +474,10 @@ public class TopupOperationsTest {
             PinDetail pinDetail = transaction.getPinDetail();
             List<String> pinDFields = Arrays.stream(pinDetail.getClass().getDeclaredFields())
                     .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                            !f.getName().equalsIgnoreCase("$jacocoData")))
-                    .map(Field::getName).collect(Collectors.toList());
+                            !f.getName().equalsIgnoreCase("$jacocoData") &&
+                            !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                    ).map(Field::getName).collect(Collectors.toList());
+
             int actualPinDetailFieldsCount = pinDFields.size();
             errorMsg = "Failed asserting that PinDetail::class contains " + expectedPinDetailFieldsCount;
             errorMsg += " fields. It actually contains " + actualPinDetailFieldsCount + " fields";
@@ -483,8 +489,9 @@ public class TopupOperationsTest {
         TransactionBalanceInfo balanceInfo = transaction.getBalanceInfo();
         List<String> balInfoDFields = Arrays.stream(balanceInfo.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
         int actualBalanceInfoFieldsCount = balInfoDFields.size();
         errorMsg = "Failed asserting that PinDetail::class contains " + expectedBalanceInfoFieldsCount;
         errorMsg += " fields. It actually contains " + actualBalanceInfoFieldsCount + " fields";
@@ -517,8 +524,9 @@ public class TopupOperationsTest {
         assertThat(response, is(notNullValue()));
         List<String> transFields = Arrays.stream(response.getClass().getDeclaredFields())
                 .filter(f -> (!f.getName().equalsIgnoreCase("serialVersionUID") &&
-                        !f.getName().equalsIgnoreCase("$jacocoData")))
-                .map(Field::getName).collect(Collectors.toList());
+                        !f.getName().equalsIgnoreCase("$jacocoData") &&
+                        !f.getName().equalsIgnoreCase("__$lineHits$__"))
+                ).map(Field::getName).collect(Collectors.toList());
 
         int actualResponseFieldsCount = transFields.size();
         String errorMsg = "Failed asserting that TopupTransaction::class contains " + expectedResponseFieldsCount;

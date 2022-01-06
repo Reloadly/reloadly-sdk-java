@@ -111,8 +111,8 @@ public class OAuth2ClientCredentialOperationsTest {
 
         DecodedJWT decodedToken = JWT.decode(tokenHolder.getToken());
         assertThat(decodedToken, is(notNullValue()));
-        assertTrue(decodedToken.getAudience().contains(service.getAudienceInternal()) ||
-                decodedToken.getAudience().contains(service.getAudienceInternal() + "/"));
+        assertTrue(decodedToken.getAudience().contains(service.getServiceAudience()) ||
+                decodedToken.getAudience().contains(service.getServiceAudience() + "/"));
 
         Claim userIdClaim = decodedToken.getClaim(CLAIM_USER_ID);
         Claim sandboxClaim = decodedToken.getClaim(CLAIM_SANDBOX);
