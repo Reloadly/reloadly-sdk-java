@@ -51,7 +51,9 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
                 .includeData(false)
                 .includeBundles(false)
                 .includeSuggestedAmounts(true)
-                .includeSuggestedAmountsMap(true);
+                .includeSuggestedAmountsMap(true)
+                .includeFixedDenominationType(true)
+                .includeRangeDenominationType(true);
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
 
