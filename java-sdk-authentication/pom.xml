@@ -19,10 +19,6 @@
         that are used for communicating with Reloadly Authentication Service.
     </description>
 
-    <properties>
-        <sdk-core.version>1.0.2</sdk-core.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>software.reloadly</groupId>
