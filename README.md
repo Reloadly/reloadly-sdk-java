@@ -39,7 +39,7 @@ To run the SDK you will need **Java 1.8+**
 
 ## Using the SDK Modules
 
-The SDK is made up of several modules such as **Authentication, Airtime, etc...**, you can alternatively add
+The SDK is made up of several modules such as **Authentication, Airtime, Giftcard etc...**, you can alternatively add
 dependencies for the specific services you use only. For example : Authentication & Airtime
 ***(currently all modules have the same version, but this may not always be the case)***
 
@@ -55,6 +55,12 @@ implementation "software.reloadly:java-sdk-authentication:1.0.2"
 
 ```groovy
 implementation "software.reloadly:java-sdk-airtime:1.0.2"
+```
+
+**OR**
+
+```groovy
+implementation "software.reloadly:java-sdk-giftcard:1.0.2"
 ```
 
 ### Maven users
@@ -77,6 +83,17 @@ Add specific dependencies to your project's POM:
 <dependency>
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk-airtime</artifactId>
+    <version>1.0.2</version>
+</dependency>
+```
+
+**OR**
+
+```xml
+
+<dependency>
+    <groupId>software.reloadly</groupId>
+    <artifactId>java-sdk-giftcard</artifactId>
     <version>1.0.2</version>
 </dependency>
 ```
