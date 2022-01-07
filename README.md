@@ -108,7 +108,7 @@ We need your help in making this SDK great. Please participate in the community 
 submitting issues, participating in discussion forums and submitting pull requests through the following channels:
 
 * Submit [issues][sdk-issues] - this is the preferred channel to interact with our team
-* Come join the Reloadly Java community chat on [Gitter][gitter]
+* Come join the Reloadly Java community chat on [Slack][slack]
 * Articulate your feature request or upvote existing ones on our [Issues][features] page
 * Send feedback directly to the team at oss@reloadly.com
 
@@ -118,7 +118,7 @@ This project is licensed under the MIT license. See the [LICENSE](LICENSE) file 
 
 [reloadly-main-site]: https://www.reloadly.com/
 
-[sdk-website]: https://sdk.reloadly.com/java
+[sdk-website]: https://docs.reloadly.com/devtools/toolbox/libraries-and-sdks
 
 [reloadly-signup-help]: https://faq.reloadly.com/en/articles/2307724-how-do-i-register-for-my-free-account
 
@@ -128,7 +128,7 @@ This project is licensed under the MIT license. See the [LICENSE](LICENSE) file 
 
 [sdk-license]: http://www.reloadly.com/software/apache2.0/
 
-[gitter]: https://gitter.im/reloadly/reloadly-sdk-java
+[slack]: https://reloadly-developers.slack.com/
 
 [sample-code]: https://github.com/reloadly/reloadly-sdk-java/blob/master/SAMPLE-CODE.md
 
