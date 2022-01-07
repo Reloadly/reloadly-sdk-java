@@ -17,7 +17,7 @@ The **Reloadly SDK for Java** enables Java developers to easily work with [Reloa
 and build scalable solutions. You can get started in minutes using Maven or any build system that supports MavenCentral
 as an artifact source.
 
-* [SDK Homepage][sdk-website] (Coming soon)
+* [SDK Homepage][sdk-website]
 * [Sample Code][sample-code]
 * [API Docs][docs-api]
 * [Issues][sdk-issues]
