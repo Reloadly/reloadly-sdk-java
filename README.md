@@ -11,7 +11,8 @@
 [![CircleCI][circle-ci-badge]][circle-ci-url]
 [![codecov][codecov-badge]][codecov-url]
 [![MIT][mit-badge]][mit-url]
-[![Maven Central][maven-badge]][maven-url]
+
+[//]: # ([![Maven Central][maven-badge]][maven-url])
 
 The **Reloadly SDK for Java** enables Java developers to easily work with [Reloadly Services][reloadly-main-site]
 and build scalable solutions. You can get started in minutes using Maven or any build system that supports MavenCentral
