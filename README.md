@@ -1,5 +1,11 @@
 <img src="icon.png" width="100" height="105" align="right" alt="reloadly-java-icon"/>
 
+<!--
+  Title: Reloadly SDK for Java
+  Description: Reloadly Java SDK for sending Airtime Topups to over 4 billion mobile phones.
+  Author: Reloadly
+  -->
+  
 # Reloadly SDK for Java
 
 [![CircleCI][circle-ci-badge]][circle-ci-url]
