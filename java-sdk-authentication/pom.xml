@@ -27,7 +27,6 @@
         <dependency>
             <groupId>software.reloadly</groupId>
             <artifactId>java-sdk-core</artifactId>
-            <version>${sdk-core.version}</version>
             <optional>false</optional>
         </dependency>
     </dependencies>

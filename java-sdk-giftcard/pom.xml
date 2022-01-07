@@ -28,7 +28,6 @@
         <dependency>
             <groupId>software.reloadly</groupId>
             <artifactId>java-sdk-authentication</artifactId>
-            <version>${sdk-authentication.version}</version>
             <optional>false</optional>
         </dependency>
         <dependency>
