@@ -6,10 +6,11 @@ import java.util.List;
  * Represents a server error when a rate limit has been exceeded.
  * <p>
  * Getters for {@code limit, remaining} and {@code reset} corresponds to {@code X-RateLimit-Limit, X-RateLimit-Remaining} and {@code X-RateLimit-Reset} HTTP headers.
- * If the value of any headers is missing, then a default value -1 will assigned.
+ * If the value of any headers is missing, then a default value -1 will be assigned.
  * <p>
  * To learn more about rate limits, visit <a href="https://api.reloadly.com/docs/policies/rate-limits">https://api.reloadly.com/docs/policies/rate-limits</a>
  */
+@SuppressWarnings("unused")
 public class RateLimitException extends APIException {
 
     private long limit;

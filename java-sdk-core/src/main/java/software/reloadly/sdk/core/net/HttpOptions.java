@@ -19,6 +19,7 @@ public class HttpOptions {
     private final ProxyOptions proxyOptions;
 
     @Builder
+    @SuppressWarnings("unused")
     public HttpOptions(Duration readTimeout, Duration writeTimeout, Duration connectTimeout, ProxyOptions proxyOptions) {
         this.readTimeout = readTimeout;
         this.writeTimeout = writeTimeout;

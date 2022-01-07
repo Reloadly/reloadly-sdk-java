@@ -41,6 +41,7 @@ public class OAuthException extends APIException {
         super(message, cause);
     }
 
+    @SuppressWarnings("unused")
     public boolean isExpiredToken() {
         return (StringUtils.isNotBlank(getErrorCode()) && getErrorCode().equalsIgnoreCase("TOKEN_EXPIRED"));
     }

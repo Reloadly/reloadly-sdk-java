@@ -95,6 +95,7 @@ public class OperatorFilter extends QueryFilter {
      * @param includeRangeDenominationType - Whether to include range denomination type
      * @return - OperatorFilter
      */
+    @SuppressWarnings("unused")
     public OperatorFilter includeRangeDenominationType(boolean includeRangeDenominationType) {
         parameters.put(INCLUDE_RANGE_DENOMINATION_TYPE, includeRangeDenominationType);
         return this;
@@ -106,6 +107,7 @@ public class OperatorFilter extends QueryFilter {
      * @param includeFixedDenominationType - Whether to include fixed denomination type
      * @return - OperatorFilter
      */
+    @SuppressWarnings("unused")
     public OperatorFilter includeFixedDenominationType(boolean includeFixedDenominationType) {
         parameters.put(INCLUDE_FIXED_DENOMINATION_TYPE, includeFixedDenominationType);
         return this;

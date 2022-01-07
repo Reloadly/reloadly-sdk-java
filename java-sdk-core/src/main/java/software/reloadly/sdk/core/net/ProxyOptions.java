@@ -24,11 +24,13 @@ public class ProxyOptions {
      *
      * @param proxy - The proxy setting
      */
+    @SuppressWarnings("unused")
     public ProxyOptions(Proxy proxy) {
         Asserter.assertNotNull(proxy, "proxy");
         this.proxy = proxy;
     }
 
+    @SuppressWarnings("unused")
     public ProxyOptions(Proxy proxy, String proxyUsername, char[] proxyPassword) {
         Asserter.assertNotNull(proxy, "proxy");
         this.proxy = proxy;

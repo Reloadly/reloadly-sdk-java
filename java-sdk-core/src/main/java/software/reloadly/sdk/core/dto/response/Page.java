@@ -11,6 +11,7 @@ import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Page<T> extends PageImpl<T> {

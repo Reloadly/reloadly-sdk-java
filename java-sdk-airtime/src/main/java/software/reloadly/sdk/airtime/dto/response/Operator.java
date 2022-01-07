@@ -59,6 +59,11 @@ public class Operator implements Serializable {
     protected boolean supportsLocalAmounts;
 
     /**
+     * Whether the operator supports geographical recharge plans
+     */
+    private boolean supportsGeographicalRechargePlans;
+
+    /**
      * Operator amount denomination type
      */
     private DenominationType denominationType;
@@ -165,6 +170,11 @@ public class Operator implements Serializable {
      * Local fixed amounts descriptions
      */
     private TreeMap<BigDecimal, String> localFixedAmountsDescriptions;
+
+    /**
+     * Geographical recharge plans where supported
+     */
+    private Set<GeographicalRechargePlan> geographicalRechargePlans;
 
     /**
      * Logo url of the mobile operator

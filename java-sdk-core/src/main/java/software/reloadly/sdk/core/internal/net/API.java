@@ -47,6 +47,7 @@ public abstract class API {
     private final String libraryVersion;
 
 
+    @SuppressWarnings("unused")
     public API(String clientId, String clientSecret, boolean enableLogging,
                List<String> redactHeaders, HttpOptions options, Boolean enableTelemetry, String libraryVersion) {
 

@@ -1,0 +1,966 @@
+{
+  "id": 200,
+  "operatorId": 200,
+  "name": "Airtel India",
+  "bundle": false,
+  "data": false,
+  "pin": false,
+  "supportsLocalAmounts": false,
+  "supportsGeographicalRechargePlans": true,
+  "denominationType": "FIXED",
+  "senderCurrencyCode": "EUR",
+  "senderCurrencySymbol": "€",
+  "destinationCurrencyCode": "INR",
+  "destinationCurrencySymbol": "₹",
+  "commission": 15.0,
+  "internationalDiscount": 15.0,
+  "localDiscount": 0.0,
+  "mostPopularAmount": null,
+  "mostPopularLocalAmount": null,
+  "minAmount": null,
+  "maxAmount": null,
+  "localMinAmount": null,
+  "localMaxAmount": null,
+  "country": {
+    "isoName": "IN",
+    "name": "India"
+  },
+  "fx": {
+    "rate": 62.9886,
+    "currencyCode": "INR"
+  },
+  "logoUrls": [
+    "https://s3.amazonaws.com/rld-operator/48a34cc8-a395-43b2-848d-8caa7af71649-size-1.png",
+    "https://s3.amazonaws.com/rld-operator/48a34cc8-a395-43b2-848d-8caa7af71649-size-2.png",
+    "https://s3.amazonaws.com/rld-operator/48a34cc8-a395-43b2-848d-8caa7af71649-size-3.png"
+  ],
+  "fixedAmounts": [],
+  "fixedAmountsDescriptions": {},
+  "localFixedAmounts": [],
+  "localFixedAmountsDescriptions": {},
+  "suggestedAmounts": [],
+  "suggestedAmountsMap": {},
+  "geographicalRechargePlans": [
+    {
+      "locationCode": "AP",
+      "locationName": "Andhra Pradesh",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "KOL",
+      "locationName": "Kolkata",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "NE",
+      "locationName": "North East",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "BIH",
+      "locationName": "Bihar & Jharkhand",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "UPW",
+      "locationName": "Uttaranchal",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "KER",
+      "locationName": "Kerala",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "ASM",
+      "locationName": "Assam",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "UPE",
+      "locationName": "Uttar Pradesh East",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "WB",
+      "locationName": "West Bengal",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "MP",
+      "locationName": "Madhya Pradesh",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "RAJ",
+      "locationName": "Rajasthan",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "DEL",
+      "locationName": "Delhi",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "HAR",
+      "locationName": "Haryana",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "MAH",
+      "locationName": "Maharashtra",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "MUM",
+      "locationName": "Mumbai",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "KK",
+      "locationName": "Karnataka",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "GUJ",
+      "locationName": "Gujrat",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "ORI",
+      "locationName": "Orissa",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "JK",
+      "locationName": "Jammu & Kashmir",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "HP",
+      "locationName": "Himachal Pradesh",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "TN",
+      "locationName": "Tamilnadu",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "PUN",
+      "locationName": "Punjab",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    },
+    {
+      "locationCode": "CHE",
+      "locationName": "Chennai",
+      "fixedAmounts": [
+        0.14,
+        0.25,
+        0.28,
+        1.39,
+        6.96,
+        13.93,
+        69.63
+      ],
+      "localAmounts": [
+        10.00,
+        18.00,
+        20.00,
+        100.00,
+        500.00,
+        1000.00,
+        5000.00
+      ],
+      "fixedAmountsDescriptions": {
+        "0.14": "Get Talktime of Rs. 7.47",
+        "0.25": "Get ISD Calling at discounted rates for 28 Days.",
+        "0.28": "Get Talktime of Rs. 14.95",
+        "1.39": "Get Talktime of Rs. 81.75",
+        "6.96": "Get Talktime of Rs. 423.73",
+        "13.93": "Get Talktime of Rs. 847.46",
+        "69.63": "Get Talktime of Rs. 4237.29"
+      },
+      "localFixedAmountsDescriptions": {
+        "10.00": "Get Talktime of Rs. 7.47",
+        "18.00": "Get ISD Calling at discounted rates for 28 Days.",
+        "20.00": "Get Talktime of Rs. 14.95",
+        "100.00": "Get Talktime of Rs. 81.75",
+        "500.00": "Get Talktime of Rs. 423.73",
+        "1000.00": "Get Talktime of Rs. 847.46",
+        "5000.00": "Get Talktime of Rs. 4237.29"
+      }
+    }
+  ],
+  "promotions": []
+}

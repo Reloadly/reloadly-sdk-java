@@ -7,11 +7,11 @@
     <parent>
         <groupId>software.reloadly</groupId>
         <artifactId>java-sdk</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>java-sdk-authentication</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <name>Reloadly Java SDK :: Services :: Reloadly Authentication Service</name>
     <url>https://github.com/reloadly/reloadly-sdk-java</url>
 
@@ -19,15 +19,10 @@
         that are used for communicating with Reloadly Authentication Service.
     </description>
 
-    <properties>
-        <sdk-core.version>1.0.0</sdk-core.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>software.reloadly</groupId>
             <artifactId>java-sdk-core</artifactId>
-            <version>${sdk-core.version}</version>
             <optional>false</optional>
         </dependency>
     </dependencies>

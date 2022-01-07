@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.authentication.AuthenticationAPIMockServer;
 import software.reloadly.sdk.authentication.dto.request.OAuth2ClientCredentialsRequest;
 import software.reloadly.sdk.authentication.dto.response.TokenHolder;
+import software.reloadly.sdk.core.constant.ServiceURLs;
 import software.reloadly.sdk.core.enums.Service;
 import software.reloadly.sdk.core.exception.oauth.OAuthException;
 import software.reloadly.sdk.core.internal.constant.GrantType;
@@ -33,7 +34,6 @@ import static software.reloadly.sdk.core.internal.constant.MediaType.APPLICATION
 public class AuthenticationAPITest {
 
     private static final String CLIENT_ID = "some-client-id";
-    private static final String END_POINT = "/oauth/token";
     private static final String CLIENT_SECRET = "some-client-secret";
     private static final String ACCESS_DENIED_ERROR_RESPONSE = "src/test/resources/client/auth/error_access_denied.json";
     private static final String SUCCESS_RESPONSE = "src/test/resources/client/auth/success_token_response.json";
@@ -209,6 +209,38 @@ public class AuthenticationAPITest {
     }
 
     @Test
+    public void shouldCreateOAuth2ClientCredentialsTokenRequestWithAudience() throws Exception {
+
+        AuthenticationAPI authenticationAPI = getAuthenticationAPIBuilder().build();
+
+        OAuth2ClientCredentialsOperation oAuthOperation = authenticationAPI.clientCredentials();
+        Field baseUrlField = oAuthOperation.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(oAuthOperation, HttpUrl.parse(server.getBaseUrl()));
+
+        OAuth2ClientCredentialsRequest tokenRequest = oAuthOperation.getAccessToken();
+        tokenRequest.setAudience(ServiceURLs.AIRTIME);
+        assertThat(tokenRequest, is(notNullValue()));
+        server.jsonResponse(SUCCESS_RESPONSE, 200);
+        TokenHolder response = tokenRequest.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("POST", "/oauth/token"));
+        assertThat(recordedRequest, hasHeader(HttpHeader.CONTENT_TYPE, APPLICATION_JSON));
+        assertThat(recordedRequest, hasHeader(HttpHeader.ACCEPT, APPLICATION_JSON));
+
+        Map<String, Object> body = AuthenticationAPIMockServer.bodyFromRequest(recordedRequest);
+        assertThat(body, hasEntry("grant_type", GrantType.CLIENT_CREDENTIALS));
+        assertThat(body, hasEntry("client_id", CLIENT_ID));
+        assertThat(body, hasEntry("client_secret", CLIENT_SECRET));
+
+        assertThat(response, is(notNullValue()));
+        assertThat(response.getToken(), not(emptyOrNullString()));
+        assertThat(response.getTokenType(), not(emptyOrNullString()));
+        assertThat(response.getExpiresIn(), is(notNullValue()));
+    }
+
+    @Test
     public void shouldCreateOauth2ClientCredentialsTokenRequestErrorResponse() throws Exception {
 
         AuthenticationAPI authenticationAPI = getAuthenticationAPIBuilder().build();
@@ -235,6 +267,72 @@ public class AuthenticationAPITest {
         assertThat(body, hasEntry("grant_type", GrantType.CLIENT_CREDENTIALS));
         assertThat(body, hasEntry("client_id", CLIENT_ID));
         assertThat(body, hasEntry("client_secret", CLIENT_SECRET));
+    }
+
+    @Test
+    public void shouldCreateOAuth2ClientCredentialsTokenRequestWithAudienceGiftCard() throws Exception {
+
+        AuthenticationAPI authenticationAPI = AuthenticationAPI.builder().clientId(CLIENT_ID)
+                .clientSecret(CLIENT_SECRET).service(Service.GIFTCARD).build();
+
+        OAuth2ClientCredentialsOperation oAuthOperation = authenticationAPI.clientCredentials();
+        Field baseUrlField = oAuthOperation.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(oAuthOperation, HttpUrl.parse(server.getBaseUrl()));
+
+        OAuth2ClientCredentialsRequest tokenRequest = oAuthOperation.getAccessToken();
+        tokenRequest.setAudience(ServiceURLs.AIRTIME);
+        assertThat(tokenRequest, is(notNullValue()));
+        server.jsonResponse(SUCCESS_RESPONSE, 200);
+        TokenHolder response = tokenRequest.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("POST", "/oauth/token"));
+        assertThat(recordedRequest, hasHeader(HttpHeader.CONTENT_TYPE, APPLICATION_JSON));
+        assertThat(recordedRequest, hasHeader(HttpHeader.ACCEPT, APPLICATION_JSON));
+
+        Map<String, Object> body = AuthenticationAPIMockServer.bodyFromRequest(recordedRequest);
+        assertThat(body, hasEntry("grant_type", GrantType.CLIENT_CREDENTIALS));
+        assertThat(body, hasEntry("client_id", CLIENT_ID));
+        assertThat(body, hasEntry("client_secret", CLIENT_SECRET));
+
+        assertThat(response, is(notNullValue()));
+        assertThat(response.getToken(), not(emptyOrNullString()));
+        assertThat(response.getTokenType(), not(emptyOrNullString()));
+        assertThat(response.getExpiresIn(), is(notNullValue()));
+    }
+
+    @Test
+    public void shouldCreateOAuth2ClientCredentialsTokenRequestWithAudienceGiftCardSandbox() throws Exception {
+
+        AuthenticationAPI authenticationAPI = AuthenticationAPI.builder().clientId(CLIENT_ID)
+                .clientSecret(CLIENT_SECRET).service(Service.GIFTCARD_SANDBOX).build();
+
+        OAuth2ClientCredentialsOperation oAuthOperation = authenticationAPI.clientCredentials();
+        Field baseUrlField = oAuthOperation.getClass().getDeclaredField("baseUrl");
+        baseUrlField.setAccessible(true);
+        baseUrlField.set(oAuthOperation, HttpUrl.parse(server.getBaseUrl()));
+
+        OAuth2ClientCredentialsRequest tokenRequest = oAuthOperation.getAccessToken();
+        tokenRequest.setAudience(ServiceURLs.AIRTIME);
+        assertThat(tokenRequest, is(notNullValue()));
+        server.jsonResponse(SUCCESS_RESPONSE, 200);
+        TokenHolder response = tokenRequest.execute();
+        RecordedRequest recordedRequest = server.takeRequest();
+
+        MatcherAssert.assertThat(recordedRequest, hasMethodAndPath("POST", "/oauth/token"));
+        assertThat(recordedRequest, hasHeader(HttpHeader.CONTENT_TYPE, APPLICATION_JSON));
+        assertThat(recordedRequest, hasHeader(HttpHeader.ACCEPT, APPLICATION_JSON));
+
+        Map<String, Object> body = AuthenticationAPIMockServer.bodyFromRequest(recordedRequest);
+        assertThat(body, hasEntry("grant_type", GrantType.CLIENT_CREDENTIALS));
+        assertThat(body, hasEntry("client_id", CLIENT_ID));
+        assertThat(body, hasEntry("client_secret", CLIENT_SECRET));
+
+        assertThat(response, is(notNullValue()));
+        assertThat(response.getToken(), not(emptyOrNullString()));
+        assertThat(response.getTokenType(), not(emptyOrNullString()));
+        assertThat(response.getExpiresIn(), is(notNullValue()));
     }
 
     private AuthenticationAPI.AuthenticationAPIBuilder getAuthenticationAPIBuilder() {

@@ -50,7 +50,7 @@ public class OAuth2ClientCredentialsOperation {
     public OAuth2ClientCredentialsRequest getAccessToken() {
 
         Asserter.assertNotNull(service, "Service");
-        String audience = service.getUrl();
+        String audience = service.getServiceUrl();
 
         if (!audience.startsWith("https://") || audience.startsWith("http://")) {
             audience = "https://" + audience;

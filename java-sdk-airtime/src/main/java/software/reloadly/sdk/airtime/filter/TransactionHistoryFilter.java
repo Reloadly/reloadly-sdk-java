@@ -7,7 +7,6 @@ import software.reloadly.sdk.airtime.operation.TopupOperations;
 import software.reloadly.sdk.core.internal.filter.QueryFilter;
 import software.reloadly.sdk.core.internal.util.Asserter;
 
-import java.io.UnsupportedEncodingException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -16,6 +15,7 @@ import java.time.format.DateTimeFormatter;
  * Related to the {@link TopupOperations}.
  */
 @NoArgsConstructor
+@SuppressWarnings("unused")
 public class TransactionHistoryFilter extends QueryFilter {
 
     private static final String END_DATE = "endDate";

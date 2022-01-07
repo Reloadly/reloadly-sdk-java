@@ -7,11 +7,11 @@
     <parent>
         <groupId>software.reloadly</groupId>
         <artifactId>java-sdk</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>java-sdk-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <name>Reloadly Java SDK :: Core</name>
     <url>https://github.com/reloadly/reloadly-sdk-java</url>
 
@@ -21,9 +21,9 @@
     </description>
 
     <properties>
-        <java-jwt.version>3.13.0</java-jwt.version>
-        <spring-data-commons.version>2.4.3</spring-data-commons.version>
-        <apache-commons-lang.version>3.11</apache-commons-lang.version>
+        <java-jwt.version>3.18.2</java-jwt.version>
+        <spring-data-commons.version>2.6.0</spring-data-commons.version>
+        <apache-commons-lang.version>3.12.0</apache-commons-lang.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <apache-commons-validator.version>1.7</apache-commons-validator.version>
     </properties>
@@ -48,6 +48,11 @@
             <groupId>commons-validator</groupId>
             <artifactId>commons-validator</artifactId>
             <version>${apache-commons-validator.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>mockwebserver</artifactId>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

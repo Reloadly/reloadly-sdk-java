@@ -2,6 +2,7 @@ package software.reloadly.sdk.core.internal.interceptor;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.lang.NonNull;
 import software.reloadly.sdk.core.internal.net.Telemetry;
 import okhttp3.Interceptor;
 import okhttp3.Response;
@@ -20,8 +21,9 @@ public class TelemetryInterceptor implements Interceptor {
         this.enabled = true;
     }
 
+    @NonNull
     @Override
-    public Response intercept(Chain chain) throws IOException {
+    public Response intercept(@NonNull Chain chain) throws IOException {
         if (!enabled) {
             return chain.proceed(chain.request());
         }

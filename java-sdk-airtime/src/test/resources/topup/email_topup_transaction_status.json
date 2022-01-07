@@ -1,0 +1,32 @@
+{
+  "code": null,
+  "message": null,
+  "status": "SUCCESSFUL",
+  "transaction": {
+    "transactionId": 2,
+    "status": "SUCCESSFUL",
+    "operatorTransactionId": null,
+    "customIdentifier": null,
+    "recipientPhone": null,
+    "recipientEmail": "test@nauta.com.cu",
+    "senderPhone": null,
+    "countryCode": "CU",
+    "operatorId": 683,
+    "operatorName": "Nauta Cuba",
+    "discount": 1.5,
+    "discountCurrencyCode": "USD",
+    "requestedAmount": 30,
+    "requestedAmountCurrencyCode": "USD",
+    "deliveredAmount": 772.5,
+    "deliveredAmountCurrencyCode": "CUP",
+    "transactionDate": "2022-01-05 15:25:19",
+    "pinDetail": null,
+    "balanceInfo": {
+      "oldBalance": 982.60,
+      "newBalance": 954.10,
+      "currencyCode": "USD",
+      "currencyName": "US Dollar",
+      "updatedAt": "2022-01-05 20:25:19"
+    }
+  }
+}

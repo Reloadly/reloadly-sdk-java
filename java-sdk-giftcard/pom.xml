@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>java-sdk</artifactId>
+        <groupId>software.reloadly</groupId>
+        <version>1.0.2</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>java-sdk-giftcard</artifactId>
+    <version>1.0.2</version>
+    <name>Reloadly Java SDK :: Services :: Reloadly Giftcard Service</name>
+    <url>https://github.com/reloadly/reloadly-sdk-java</url>
+
+    <description>The Reloadly Java SDK for the Giftcard API. The module holds the client classes
+        that are used for communicating with Reloadly Giftcard Service.
+    </description>
+
+    <properties>
+        <nv-i18n.version>1.29</nv-i18n.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>software.reloadly</groupId>
+            <artifactId>java-sdk-authentication</artifactId>
+            <optional>false</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.neovisionaries</groupId>
+            <artifactId>nv-i18n</artifactId>
+            <version>${nv-i18n.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

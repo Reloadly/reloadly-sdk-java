@@ -4,6 +4,7 @@ import okhttp3.mockwebserver.RecordedRequest;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeDiagnosingMatcher;
 
+@SuppressWarnings("unused")
 public class RecordedRequestMatcher extends TypeSafeDiagnosingMatcher<RecordedRequest> {
 
     private static final int METHOD_PATH = 0;

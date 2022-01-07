@@ -47,4 +47,12 @@ public abstract class Asserter {
             throw new IllegalArgumentException(String.format("'%s' is not a valid email address!", name));
         }
     }
+
+    public static void assertValidPhoneNumber(String value, String name) {
+        assertNotBlank(value, name);
+        if (!StringUtils.isNumeric(value)) {
+            String msg = "'%s' must contain '+' signs and numbers only. No other characters allowed!";
+            throw new IllegalArgumentException(String.format(msg, name));
+        }
+    }
 }
