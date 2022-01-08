@@ -4,6 +4,7 @@ import com.neovisionaries.i18n.CountryCode;
 import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.Country;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTest;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 
@@ -15,7 +16,7 @@ import static org.hamcrest.Matchers.*;
 
 public class CountryOperationsTest extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListCountries() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -26,7 +27,7 @@ public class CountryOperationsTest extends BaseIntegrationTest {
         countries.forEach(this::assertIsValidCountry);
     }
 
-    @Test
+    @IntegrationTest
     public void testGetByCountryCode() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();

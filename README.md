@@ -5,7 +5,7 @@
   Description: Reloadly Java SDK for sending Airtime Topups to over 4 billion mobile phones.
   Author: Reloadly
   -->
-  
+
 # Reloadly SDK for Java
 
 [![CircleCI][circle-ci-badge]][circle-ci-url]
@@ -124,6 +124,28 @@ You can also refer to the [online Javadoc][javadoc].
 
 The library uses [Project Lombok][lombok]. While it is not a requirement, you might want to install
 a [plugin][lombok-plugins] for your favorite IDE to facilitate development.
+
+## Running Tests
+
+There are 3 groups of tests : `integration`, `integration-with-proxy` and all test.
+
+* To run all the tests, including integration tests, execute `./mvnw test`. However, for integration tests to run
+  successfully, the following environment variables are required :
+
+```
+export LIVE_CLIENT_ID=put_your_account_live_client_id_here
+export LIVE_CLIENT_SECRET=put_your_account_live_client_secret_here
+export SANDBOX_CLIENT_ID=put_your_account_sandbox_client_id_here
+export SANDBOX_CLIENT_SECRET=put_your_account_sandbox_client_secret_here
+export PROXY_HOST=put_your_proxy_host_here
+export PROXY_USERNAME=put_your_proxy_username_here
+export PROXY_PASSWORD=put_your_proxy_password_here
+export PROXY_PORT=put_your_proxy_port_here
+```
+
+* To run all integration tests only, execute `./mvnw test -Dgroups=integration`
+
+* To run all proxy integration tests only, execute `./mvnw test -Dgroups=integration-with-proxy`
 
 ## Giving Feedback
 

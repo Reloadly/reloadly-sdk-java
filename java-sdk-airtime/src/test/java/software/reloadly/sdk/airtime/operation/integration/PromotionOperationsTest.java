@@ -4,6 +4,7 @@ import com.neovisionaries.i18n.CountryCode;
 import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.Promotion;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTest;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
@@ -17,7 +18,7 @@ import static org.hamcrest.Matchers.*;
 
 public class PromotionOperationsTest extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListPromotionsWithNoFilters() throws Exception {
 
         AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -28,7 +29,7 @@ public class PromotionOperationsTest extends BaseIntegrationTest {
         promotionPage.getContent().forEach(this::assertIsValidPromotion);
     }
 
-    @Test
+    @IntegrationTest
     public void testListPromotionsWithFilters() throws Exception {
 
         AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -43,7 +44,7 @@ public class PromotionOperationsTest extends BaseIntegrationTest {
         promotionPage.getContent().forEach(this::assertIsValidPromotion);
     }
 
-    @Test
+    @IntegrationTest
     public void testGetById() throws Exception {
 
         AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -61,7 +62,7 @@ public class PromotionOperationsTest extends BaseIntegrationTest {
         assertIsValidPromotion(promotion);
     }
 
-    @Test
+    @IntegrationTest
     public void testGetByCountryCode() throws Exception {
 
         AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -72,7 +73,7 @@ public class PromotionOperationsTest extends BaseIntegrationTest {
         promotions.forEach(this::assertIsValidPromotion);
     }
 
-    @Test
+    @IntegrationTest
     public void testGetByOperatorId() throws Exception {
 
         Long operatorId = 173L;

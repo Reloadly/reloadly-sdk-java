@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.TopupTransaction;
 import software.reloadly.sdk.airtime.filter.TransactionHistoryFilter;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTest;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 
@@ -17,7 +18,7 @@ import static org.hamcrest.Matchers.*;
 
 public class TransactionHistoryOperationsTest extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListTransactionHistoryWithNoFilters() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(sandboxAccessToken).build();
@@ -28,7 +29,7 @@ public class TransactionHistoryOperationsTest extends BaseIntegrationTest {
         transactionHistoryPage.getContent().forEach(this::assertIsValidTransactionHistory);
     }
 
-    @Test
+    @IntegrationTest
     public void testListTransactionHistoryWithFilters() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(sandboxAccessToken).build();
@@ -48,7 +49,7 @@ public class TransactionHistoryOperationsTest extends BaseIntegrationTest {
         transactionHistoryPage.getContent().forEach(this::assertIsValidTransactionHistory);
     }
 
-    @Test
+    @IntegrationTest
     public void testListTransactionHistoryFilteredByCustomIdentifier() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().accessToken(sandboxAccessToken).build();
@@ -67,7 +68,7 @@ public class TransactionHistoryOperationsTest extends BaseIntegrationTest {
         transactionHistoryPage.getContent().forEach(this::assertIsValidTransactionHistory);
     }
 
-    @Test
+    @IntegrationTest
     public void testGetById() throws Exception {
 
         Long transactionId = 24995L;
