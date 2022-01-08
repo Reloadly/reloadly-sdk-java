@@ -1,7 +1,6 @@
 package software.reloadly.sdk.airtime.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.Phone;
 import software.reloadly.sdk.airtime.dto.request.EmailTopupRequest;

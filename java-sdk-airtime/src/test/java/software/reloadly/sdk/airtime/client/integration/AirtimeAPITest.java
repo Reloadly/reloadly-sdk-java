@@ -6,7 +6,6 @@ import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.Operator;
 import software.reloadly.sdk.airtime.util.ExpiredToken;
 import software.reloadly.sdk.core.enums.Environment;
-import software.reloadly.sdk.core.enums.Service;
 import software.reloadly.sdk.core.exception.ReloadlyException;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 

@@ -1,6 +1,5 @@
 package software.reloadly.sdk.giftcard.operation.integration;
 
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.giftcard.client.GiftcardAPI;

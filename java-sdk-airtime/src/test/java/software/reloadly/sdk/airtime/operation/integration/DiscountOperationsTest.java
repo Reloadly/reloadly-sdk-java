@@ -1,6 +1,5 @@
 package software.reloadly.sdk.airtime.operation.integration;
 
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.Discount;
 import software.reloadly.sdk.airtime.interfaces.IntegrationTest;

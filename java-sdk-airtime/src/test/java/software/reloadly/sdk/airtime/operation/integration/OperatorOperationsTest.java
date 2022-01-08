@@ -2,7 +2,6 @@ package software.reloadly.sdk.airtime.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.GeographicalRechargePlan;
 import software.reloadly.sdk.airtime.dto.response.Operator;

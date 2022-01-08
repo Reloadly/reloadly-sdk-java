@@ -2,7 +2,6 @@ package software.reloadly.sdk.giftcard.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.exception.ReloadlyException;
