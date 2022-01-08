@@ -9,7 +9,6 @@
 # Reloadly SDK for Java
 
 [![CircleCI][circle-ci-badge]][circle-ci-url]
-[![codecov][codecov-badge]][codecov-url]
 [![MIT][mit-badge]][mit-url]
 [![Maven Central][maven-badge]][maven-url]
 
