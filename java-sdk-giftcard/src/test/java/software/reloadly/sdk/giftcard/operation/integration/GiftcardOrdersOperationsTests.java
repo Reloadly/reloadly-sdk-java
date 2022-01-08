@@ -2,7 +2,6 @@ package software.reloadly.sdk.giftcard.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.authentication.client.AuthenticationAPI;
 import software.reloadly.sdk.core.enums.Service;
 import software.reloadly.sdk.core.exception.ReloadlyException;
@@ -11,6 +10,7 @@ import software.reloadly.sdk.giftcard.client.GiftcardAPI;
 import software.reloadly.sdk.giftcard.dto.request.GiftCardOrderRequest;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardInfo;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardTransaction;
+import software.reloadly.sdk.giftcard.interfaces.IntegrationTest;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
@@ -36,7 +36,7 @@ public class GiftcardOrdersOperationsTests {
                 .build().clientCredentials().getAccessToken().execute().getToken();
     }
 
-    @Test
+    @IntegrationTest
     public void testPlaceOrderWithRecipientEmailHappyPath() throws Exception {
 
         GiftcardAPI giftcardAPI = GiftcardAPI.builder().accessToken(accessToken).build();
@@ -54,7 +54,7 @@ public class GiftcardOrdersOperationsTests {
         assertIsValidGiftcardTransaction(transaction);
     }
 
-    @Test
+    @IntegrationTest
     public void testPlaceOrderWithRecipientPhoneHappyPath() throws Exception {
 
         GiftcardAPI giftcardAPI = GiftcardAPI.builder().accessToken(accessToken).build();
@@ -72,7 +72,7 @@ public class GiftcardOrdersOperationsTests {
         assertIsValidGiftcardTransaction(transaction);
     }
 
-    @Test
+    @IntegrationTest
     public void testRedeemOrderByTransactionId() throws Exception {
 
         Long transactionId = 818L;

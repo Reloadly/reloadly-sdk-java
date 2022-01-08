@@ -1,11 +1,11 @@
 package software.reloadly.sdk.giftcard.operation.integration;
 
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.giftcard.client.GiftcardAPI;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardDiscount;
+import software.reloadly.sdk.giftcard.interfaces.IntegrationTest;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.*;
 
 public class GiftcardDiscountsOperationsTests extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardDiscounts() throws Exception {
 
         GiftcardAPI giftcardAPI = GiftcardAPI.builder()
@@ -29,7 +29,7 @@ public class GiftcardDiscountsOperationsTests extends BaseIntegrationTest {
         redeemInstructions.forEach(this::assertIsValidGiftcardDiscount);
     }
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardDiscountsByProductId() throws Exception {
 
         long productId = 100L;

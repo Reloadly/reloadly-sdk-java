@@ -1,8 +1,8 @@
 package software.reloadly.sdk.airtime.operation.integration;
 
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.Discount;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTest;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.*;
 
 public class DiscountOperationsTest extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListDiscounts() throws Exception {
 
         AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -26,7 +26,7 @@ public class DiscountOperationsTest extends BaseIntegrationTest {
         discountPage.getContent().forEach(this::assertIsValidDiscount);
     }
 
-    @Test
+    @IntegrationTest
     public void testListDiscountsWithFilters() throws Exception {
 
         AirtimeAPI airtimeAPI =AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -37,7 +37,7 @@ public class DiscountOperationsTest extends BaseIntegrationTest {
         discountPage.getContent().forEach(this::assertIsValidDiscount);
     }
 
-    @Test
+    @IntegrationTest
     public void testGetByOperatorId() throws Exception {
 
         Long operatorId = 174L;

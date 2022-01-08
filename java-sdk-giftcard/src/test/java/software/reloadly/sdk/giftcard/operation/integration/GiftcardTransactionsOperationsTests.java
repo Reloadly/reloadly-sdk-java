@@ -1,11 +1,11 @@
 package software.reloadly.sdk.giftcard.operation.integration;
 
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 import software.reloadly.sdk.giftcard.client.GiftcardAPI;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardTransaction;
 import software.reloadly.sdk.giftcard.filter.GiftcardTransactionFilter;
+import software.reloadly.sdk.giftcard.interfaces.IntegrationTest;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
@@ -20,7 +20,7 @@ import static software.reloadly.sdk.core.enums.Environment.SANDBOX;
 
 public class GiftcardTransactionsOperationsTests extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardTransactionsWithNoFilters() throws Exception {
 
         GiftcardAPI giftcardAPI = GiftcardAPI.builder().environment(LIVE).accessToken(accessToken).build();
@@ -30,7 +30,7 @@ public class GiftcardTransactionsOperationsTests extends BaseIntegrationTest {
         transactionsPage.forEach(this::assertIsValidGiftcardTransaction);
     }
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardTransactionsWithFilters() throws Exception {
 
         int page = 1;
@@ -46,7 +46,7 @@ public class GiftcardTransactionsOperationsTests extends BaseIntegrationTest {
         transactionsPage.forEach(this::assertIsValidGiftcardTransaction);
     }
 
-    @Test
+    @IntegrationTest
     public void testGetGiftcardTransactionById() throws Exception {
 
         Long transactionId = 813L;

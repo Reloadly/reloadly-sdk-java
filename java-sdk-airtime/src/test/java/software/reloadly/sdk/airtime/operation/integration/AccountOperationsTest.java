@@ -1,8 +1,8 @@
 package software.reloadly.sdk.airtime.operation.integration;
 
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.AccountBalanceInfo;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTest;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 
@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.*;
 
 public class AccountOperationsTest extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testGetAccountBalance() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();

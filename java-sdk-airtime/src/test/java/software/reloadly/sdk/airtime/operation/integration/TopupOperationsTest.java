@@ -1,7 +1,6 @@
 package software.reloadly.sdk.airtime.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.Phone;
 import software.reloadly.sdk.airtime.dto.request.EmailTopupRequest;
@@ -9,6 +8,7 @@ import software.reloadly.sdk.airtime.dto.request.PhoneTopupRequest;
 import software.reloadly.sdk.airtime.dto.response.*;
 import software.reloadly.sdk.airtime.enums.AirtimeTransactionStatus;
 import software.reloadly.sdk.airtime.enums.DenominationType;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTest;
 import software.reloadly.sdk.core.exception.ReloadlyException;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
 
@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TopupOperationsTest extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testSendPhoneTopup() throws Exception {
 
         Long operatorId = 173L;
@@ -48,7 +48,7 @@ public class TopupOperationsTest extends BaseIntegrationTest {
         assertThat(topupTransaction.getRecipientEmail(), is(nullValue()));
     }
 
-    @Test
+    @IntegrationTest
     public void testSendPinBasedPhoneTopup() throws Exception {
 
         Long operatorId = 672L;
@@ -71,7 +71,7 @@ public class TopupOperationsTest extends BaseIntegrationTest {
         assertThat(topupTransaction.getRecipientEmail(), is(nullValue()));
     }
 
-    @Test
+    @IntegrationTest
     public void testSendEmailTopup() throws Exception {
 
         Long operatorId = 683L;
@@ -96,7 +96,7 @@ public class TopupOperationsTest extends BaseIntegrationTest {
         assertEquals(recipientEmail, topupTransaction.getRecipientEmail());
     }
 
-    @Test
+    @IntegrationTest
     public void testSendPhoneTopupAsync() throws Exception {
 
         Long operatorId = 173L;
@@ -119,7 +119,7 @@ public class TopupOperationsTest extends BaseIntegrationTest {
         assertThat(airtimeResponse.getTransactionId(), is(greaterThan(0L)));
     }
 
-    @Test
+    @IntegrationTest
     public void testSendEmailTopupAsync() throws Exception {
 
         Long operatorId = 683L;
@@ -141,7 +141,7 @@ public class TopupOperationsTest extends BaseIntegrationTest {
         assertThat(airtimeResponse.getTransactionId(), is(greaterThan(0L)));
     }
 
-    @Test
+    @IntegrationTest
     public void testRetrievePhoneTransactionStatus() throws Exception {
 
         Long transactionId = 24995L;
@@ -156,7 +156,7 @@ public class TopupOperationsTest extends BaseIntegrationTest {
         assertEquals(transactionId, transactionStatus.getTransaction().getId());
     }
 
-    @Test
+    @IntegrationTest
     public void testRetrieveEmailTransactionStatus() throws Exception {
 
         Long transactionId = 24996L;

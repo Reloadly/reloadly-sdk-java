@@ -2,12 +2,13 @@ package software.reloadly.sdk.airtime.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import software.reloadly.sdk.airtime.client.AirtimeAPI;
 import software.reloadly.sdk.airtime.dto.response.GeographicalRechargePlan;
 import software.reloadly.sdk.airtime.dto.response.Operator;
 import software.reloadly.sdk.airtime.dto.response.OperatorFxRate;
 import software.reloadly.sdk.airtime.filter.OperatorFilter;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTest;
+import software.reloadly.sdk.airtime.interfaces.IntegrationTestWithProxy;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.enums.Environment;
 import software.reloadly.sdk.core.exception.ReloadlyException;
@@ -31,7 +32,7 @@ import static software.reloadly.sdk.airtime.enums.DenominationType.RANGE;
 
 public class OperatorOperationsTest extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListOperatorsWithNoFilters() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -41,7 +42,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         operatorsPage.getContent().forEach(this::assertIsValidOperator);
     }
 
-    @Test
+    @IntegrationTest
     public void testListOperatorsWithFilters() throws Exception {
 
         int page = 1;
@@ -63,7 +64,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         operatorsPage.getContent().forEach(this::assertIsValidOperator);
     }
 
-    @Test
+    @IntegrationTest
     public void testListOperatorsByCountryCodeWithNoFilters() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -75,7 +76,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         operators.forEach(operator -> assertThat(operator.getSuggestedAmountsMap(), is(anEmptyMap())));
     }
 
-    @Test
+    @IntegrationTest
     public void testListOperatorsByCountryCodeWithFilters() throws Exception {
 
         AirtimeAPI airtimeAPI = AirtimeAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -92,7 +93,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         });
     }
 
-    @Test
+    @IntegrationTest
     public void testGetOperatorByIdWithNoFilters() throws Exception {
 
         Long operatorId = 174L;
@@ -106,7 +107,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         assertThat(operator.getSuggestedAmountsMap(), is(anEmptyMap()));
     }
 
-    @Test
+    @IntegrationTest
     public void testGetOperatorByIdWithFilters() throws Exception {
 
         Long operatorId = 174L;
@@ -121,7 +122,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         assertThat(operator.getSuggestedAmountsMap(), not(anEmptyMap()));
     }
 
-    @Test
+    @IntegrationTest
     public void testAutoDetectOperatorWithNoFilters() throws Exception {
 
         String phone = "+50936377111";
@@ -134,7 +135,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         assertThat(operator.getSuggestedAmountsMap(), anEmptyMap());
     }
 
-    @Test
+    @IntegrationTest
     public void testAutoDetectOperatorWithFilters() throws Exception {
 
         String phone = "+50936377111";
@@ -148,7 +149,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         assertThat(operator.getSuggestedAmountsMap(), not(anEmptyMap()));
     }
 
-    @Test
+    @IntegrationTest
     public void testCalculateOperatorFxRate() throws Exception {
 
         Double amount = 5.00;
@@ -164,7 +165,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         assertThat(operatorFxRate.getOperatorId(), equalTo(operatorId));
     }
 
-    @Test
+    @IntegrationTest
     public void testGetOperatorByIdWithGeographicalRechargePlan() throws Exception {
 
         Long operatorId = 200L;
@@ -198,7 +199,7 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         });
     }
 
-    @Test
+    @IntegrationTestWithProxy
     public void testRequestWithProxyAuthentication() throws ReloadlyException {
 
         String host = System.getenv("PROXY_HOST");
@@ -223,8 +224,8 @@ public class OperatorOperationsTest extends BaseIntegrationTest {
         assertThat(operator, is(notNullValue()));
     }
 
-    @Test
-    public void testRequestWithoutProxyAuthentication() {
+    @IntegrationTestWithProxy
+    public void testRequestWithUnAuthenticatedProxy() {
 
         String host = System.getenv("PROXY_HOST");
         int port = Integer.parseInt(System.getenv("PROXY_PORT"));

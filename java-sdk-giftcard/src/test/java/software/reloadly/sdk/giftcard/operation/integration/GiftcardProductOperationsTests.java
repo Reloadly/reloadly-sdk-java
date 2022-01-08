@@ -1,25 +1,35 @@
 package software.reloadly.sdk.giftcard.operation.integration;
 
 import com.neovisionaries.i18n.CountryCode;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 import software.reloadly.sdk.core.dto.response.Page;
 import software.reloadly.sdk.core.enums.Environment;
+import software.reloadly.sdk.core.exception.ReloadlyException;
 import software.reloadly.sdk.core.internal.dto.request.interfaces.Request;
+import software.reloadly.sdk.core.net.HttpOptions;
+import software.reloadly.sdk.core.net.ProxyOptions;
 import software.reloadly.sdk.giftcard.client.GiftcardAPI;
 import software.reloadly.sdk.giftcard.dto.response.GiftcardProduct;
 import software.reloadly.sdk.giftcard.filter.GiftcardProductFilter;
+import software.reloadly.sdk.giftcard.interfaces.IntegrationTest;
+import software.reloadly.sdk.giftcard.interfaces.IntegrationTestWithProxy;
 
+import java.io.IOException;
 import java.lang.reflect.Field;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static software.reloadly.sdk.giftcard.enums.GiftcardDenominationType.*;
 
 public class GiftcardProductOperationsTests extends BaseIntegrationTest {
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardProductsWithNoFilters() throws Exception {
 
         GiftcardAPI giftcardAPI = GiftcardAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -30,7 +40,7 @@ public class GiftcardProductOperationsTests extends BaseIntegrationTest {
         productPage.getContent().forEach(this::assertIsValidGiftcardProduct);
     }
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardProductsWithFilters() throws Exception {
 
         int page = 1;
@@ -48,7 +58,7 @@ public class GiftcardProductOperationsTests extends BaseIntegrationTest {
         giftcardProductsPage.getContent().forEach(this::assertIsValidGiftcardProduct);
     }
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardProductsByCountryCodeWithNoFilters() throws Exception {
 
         GiftcardAPI giftcardAPI = GiftcardAPI.builder().environment(Environment.LIVE).accessToken(accessToken).build();
@@ -58,7 +68,7 @@ public class GiftcardProductOperationsTests extends BaseIntegrationTest {
         products.forEach(this::assertIsValidGiftcardProduct);
     }
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardProductsByCountryCodeWithFilters() throws Exception {
 
         int page = 1;
@@ -76,7 +86,7 @@ public class GiftcardProductOperationsTests extends BaseIntegrationTest {
         giftcardProductsPage.forEach(this::assertIsValidGiftcardProduct);
     }
 
-    @Test
+    @IntegrationTest
     public void testListGiftcardProductById() throws Exception {
 
         Long productId = 10L;
@@ -85,6 +95,63 @@ public class GiftcardProductOperationsTests extends BaseIntegrationTest {
         assertThat(request, is(notNullValue()));
         GiftcardProduct product = request.execute();
         assertIsValidGiftcardProduct(product);
+    }
+
+    @IntegrationTestWithProxy
+    public void testRequestWithProxyAuthentication() throws Exception {
+
+        Long productId = 10L;
+        String host = System.getenv("PROXY_HOST");
+        String username = System.getenv("PROXY_USERNAME");
+        String password = System.getenv("PROXY_PASSWORD");
+        int port = Integer.parseInt(System.getenv("PROXY_PORT"));
+
+        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(host, port));
+        ProxyOptions options = new ProxyOptions(proxy, username, password.toCharArray());
+
+        GiftcardAPI giftcardAPI = GiftcardAPI.builder().environment(Environment.LIVE).accessToken(accessToken)
+                .options(HttpOptions.builder()
+                        .readTimeout(Duration.ofSeconds(60))
+                        .writeTimeout(Duration.ofSeconds(60))
+                        .connectTimeout(Duration.ofSeconds(60))
+                        .proxyOptions(options)
+                        .build()
+                ).build();
+
+        Request<GiftcardProduct> request = giftcardAPI.products().getById(productId);
+        assertThat(request, is(notNullValue()));
+        GiftcardProduct product = request.execute();
+        assertIsValidGiftcardProduct(product);
+    }
+
+    @IntegrationTestWithProxy
+    public void testRequestWithUnAuthenticatedProxy() {
+
+        Long productId = 10L;
+        String host = System.getenv("PROXY_HOST");
+        int port = Integer.parseInt(System.getenv("PROXY_PORT"));
+
+        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(host, port));
+        ProxyOptions options = new ProxyOptions(proxy);
+
+        GiftcardAPI giftcardAPI = GiftcardAPI.builder().environment(Environment.LIVE).accessToken(accessToken)
+                .options(HttpOptions.builder()
+                        .readTimeout(Duration.ofSeconds(60))
+                        .writeTimeout(Duration.ofSeconds(60))
+                        .connectTimeout(Duration.ofSeconds(60))
+                        .proxyOptions(options)
+                        .build()
+                ).build();
+
+
+        Throwable exception = assertThrows(ReloadlyException.class, () -> giftcardAPI.products()
+                .getById(productId).execute());
+
+        Assertions.assertInstanceOf(IOException.class, exception.getCause());
+        String errorMessage = "Failed to execute request";
+        String rootErrorMessage = "Failed to authenticate with proxy";
+        Assertions.assertEquals(errorMessage, exception.getMessage());
+        Assertions.assertEquals(rootErrorMessage, exception.getCause().getMessage());
     }
 
     private void assertIsValidGiftcardProduct(GiftcardProduct product) {
