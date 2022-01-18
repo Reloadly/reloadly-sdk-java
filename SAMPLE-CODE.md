@@ -14,3 +14,6 @@
 * [Promotion Operations](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-airtime/usage/PROMOTION-OPERATIONS.md)
 * [Report Operations](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-airtime/usage/REPORT-OPERATIONS.md)
 * [Topup Operations](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-airtime/usage/TOPUP-OPERATIONS.md)
+
+## Giftcard SDK
+* [Overview](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-giftcard/USAGE.md) (You should start here)
