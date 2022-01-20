@@ -17,3 +17,4 @@
 
 ## Giftcard SDK
 * [Overview](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-giftcard/USAGE.md) (You should start here)
+* [Giftcard Discount Operations](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-giftcard/usage/GIFTCARD-DISCOUNT-OPERATIONS.md)
