@@ -7,7 +7,7 @@ Use the Order Operations to order a gift card and to retrieve the details of a p
 In order to send a gift card to a recipient, a couple of information will be required such as the quantity, product id, 
 name of sender, unit price, the recipient's email or phone number and a custom identifier.
 
-```
+```java
         GiftcardAPI giftcardAPI = GiftcardAPI.builder()
                 .clientId(clientId)
                 .clientSecret(clientSecret)
@@ -58,7 +58,7 @@ name of sender, unit price, the recipient's email or phone number and a custom i
 You can also retrieve the details (card number and pin code) of a gift card that has been earlier purchase. You'd just 
 have to provide the transaction id.
 
-```
+```java
         GiftcardAPI giftcardAPI = GiftcardAPI.builder()
                 .clientId(clientId)
                 .clientSecret(clientSecret)
