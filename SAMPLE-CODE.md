@@ -19,3 +19,4 @@
 * [Overview](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-giftcard/USAGE.md) (You should start here)
 * [Giftcard Order Operations](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-giftcard/GIFTCARD-ORDER-OPERATIONS.md)
 * [Giftcard Products Operations](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-giftcard/GIFTCARD-PRODUCTS-OPERATIONS.md)
+* [Giftcard Redeem Instructions Operations](https://github.com/Reloadly/reloadly-sdk-java/blob/main/java-sdk-giftcard/GIFTCARD-REDEEM-INSTRUCTIONS-OPERATIONS.md)
