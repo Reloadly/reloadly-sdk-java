@@ -198,7 +198,7 @@ You can search for products that exist within a given country by searching using
 
 ```
 
-## Products - List products by country code using filters
+## Products - Get by id
 
 You can get a product using its id
 
