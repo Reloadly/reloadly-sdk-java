@@ -107,7 +107,7 @@ Using the example above has some benefits and drawbacks:
 * However, because access tokens have a finite lifetime, you now have to manage or handle the expiration of the access
   token in your application code.
 * In the sample above, the AirtimeAPI will continue using the same access token until it expires. Therefore, the
-  responsibility false on you to handle token renewal when the token expires.
+  responsibility falls on you to handle token renewal when the token expires.
 
 ### Sample token expiration handling
 
