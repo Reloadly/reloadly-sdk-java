@@ -90,7 +90,7 @@ try {
     // api error retrieving access_token
 }
 
-Page<Discount> discount = null;
+Discount discount = null;
 try {
     discount = request.execute();
 } catch (APIException e) {
