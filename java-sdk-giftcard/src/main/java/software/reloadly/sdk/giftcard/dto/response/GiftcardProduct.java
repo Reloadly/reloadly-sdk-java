@@ -9,6 +9,7 @@ import software.reloadly.sdk.giftcard.enums.GiftcardDenominationType;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -42,4 +43,5 @@ public class GiftcardProduct implements Serializable {
     private TreeSet<BigDecimal> fixedSenderDenominations;
     private TreeMap<BigDecimal, BigDecimal> fixedRecipientToSenderDenominationsMap;
     private GiftcardRedeemInstructionSimplified redeemInstruction;
+    private Map<BigDecimal, String> denominationsInfo;
 }
