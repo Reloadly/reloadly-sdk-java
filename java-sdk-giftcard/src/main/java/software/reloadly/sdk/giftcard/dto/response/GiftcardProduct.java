@@ -42,4 +42,5 @@ public class GiftcardProduct implements Serializable {
     private TreeSet<BigDecimal> fixedSenderDenominations;
     private TreeMap<BigDecimal, BigDecimal> fixedRecipientToSenderDenominationsMap;
     private GiftcardRedeemInstructionSimplified redeemInstruction;
+    private TreeMap<BigDecimal, String> denominationsInfo;
 }
