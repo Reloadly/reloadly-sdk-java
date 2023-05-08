@@ -1,7 +1,7 @@
 # Giftcard Products Operations
 
 Reloadly supports over 13,000 gift card products spanning multiple brands in multiple countries. The Products Operations 
-allow you to get information about these products
+allow you to get information about these products.
 
 ## Products - List
 
