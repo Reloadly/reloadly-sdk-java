@@ -19,8 +19,8 @@
       "title": "Telenor Pakistan From 15 Apr 2020 00:00 To 31 Dec 2020 23:59 (GMT+05:00)",
       "title2": "Free data and minutes",
       "description": "Telenor Pakistan has an exciting offer for friends and family in Pakistan.<br />Top them up with Rs 100 and above and they get FREE 50 Telenor Mins &amp; 500 SMS.<br /><br /><strong>Activating the bonus</strong> is in <strong>3 easy steps</strong><br /><br /><strong>Step 1: Receiver in Pakistan dials *345*260#&nbsp;and receives confirmation</strong><br /><img alt=\"\" src=\"https://i.postimg.cc/YCmC94tN/Subscription-Request-Confirmation-Telenor-Pakistan-2.png\" style=\"height:139px; width:250px\" /><br /><br /><strong>Step 2: Global Sender remits 100PKR to the receiver</strong><br /><br /><strong>Step 3: Receiver&nbsp;enjoys extra minutes and SMS valid for 24hrs</strong><br /><img alt=\"\" src=\"https://i.postimg.cc/t4f9G9P1/Subscription-Notification-Telenor-Pakistan-4.png\" style=\"height:222px; width:250px\" /><br /><br /><strong>Terms and Conditions:</strong><br />* Bonus is usable for onnet calls, and local SMS<br />* Only 1 promo per day is allowed i.e. promo is applied on 1st&nbsp;100 PKR recharge&nbsp;&nbsp;<br />* Bonus is valid for the same day of recharge i.e&nbsp; get a recharge from abroad at 11AM, the offer will expire at 23:59 same day.<br /><br />Offer is valid until further notice.",
-      "startDate": "2020-04-14 23:00:00",
-      "endDate": "2020-12-31 23:59:00",
+      "startDate": "2020-04-14T23:00",
+      "endDate": "2020-12-31T23:59",
       "denominations": "USD 1 and above",
       "localDenominations": "PKR 100 and above"
     },
@@ -31,8 +31,8 @@
       "title": "Econet Zimbabwe From 03 Jun 2020 00:01 To 31 Dec 2020 23:59 (GMT+02:00)",
       "title2": "Bonus 2x",
       "description": "<font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Econet Zimbabwe 100% Bonus Promotion from 3rd June 2020 until further notice. </font></font><br /><br /><strong><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Terms and Conditions</font></font></strong><br /><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">1. Promotion runs from 3rd June 2020 until further notice. </font></font><br /><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">2. Bonus will be rewarded for all denominations recharged. </font></font><br /><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">3. Bonus applies to any number of recharges received.&nbsp;&nbsp;</font></font><br /><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">4. The normal and usual validity periods apply. </font></font><br /><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">5. The airtime will credited into the main airtime account. </font></font><br /><br /><br /><strong><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Example</font></font></strong><br /><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">2 US $ buys 50 ZWL Principal Airtime Recharge + 50 ZWL / RTGS Free Bonus Airtime Recharge = Total Amount Received 100 ZWL / RTGS&nbsp;&nbsp; </font></font><br /><br />&nbsp;",
-      "startDate": "2020-06-03 02:01:00",
-      "endDate": "2021-01-01 02:59:00",
+      "startDate": "2020-06-03T02:01:00Z",
+      "endDate": "2021-01-01T02:59:00Z",
       "denominations": "USD 1 and above",
       "localDenominations": "USD 1 and above"
     },
