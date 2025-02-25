@@ -46,19 +46,19 @@ dependencies for the specific services you use only. For example : Authenticatio
 Add specific dependencies to your project's build file:
 
 ```groovy
-implementation "software.reloadly:java-sdk-authentication:1.0.2"
+implementation "software.reloadly:java-sdk-authentication:1.0.3"
 ```
 
 **OR**
 
 ```groovy
-implementation "software.reloadly:java-sdk-airtime:1.0.2"
+implementation "software.reloadly:java-sdk-airtime:1.0.3"
 ```
 
 **OR**
 
 ```groovy
-implementation "software.reloadly:java-sdk-giftcard:1.0.2"
+implementation "software.reloadly:java-sdk-giftcard:1.0.3"
 ```
 
 ### Maven users
@@ -70,7 +70,7 @@ Add specific dependencies to your project's POM:
 <dependency>
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk-authentication</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 
@@ -81,7 +81,7 @@ Add specific dependencies to your project's POM:
 <dependency>
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk-airtime</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 
@@ -92,7 +92,7 @@ Add specific dependencies to your project's POM:
 <dependency>
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk-giftcard</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 
