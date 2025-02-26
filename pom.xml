@@ -7,7 +7,7 @@
 
     <groupId>software.reloadly</groupId>
     <artifactId>java-sdk</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>Reloadly Java SDK :: POM</name>
     <url>https://github.com/reloadly/reloadly-sdk-java</url>
 

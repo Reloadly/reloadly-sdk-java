@@ -3,10 +3,10 @@ package software.reloadly.sdk.airtime.dto.response;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import software.reloadly.sdk.core.internal.adapter.JackSonDateDeserializer;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+import software.reloadly.sdk.core.internal.adapter.UTCDateDeserializer;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -48,13 +48,13 @@ public class Promotion implements Serializable {
     /**
      * Date on which the promotion starts
      */
-    @JsonDeserialize(using = JackSonDateDeserializer.class)
+    @JsonDeserialize(using = UTCDateDeserializer.class)
     private Date startDate;
 
     /**
      * Date on which the promotion ends
      */
-    @JsonDeserialize(using = JackSonDateDeserializer.class)
+    @JsonDeserialize(using = UTCDateDeserializer.class)
     private Date endDate;
 
     /**
